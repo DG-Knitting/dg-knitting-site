@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DG Knitting | Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/blog.css">
+
+          <!-- Container for third-party tags -->
+    <div id="tags-container"></div>
+
+</head>
+<body>
+
+<!-- Navbar with Thread Theme -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+        <a class="navbar-brand logo-container" href="index.html">
+            <img src="assets/images/logo.png" alt="DG Knitting Logo" class="logo-img">
+            <span class="logo-text">Knitting</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#fabrics">Fabrics</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#strength">Strength</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#process">Process</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#quality">Quality</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#industries">Industries</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#export">Export</a></li>
+                <li class="nav-item"><a class="nav-link active" href="blog.html">Blogs</a></li>
+                <li class="nav-item"><a class="btn contact-btn" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="thread-line"></div>
+</nav>
+
+<!-- Page Header -->
+<section class="blog-header">
+    <div class="thread-background">
+        <div class="thread-1"></div>
+        <div class="thread-2"></div>
+        <div class="thread-3"></div>
+    </div>
+    <div class="container">
+        <div class="header-content text-center">
+            <span class="header-subtitle">Our Journal</span>
+            <h1 class="header-title">Latest <span class="highlight">Stories</span></h1>
+            <div class="header-divider">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p class="header-description">Insights, trends, and innovations from the world of textile manufacturing</p>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Grid Section -->
+<section class="blog-grid-section">
+    <div class="container">
+        <!-- Category Filters -->
+        <div class="blog-filters">
+            <button class="filter-btn active" data-filter="all">All Articles</button>
+            <button class="filter-btn" data-filter="technology">Technology</button>
+            <button class="filter-btn" data-filter="trends">Trends</button>
+            <button class="filter-btn" data-filter="sustainability">Sustainability</button>
+            <button class="filter-btn" data-filter="manufacturing">Manufacturing</button>
+        </div>
+
+        <!-- Blog Grid - 3x3 -->
+        <div class="blog-grid" id="blogGrid">
+            <!-- Blog Card 1 -->
+            <div class="blog-card" data-category="technology">
+                <div class="blog-image">
+                    <img src="assets/images/blog/tech-1.jpg" alt="AI in Textile Manufacturing">
+                    <div class="blog-category">Technology</div>
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">How AI is Revolutionizing Textile Manufacturing Processes</h3>
+                    <p class="blog-excerpt">Artificial intelligence is transforming every aspect of textile production, from quality control to predictive maintenance...</p>
+                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="blog-card" data-category="trends">
+                <div class="blog-image">
+                    <img src="assets/images/blog/trends-1.jpg" alt="Sustainable Fashion Trends">
+                    <div class="blog-category">Trends</div>
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Sustainable Fashion: The Rise of Eco-Friendly Knitted Fabrics</h3>
+                    <p class="blog-excerpt">Consumer demand for sustainable fashion is driving innovation in eco-friendly knitted fabrics and production methods...</p>
+                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="blog-card" data-category="sustainability">
+                <div class="blog-image">
+                    <img src="assets/images/blog/sustainability-1.jpg" alt="Circular Economy">
+                    <div class="blog-category">Sustainability</div>
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Circular Economy: Reducing Waste in Textile Manufacturing</h3>
+                    <p class="blog-excerpt">How manufacturers are adopting circular economy principles to minimize waste and maximize resource efficiency...</p>
+                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog Card 4 -->
+            <div class="blog-card" data-category="manufacturing">
+                <div class="blog-image">
+                    <img src="assets/images/blog/manufacturing-1.jpg" alt="Circular Knitting Machines">
+                    <div class="blog-category">Manufacturing</div>
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">The Evolution of Circular Knitting Machines: A Technical Deep Dive</h3>
+                    <p class="blog-excerpt">From mechanical to fully automated systems, explore how circular knitting machines have evolved over the decades...</p>
+                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog Card 5 -->
+            <div class="blog-card" data-category="technology">
+                <div class="blog-image">
+                    <img src="assets/images/blog/tech-2.jpg" alt="IoT in Textiles">
+                    <div class="blog-category">Technology</div>
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">IoT and Industry 4.0: Smart Factories in Textile Industry</h3>
+                    <p class="blog-excerpt">Internet of Things is enabling real-time monitoring and optimization of textile manufacturing processes...</p>
+                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog Card 6 -->
+            <div class="blog-card" data-category="trends">
+                <div class="blog-image">
+                    <img src="assets/images/blog/trends-2.jpg" alt="Performance Fabrics">
+                    <div class="blog-category">Trends</div>
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">The Growing Demand for High-Performance Knitted Fabrics</h3>
+                    <p class="blog-excerpt">Sportswear and activewear brands are driving demand for innovative performance fabrics with advanced properties...</p>
+                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog Card 7 -->
+            <div class="blog-card" data-category="sustainability">
+                <div class="blog-image">
+                    <img src="assets/images/blog/sustainability-2.jpg" alt="Organic Cotton">
+                    <div class="blog-category">Sustainability</div>
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Organic Cotton: Benefits and Challenges for Manufacturers</h3>
+                    <p class="blog-excerpt">Exploring the benefits and challenges of transitioning to organic cotton in knitted fabric production...</p>
+                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog Card 8 -->
+            <div class="blog-card" data-category="manufacturing">
+                <div class="blog-image">
+                    <img src="assets/images/blog/manufacturing-2.jpg" alt="Quality Control">
+                    <div class="blog-category">Manufacturing</div>
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Quality Control 4.0: Automated Inspection Systems</h3>
+                    <p class="blog-excerpt">How computer vision and AI are revolutionizing quality control in textile manufacturing...</p>
+                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog Card 9 -->
+            <div class="blog-card" data-category="technology">
+                <div class="blog-image">
+                    <img src="assets/images/blog/tech-3.jpg" alt="3D Knitting">
+                    <div class="blog-category">Technology</div>
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">3D Knitting Technology: The Future of Seamless Garments</h3>
+                    <p class="blog-excerpt">Discover how 3D knitting technology is enabling seamless garment production and reducing waste...</p>
+                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animated Pagination -->
+        <div class="pagination-container">
+            <div class="pagination">
+                <button class="page-btn prev-btn" disabled><i class="fas fa-chevron-left"></i></button>
+                <div class="page-numbers">
+                    <span class="page-number active">1</span>
+                    <span class="page-number">2</span>
+                    <span class="page-number">3</span>
+                    <span class="page-number">4</span>
+                    <span class="page-number">5</span>
+                </div>
+                <button class="page-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Load More Button (Mobile) -->
+        <div class="load-more-container">
+            <button class="load-more-btn">Load More Articles <i class="fas fa-sync-alt"></i></button>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="DG Knitting" class="footer-logo-img">
+                    <span class="footer-logo-text">Knitting</span>
+                </div>
+                <p class="footer-description">Premium knitted fabrics manufacturer serving India's finest fashion brands since 1998.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#fabrics">Fabrics</a></li>
+                    <li><a href="index.html#strength">Strength</a></li>
+                    <li><a href="index.html#quality">Quality</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-title">Products</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#fabrics">Single Jersey</a></li>
+                    <li><a href="index.html#fabrics">Rib Knit</a></li>
+                    <li><a href="index.html#fabrics">Fleece</a></li>
+                    <li><a href="index.html#fabrics">Lycra Jersey</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-title">Contact</h3>
+                <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Surat, Gujarat</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 22 1234 5678</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@dgknitting.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> DG Knitting. All rights reserved.</p>
+        </div>
+    </div>
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+</footer>
+
+ <!-- Scripts -->
+    <script src="js/component.js"></script>
+
+<!-- Scripts -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/blog.js"></script>
+</body>
+</html>

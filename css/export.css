@@ -1,0 +1,656 @@
+/* Export Header with Image */
+.export-header {
+    margin-top: 75px;
+    padding: 120px 0 100px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(223,34,41,0.4));
+    z-index: 1;
+}
+
+.export-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.export-header .header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+}
+
+.export-header .header-subtitle {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 15px;
+    position: relative;
+    padding: 0 15px;
+}
+
+.export-header .header-subtitle::before,
+.export-header .header-subtitle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 1px;
+    background: white;
+    opacity: 0.5;
+}
+
+.export-header .header-subtitle::before {
+    left: -30px;
+}
+
+.export-header .header-subtitle::after {
+    right: -30px;
+}
+
+.export-header .header-title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.export-header .header-title .highlight {
+    color: white;
+    background: none;
+    -webkit-text-fill-color: white;
+}
+
+.export-header .header-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.export-header .header-divider span {
+    height: 2px;
+    background: white;
+}
+
+.export-header .header-divider span:nth-child(1),
+.export-header .header-divider span:nth-child(3) {
+    width: 60px;
+    opacity: 0.3;
+}
+
+.export-header .header-divider span:nth-child(2) {
+    width: 30px;
+    opacity: 0.7;
+}
+
+.export-header .header-description {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Goal Section with Image Background */
+.goal-section {
+    padding: 60px 0 40px;
+    background: white;
+}
+
+.goal-card {
+    position: relative;
+    padding: 80px 60px;
+    border-radius: 30px;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
+
+.goal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(223,34,41,0.6));
+    z-index: 1;
+}
+
+.goal-card .row {
+    position: relative;
+    z-index: 2;
+}
+
+.goal-subtitle {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 10px;
+    background: rgba(255,255,255,0.1);
+    padding: 5px 18px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+}
+
+.goal-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.goal-title .highlight {
+    color: white;
+    position: relative;
+}
+
+.goal-title .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    opacity: 0.5;
+}
+
+.goal-text {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.goal-stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    background: rgba(0,0,0,0.3);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.goal-stat-item {
+    text-align: center;
+}
+
+.goal-stat-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    filter: brightness(0) invert(1);
+}
+
+.goal-stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.goal-stat-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+/* Focus Section - Image Cards */
+.focus-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--pink-light), #ffffff);
+}
+
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.focus-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(223, 34, 41, 0.1);
+}
+
+.focus-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(223, 34, 41, 0.15);
+}
+
+.focus-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.focus-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.focus-card:hover .focus-image img {
+    transform: scale(1.1);
+}
+
+.focus-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.5));
+}
+
+.focus-content {
+    padding: 25px;
+}
+
+.focus-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--dark-main);
+    margin-bottom: 10px;
+}
+
+.focus-content p {
+    color: var(--dark-soft);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.focus-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.focus-tag {
+    background: var(--pink-light);
+    color: var(--crimson);
+    padding: 4px 12px;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 1px solid rgba(223, 34, 41, 0.1);
+}
+
+/* Values Section - Image Based */
+.values-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.value-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(223, 34, 41, 0.1);
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(223, 34, 41, 0.1);
+    border-color: var(--crimson);
+}
+
+.value-image {
+    height: 150px;
+    overflow: hidden;
+}
+
+.value-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.value-card:hover .value-image img {
+    transform: scale(1.1);
+}
+
+.value-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--crimson);
+    margin: 20px 20px 10px;
+    letter-spacing: 1px;
+}
+
+.value-card p {
+    color: var(--dark-soft);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 20px 20px;
+}
+
+/* Timeline Section - Visual Timeline */
+.timeline-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #ffffff, var(--pink-light));
+}
+
+.timeline-visual {
+    max-width: 900px;
+    margin: 60px auto 0;
+    position: relative;
+}
+
+.timeline-track {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(223, 34, 41, 0.1);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.timeline-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--crimson), var(--orchid));
+    border-radius: 4px;
+    animation: progressPulse 2s infinite;
+}
+
+@keyframes progressPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.timeline-items {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeline-item {
+    flex: 1;
+    text-align: center;
+    padding-top: 80px;
+    position: relative;
+}
+
+.timeline-marker {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(223, 34, 41, 0.2);
+    border: 3px solid var(--crimson);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-marker {
+    transform: translateX(-50%) scale(1.1);
+    box-shadow: 0 15px 40px rgba(223, 34, 41, 0.3);
+}
+
+.timeline-marker img {
+    width: 30px;
+    height: 30px;
+}
+
+.timeline-content {
+    padding: 0 15px;
+}
+
+.timeline-content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--crimson);
+    margin-bottom: 8px;
+}
+
+.timeline-content p {
+    color: var(--dark-soft);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Confidential Section with Image */
+.confidential-section {
+    padding: 80px 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.confidential-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(223,34,41,0.7));
+}
+
+.confidential-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.confidential-card {
+    background: transparent;
+    color: white;
+    position: relative;
+}
+
+.confidential-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.1);
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.badge-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.confidential-card h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.confidential-card p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 0;
+    line-height: 1.8;
+}
+
+.confidential-btn {
+    background: white;
+    color: var(--crimson);
+    border: none;
+    padding: 16px 35px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.confidential-btn:hover {
+    background: var(--crimson);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.btn-icon {
+    width: 20px;
+    height: 20px;
+    transition: filter 0.3s ease;
+}
+
+.confidential-btn:hover .btn-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .goal-card {
+        padding: 50px 30px;
+    }
+    
+    .goal-stats {
+        margin-top: 30px;
+    }
+    
+    .timeline-items {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .timeline-track {
+        display: none;
+    }
+    
+    .timeline-item {
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        text-align: left;
+    }
+    
+    .timeline-marker {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        flex-shrink: 0;
+    }
+    
+    .timeline-item:hover .timeline-marker {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .export-header {
+        padding: 80px 0 60px;
+    }
+    
+    .goal-title {
+        font-size: 1.8rem;
+    }
+    
+    .goal-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .confidential-card {
+        text-align: center;
+    }
+    
+    .confidential-card .col-lg-4 {
+        text-align: center !important;
+        margin-top: 30px;
+    }
+    
+    .confidential-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .export-header {
+        margin-top: 65px;
+    }
+    
+    .goal-card {
+        padding: 30px 20px;
+    }
+    
+    .goal-title {
+        font-size: 1.5rem;
+    }
+    
+    .focus-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
