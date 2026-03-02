@@ -1,90 +1,65 @@
-DG Knitting site/ (proposed)
-├── index.html
-├── about.html            # optional
-├── blog.html
-├── contact.html
-├── export.html
-├── industries.html
-├── process.html
-├── quality.html
-├── strength.html
-├── 404.html              # optional
-├── favicon.ico
-├── robots.txt
-├── sitemap.xml
+DG Knitting site/
+├── .git/                      # repository metadata
+├── .gitignore                # ignores
+├── .vscode/                  # editor settings
+├── index.html                # homepage (hero, about, fabrics, etc.)
+├── blog.html                 # blog listing & posts
+├── contact.html              # contact form and details
+├── export.html               # export vision page
+├── industries.html           # industries we serve
+├── process.html              # detailed process workflow
+├── quality.html              # quality commitment section
+├── strength.html             # production strength cards
+├── SITE_TREE.md              # this file
 ├── assets/
-│   ├── images/
-│   │   ├── product/
-│   │   ├── team/
-│   │   ├── logos/
-│   │   ├── bg/
-│   │   └── icons/
-│   ├── video/
-│   └── fonts/
+│   ├── images/
+│   │   ├── logo.png                  # site logo
+│   │   ├── office.jpeg               # about section image
+│   │   ├── product/
+│   │   │   ├── Fleece.jpg
+│   │   │   ├── French-Terry.jpg
+│   │   │   ├── Interlock.jpg
+│   │   │   ├── Lycra.jpg
+│   │   │   ├── Rib-Knit.jpg
+│   │   │   └── Single-Jersey.jpg
+│   │   └── Round-images/
+│   │       ├── Machine.png
+│   │       ├── Single.png
+│   │       └── Yarn.png
+│   └── video/
+│       ├── factory-tour.mp4
+│       └── factory-tour.webm
+├── component/
+│   ├── navbar.html           # inserted nav markup
+│   └── tags.html             # state tags used on export page
 ├── css/
-│   ├── base.css
-│   ├── layout.css
-│   ├── components.css
-│   ├── style.css         # site-wide entry
-│   ├── vendor/
-│   │   └── bootstrap.min.css
-│   └── pages/
-│       ├── blog.css
-│       ├── contact.css
-│       ├── export.css
-│       ├── industries.css
-│       ├── process.css
-│       ├── quality.css
-│       └── strength.css
+│   ├── bootstrap.min.css     # vendor
+│   ├── style.css             # global styles
+│   ├── footer.css            # footer specific
+│   ├── blog.css              # blog page styles
+│   ├── contact.css           # contact page styles
+│   ├── export.css            # export page styles
+│   ├── industries.css        # industries page styles
+│   ├── process.css           # process page styles
+│   ├── quality.css           # quality page styles
+│   └── strength.css          # strength page styles
 ├── js/
-│   ├── lib/
-│   ├── components/
-│   │   └── navbar.js
-│   ├── pages/
-│   │   ├── blog.js
-│   │   └── contact.js
-│   └── vendor/
-│       ├── bootstrap.bundle.min.js
-│       └── bootstrap.min.js
-├── components/
-│   ├── navbar.html
-│   ├── footer.html
-│   ├── tags.html
-│   └── product-card.html
-├── data/
-│   ├── products.json
-│   └── blog-posts.json
-├── src/                  # optional build sources (Sass/TS/templates)
-│   ├── scss/
-│   ├── ts/
-│   └── templates/
-├── build/ or dist/       # generated site output
-├── docs/ or README.md
-└── .github/ (CI workflows)
+│   ├── bootstrap.bundle.min.js  # vendor
+│   ├── bootstrap.min.js        # vendor
+│   ├── navbar.js               # component loader
+│   ├── component.js            # miscellaneous components
+│   ├── contact.js              # contact page logic
+│   ├── blog.js                 # blog page logic
+│   └── script.js               # global scripts (back-to-top, carousel)
+└── (optional/placeholder directories)
+    ├── data/                  # e.g. products.json, blog-posts.json
+    ├── src/                   # build sources (scss, ts, templates)
+    ├── build/ or dist/        # generated output
+    └── docs/ or README.md
 
-Current files mapping (from your workspace)
-- Root pages:
-  - `index.html` -> root `index.html`
-  - `blog.html` -> root `blog.html`
-  - `contact.html` -> root `contact.html`
-  - `export.html` -> root `export.html`
-  - `industries.html` -> root `industries.html`
-  - `process.html` -> root `process.html`
-  - `quality.html` -> root `quality.html`
-  - `strength.html` -> root `strength.html`
-- Assets:
-  - `assets/images/product/` -> `assets/images/product/` (keep)
-  - `assets/video/` -> `assets/video/`
-- Components:
-  - `component/navbar.html` -> `components/navbar.html`
-  - `component/tags.html` -> `components/tags.html`
-- CSS:
-  - `css/bootstrap.min.css` -> `css/vendor/bootstrap.min.css`
-  - `css/style.css`, `css/blog.css`, etc. -> `css/` and `css/pages/`
-- JS:
-  - `js/bootstrap*.js` -> `js/vendor/`
-  - `js/navbar.js`, `js/script.js`, `js/component.js` -> `js/components/` or `js/pages/`
+---
 
-Notes / Next steps
-- I created `SITE_TREE.md` in the workspace root with this tree and mapping.
-- Next I can move files into this structure and update HTML references, or generate a script to do it automatically—which would you prefer?
+### Notes
+- above tree reflects every file currently in the workspace, with comments describing purpose
+- future reorganization can follow this structure, moving files into vendor/pages/components subfolders
+- if you want me to physically rearrange things or update references, just say so

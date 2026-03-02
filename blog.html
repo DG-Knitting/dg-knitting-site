@@ -19,41 +19,13 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/blog.css">
 
-          <!-- Container for third-party tags -->
+    <!-- Container for third-party tags -->
     <div id="tags-container"></div>
-
 </head>
 <body>
 
-<!-- Navbar with Thread Theme -->
-<nav class="navbar navbar-expand-lg custom-navbar">
-    <div class="container">
-        <a class="navbar-brand logo-container" href="index.html">
-            <img src="assets/images/logo.png" alt="DG Knitting Logo" class="logo-img">
-            <span class="logo-text">Knitting</span>
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-            <i class="fas fa-bars"></i>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ms-auto align-items-lg-center">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#fabrics">Fabrics</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#strength">Strength</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#process">Process</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#quality">Quality</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#industries">Industries</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#export">Export</a></li>
-                <li class="nav-item"><a class="nav-link active" href="blog.html">Blogs</a></li>
-                <li class="nav-item"><a class="btn contact-btn" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="thread-line"></div>
-</nav>
+<!-- Navbar will be loaded here -->
+<div id="navbar-container"></div>
 
 <!-- Page Header -->
 <section class="blog-header">
@@ -230,71 +202,13 @@
     </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer-section">
-    <div class="container">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <div class="footer-logo">
-                    <img src="assets/images/logo.png" alt="DG Knitting" class="footer-logo-img">
-                    <span class="footer-logo-text">Knitting</span>
-                </div>
-                <p class="footer-description">Premium knitted fabrics manufacturer serving India's finest fashion brands since 1998.</p>
-                <div class="footer-social">
-                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3 class="footer-title">Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#fabrics">Fabrics</a></li>
-                    <li><a href="index.html#strength">Strength</a></li>
-                    <li><a href="index.html#quality">Quality</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3 class="footer-title">Products</h3>
-                <ul class="footer-links">
-                    <li><a href="index.html#fabrics">Single Jersey</a></li>
-                    <li><a href="index.html#fabrics">Rib Knit</a></li>
-                    <li><a href="index.html#fabrics">Fleece</a></li>
-                    <li><a href="index.html#fabrics">Lycra Jersey</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3 class="footer-title">Contact</h3>
-                <div class="footer-contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Surat, Gujarat</span>
-                </div>
-                <div class="footer-contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>+91 22 1234 5678</span>
-                </div>
-                <div class="footer-contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>info@dgknitting.com</span>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; <span id="currentYear"></span> DG Knitting. All rights reserved.</p>
-        </div>
-    </div>
-    <div class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </div>
-</footer>
-
- <!-- Scripts -->
-    <script src="js/component.js"></script>
-
-<!-- Scripts -->
+<!-- Scripts (order as per index.html) -->
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/component.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/footer-loader.js"></script>
 <script src="js/script.js"></script>
 <script src="js/blog.js"></script>
+
 </body>
 </html>

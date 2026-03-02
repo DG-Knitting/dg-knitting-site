@@ -1,29 +1,37 @@
-// js/component.js - DEBUG VERSION
+// js/component.js
+function getBasePath() {
+    const path = window.location.pathname;
+    const depth = (path.match(/\//g) || []).length - 1;
+    
+    if (depth === 1) { // In root directory
+        return '';
+    } else if (depth > 1) { // In subdirectory
+        return '../'.repeat(depth - 1);
+    }
+    return '';
+}
+
 async function loadComponent(elementId, componentPath) {
     try {
-        console.log('Attempting to load:', componentPath);
-        const response = await fetch(componentPath);
+        const basePath = getBasePath();
+        const fullPath = basePath + componentPath;
+        
+        console.log('Loading component from:', fullPath);
+        const response = await fetch(fullPath);
         
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         
         const html = await response.text();
-        console.log('HTML received:', html.substring(0, 100) + '...'); // Show first 100 chars
-        
         document.getElementById(elementId).innerHTML = html;
-        console.log('✅ Successfully loaded tags');
+        console.log('✅ Component loaded:', componentPath);
     } catch (error) {
         console.error('❌ Failed to load component:', error);
-        
-        // Show where it's looking
-        console.log('Current URL:', window.location.href);
-        console.log('Tried to load:', new URL(componentPath, window.location.href).href);
     }
 }
 
-// Load tags when page loads
+
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM loaded, starting to load tags...');
-    loadComponent('tags-container', '../component/tags.html');
+    loadComponent('tags-container', 'component/tags.html');
 });

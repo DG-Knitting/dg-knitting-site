@@ -24,35 +24,8 @@
 </head>
 <body>
 
-<!-- Navbar with Thread Theme -->
-<nav class="navbar navbar-expand-lg custom-navbar">
-    <div class="container">
-        <a class="navbar-brand logo-container" href="index.html">
-            <img src="assets/images/logo.png" alt="DG Knitting Logo" class="logo-img">
-            <span class="logo-text">Knitting</span>
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-            <i class="fas fa-bars"></i>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ms-auto align-items-lg-center">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#fabrics">Fabrics</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#strength">Strength</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#process">Process</a></li>
-                <li class="nav-item"><a class="nav-link active" href="quality.html">Quality</a></li>
-                <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
-                <li class="nav-item"><a class="nav-link" href="export.html">Export</a></li>
-                <li class="nav-item"><a class="nav-link" href="blog.html">Blogs</a></li>
-                <li class="nav-item"><a class="btn contact-btn" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="thread-line"></div>
-</nav>
+<!-- Navbar will be loaded here -->
+<div id="navbar-container"></div>
 
 <!-- Page Header -->
 <section class="quality-header">
@@ -221,36 +194,6 @@
     </div>
 </section>
 
-<!-- Certifications -->
-<section class="certifications-section">
-    <div class="container">
-        <div class="certifications-card">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h3>Our Certifications</h3>
-                    <p>We adhere to international quality standards and continuously work towards obtaining globally recognized certifications.</p>
-                </div>
-                <div class="col-lg-6">
-                    <div class="certification-badges">
-                        <div class="cert-badge">
-                            <img src="assets/images/quality/iso-9001.png" alt="ISO 9001">
-                            <span>ISO 9001:2015</span>
-                        </div>
-                        <div class="cert-badge">
-                            <img src="assets/images/quality/oeko-tex.png" alt="OEKO-TEX">
-                            <span>OEKO-TEX®</span>
-                        </div>
-                        <div class="cert-badge">
-                            <img src="assets/images/quality/gots.png" alt="GOTS">
-                            <span>GOTS Certified</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Quality Promise -->
 <section class="promise-section">
     <div class="container">
@@ -263,68 +206,13 @@
     </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer-section">
-    <div class="container">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <div class="footer-logo">
-                    <img src="assets/images/logo.png" alt="DG Knitting" class="footer-logo-img">
-                    <span class="footer-logo-text">Knitting</span>
-                </div>
-                <p class="footer-description">Premium knitted fabrics manufacturer serving India's finest fashion brands since 1998.</p>
-                <div class="footer-social">
-                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3 class="footer-title">Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#fabrics">Fabrics</a></li>
-                    <li><a href="index.html#strength">Strength</a></li>
-                    <li><a href="quality.html">Quality</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3 class="footer-title">Products</h3>
-                <ul class="footer-links">
-                    <li><a href="index.html#fabrics">Single Jersey</a></li>
-                    <li><a href="index.html#fabrics">Rib Knit</a></li>
-                    <li><a href="index.html#fabrics">Fleece</a></li>
-                    <li><a href="index.html#fabrics">Lycra Jersey</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3 class="footer-title">Contact</h3>
-                <div class="footer-contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Mumbai, Maharashtra</span>
-                </div>
-                <div class="footer-contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>+91 22 1234 5678</span>
-                </div>
-                <div class="footer-contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>info@dgknitting.com</span>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; <span id="currentYear"></span> DG Knitting. All rights reserved.</p>
-        </div>
-    </div>
-    <div class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </div>
-</footer>
-
+<!-- FOOTER will be loaded via footer-loader.js -->
 <!-- Scripts -->
-<script src="js/component.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/component.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/footer-loader.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>

@@ -1,35 +1,26 @@
-// navbar.js - Fixed path and error handling
+
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Navbar loader: Starting to load navbar...');
+    console.log('Navbar loader: Starting...');
     
-    // Load navbar component - correct path based on your structure
-    fetch('components/navbar.html')  // Note: components/ folder, not component/
+    fetch('component/navbar.html')
         .then(response => {
             if (!response.ok) {
-                console.error('Navbar loader: HTTP error', response.status);
                 throw new Error(`Failed to load navbar (${response.status})`);
             }
             return response.text();
         })
         .then(html => {
-            console.log('Navbar loader: HTML received, inserting...');
-            // Insert navbar at the beginning of body
             document.body.insertAdjacentHTML('afterbegin', html);
-            
-            // Dispatch event that navbar is loaded
             document.dispatchEvent(new Event('navbarLoaded'));
-            
             console.log('✅ Navbar loaded successfully');
         })
         .catch(error => {
-            console.error('❌ Navbar loader error:', error);
-            
-            // Fallback - insert a basic navbar if file not found
-            insertFallbackNavbar();
+            console.error('❌ Navbar error:', error);
+            insertFallbackNavbar(); 
         });
 });
 
-// Fallback function in case navbar.html is missing
+
 function insertFallbackNavbar() {
     console.warn('Using fallback navbar');
     
@@ -45,7 +36,7 @@ function insertFallbackNavbar() {
             </button>
             <div class="collapse navbar-collapse" id="mainNavbar">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#fabrics">Fabrics</a></li>
                     <li class="nav-item"><a class="nav-link" href="strength.html">Strength</a></li>
