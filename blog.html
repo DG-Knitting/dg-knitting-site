@@ -2,32 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DG Knitting | Blog</title>
+    <title>DG Knitting | Journal: Threads of Thought</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </noscript>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
 
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/blog.css">
-
-    <!-- Container for third-party tags -->
-    <div id="tags-container"></div>
+    
+    <!-- Ensure color variables match brand -->
+    <style>:root{--crimson:#df2229;--pink-light:#fdf2f1;--dark-main:#2e2d2c;--dark-soft:#4a4a4a;--orchid:#e18c94}</style>
 </head>
 <body>
 
-<!-- Navbar will be loaded here -->
 <div id="navbar-container"></div>
 
-<!-- Page Header -->
+<div id="tags-container"></div>
+
 <section class="blog-header">
     <div class="thread-background">
         <div class="thread-1"></div>
@@ -36,151 +39,32 @@
     </div>
     <div class="container">
         <div class="header-content text-center">
-            <span class="header-subtitle">Our Journal</span>
-            <h1 class="header-title">Latest <span class="highlight">Stories</span></h1>
+            <span class="header-subtitle">Conversations Beyond the Loom</span>
+            <h1 class="header-title">Stories Woven <span class="highlight">in Words</span></h1>
             <div class="header-divider">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <p class="header-description">Insights, trends, and innovations from the world of textile manufacturing</p>
+            <p class="header-description">Reflections on craft, partnerships that last, and the fabric of Indian textile culture.</p>
         </div>
     </div>
 </section>
 
-<!-- Blog Grid Section -->
 <section class="blog-grid-section">
     <div class="container">
-        <!-- Category Filters -->
+        
         <div class="blog-filters">
-            <button class="filter-btn active" data-filter="all">All Articles</button>
-            <button class="filter-btn" data-filter="technology">Technology</button>
-            <button class="filter-btn" data-filter="trends">Trends</button>
-            <button class="filter-btn" data-filter="sustainability">Sustainability</button>
-            <button class="filter-btn" data-filter="manufacturing">Manufacturing</button>
+            <button class="filter-btn active" data-filter="all">All Writings</button>
+            <button class="filter-btn" data-filter="technology">Craft & Technique</button>
+            <button class="filter-btn" data-filter="trends">Material Culture</button>
+            <button class="filter-btn" data-filter="sustainability">Slow & Sustainable</button>
+            <button class="filter-btn" data-filter="manufacturing">Behind the Machines</button>
         </div>
 
-        <!-- Blog Grid - 3x3 -->
-        <div class="blog-grid" id="blogGrid">
-            <!-- Blog Card 1 -->
-            <div class="blog-card" data-category="technology">
-                <div class="blog-image">
-                    <img src="assets/images/blog/tech-1.jpg" alt="AI in Textile Manufacturing">
-                    <div class="blog-category">Technology</div>
-                </div>
-                <div class="blog-content">
-                    <h3 class="blog-title">How AI is Revolutionizing Textile Manufacturing Processes</h3>
-                    <p class="blog-excerpt">Artificial intelligence is transforming every aspect of textile production, from quality control to predictive maintenance...</p>
-                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Blog Card 2 -->
-            <div class="blog-card" data-category="trends">
-                <div class="blog-image">
-                    <img src="assets/images/blog/trends-1.jpg" alt="Sustainable Fashion Trends">
-                    <div class="blog-category">Trends</div>
-                </div>
-                <div class="blog-content">
-                    <h3 class="blog-title">Sustainable Fashion: The Rise of Eco-Friendly Knitted Fabrics</h3>
-                    <p class="blog-excerpt">Consumer demand for sustainable fashion is driving innovation in eco-friendly knitted fabrics and production methods...</p>
-                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Blog Card 3 -->
-            <div class="blog-card" data-category="sustainability">
-                <div class="blog-image">
-                    <img src="assets/images/blog/sustainability-1.jpg" alt="Circular Economy">
-                    <div class="blog-category">Sustainability</div>
-                </div>
-                <div class="blog-content">
-                    <h3 class="blog-title">Circular Economy: Reducing Waste in Textile Manufacturing</h3>
-                    <p class="blog-excerpt">How manufacturers are adopting circular economy principles to minimize waste and maximize resource efficiency...</p>
-                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Blog Card 4 -->
-            <div class="blog-card" data-category="manufacturing">
-                <div class="blog-image">
-                    <img src="assets/images/blog/manufacturing-1.jpg" alt="Circular Knitting Machines">
-                    <div class="blog-category">Manufacturing</div>
-                </div>
-                <div class="blog-content">
-                    <h3 class="blog-title">The Evolution of Circular Knitting Machines: A Technical Deep Dive</h3>
-                    <p class="blog-excerpt">From mechanical to fully automated systems, explore how circular knitting machines have evolved over the decades...</p>
-                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Blog Card 5 -->
-            <div class="blog-card" data-category="technology">
-                <div class="blog-image">
-                    <img src="assets/images/blog/tech-2.jpg" alt="IoT in Textiles">
-                    <div class="blog-category">Technology</div>
-                </div>
-                <div class="blog-content">
-                    <h3 class="blog-title">IoT and Industry 4.0: Smart Factories in Textile Industry</h3>
-                    <p class="blog-excerpt">Internet of Things is enabling real-time monitoring and optimization of textile manufacturing processes...</p>
-                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Blog Card 6 -->
-            <div class="blog-card" data-category="trends">
-                <div class="blog-image">
-                    <img src="assets/images/blog/trends-2.jpg" alt="Performance Fabrics">
-                    <div class="blog-category">Trends</div>
-                </div>
-                <div class="blog-content">
-                    <h3 class="blog-title">The Growing Demand for High-Performance Knitted Fabrics</h3>
-                    <p class="blog-excerpt">Sportswear and activewear brands are driving demand for innovative performance fabrics with advanced properties...</p>
-                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Blog Card 7 -->
-            <div class="blog-card" data-category="sustainability">
-                <div class="blog-image">
-                    <img src="assets/images/blog/sustainability-2.jpg" alt="Organic Cotton">
-                    <div class="blog-category">Sustainability</div>
-                </div>
-                <div class="blog-content">
-                    <h3 class="blog-title">Organic Cotton: Benefits and Challenges for Manufacturers</h3>
-                    <p class="blog-excerpt">Exploring the benefits and challenges of transitioning to organic cotton in knitted fabric production...</p>
-                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Blog Card 8 -->
-            <div class="blog-card" data-category="manufacturing">
-                <div class="blog-image">
-                    <img src="assets/images/blog/manufacturing-2.jpg" alt="Quality Control">
-                    <div class="blog-category">Manufacturing</div>
-                </div>
-                <div class="blog-content">
-                    <h3 class="blog-title">Quality Control 4.0: Automated Inspection Systems</h3>
-                    <p class="blog-excerpt">How computer vision and AI are revolutionizing quality control in textile manufacturing...</p>
-                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <!-- Blog Card 9 -->
-            <div class="blog-card" data-category="technology">
-                <div class="blog-image">
-                    <img src="assets/images/blog/tech-3.jpg" alt="3D Knitting">
-                    <div class="blog-category">Technology</div>
-                </div>
-                <div class="blog-content">
-                    <h3 class="blog-title">3D Knitting Technology: The Future of Seamless Garments</h3>
-                    <p class="blog-excerpt">Discover how 3D knitting technology is enabling seamless garment production and reducing waste...</p>
-                    <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Animated Pagination -->
+        <!-- Sample blog post previews would be injected here by blog.js -->
+        <!-- The filter buttons above now have more meaningful categories -->
+        
         <div class="pagination-container">
             <div class="pagination">
                 <button class="page-btn prev-btn" disabled><i class="fas fa-chevron-left"></i></button>
@@ -195,20 +79,34 @@
             </div>
         </div>
 
-        <!-- Load More Button (Mobile) -->
         <div class="load-more-container">
-            <button class="load-more-btn">Load More Articles <i class="fas fa-sync-alt"></i></button>
+            <button class="load-more-btn">Read More Articles <i class="fas fa-book-open"></i></button>
         </div>
     </div>
 </section>
 
-<!-- Scripts (order as per index.html) -->
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/component.js"></script>
-<script src="js/navbar.js"></script>
-<script src="js/footer-loader.js"></script>
-<script src="js/script.js"></script>
-<script src="js/blog.js"></script>
+<!-- Optional: Featured post section that could be activated later -->
+<!-- 
+<section class="featured-post-section">
+    <div class="container">
+        <div class="featured-card">
+            <span class="featured-tag">Latest Reflection</span>
+            <h2>The Handshake Behind the Fabric</h2>
+            <p class="featured-excerpt">Why in an age of automated everything, we still believe relationships matter more than algorithms...</p>
+            <a href="#" class="featured-link">Continue Reading <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section> 
+-->
+
+<div id="footer-container"></div>
+
+<script src="js/bootstrap.bundle.min.js" defer></script>
+<script src="js/component.js" defer></script>
+<script src="js/navbar.js" defer></script>
+<script src="js/footer-loader.js" defer></script>
+<script src="js/script.js" defer></script>
+<script src="js/blog.js" defer></script>
 
 </body>
 </html>

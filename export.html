@@ -2,44 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DG Knitting | Export Vision</title>
+    <title>DG Knitting | Global Ambitions: Rooted in India, Reaching Worldwide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts with optimization -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </noscript>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome with optimization -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
 
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS - Optimized with preload and non-blocking load -->
+    <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
 
-    <!-- Custom CSS -->
+    <!-- Custom CSS (critical) - loaded normally -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/export.css">
-
-    <!-- Container for third-party tags -->
-    <div id="tags-container"></div>
+    
+    <!-- Ensure color variables match brand -->
+    <style>:root{--crimson:#df2229;--pink-light:#fdf2f1;--dark-main:#2e2d2c;--dark-soft:#4a4a4a;--orchid:#e18c94}</style>
 </head>
 <body>
 
 <!-- Navbar will be loaded here -->
 <div id="navbar-container"></div>
 
+<!-- Container for third-party tags -->
+<div id="tags-container"></div>
+
 <!-- Page Header with Background Image -->
-<section class="export-header" style="background-image: url('assets/images/export/global-bg.jpg');">
+<section class="export-header" style="background-image: url('assets/images/hero/export.webp');">
     <div class="header-overlay"></div>
     <div class="container">
         <div class="header-content text-center">
-            <span class="header-subtitle">Global Vision</span>
-            <h1 class="header-title">Export <span class="highlight">Vision</span></h1>
+            <span class="header-subtitle">From Surat to the World · 2026 & Beyond</span>
+            <h1 class="header-title">Taking Indian <span class="highlight">Craftsmanship</span> Global</h1>
             <div class="header-divider">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <p class="header-description">Leading the knitting industry through innovation, automation, and vertical integration to become a globally recognized organization.</p>
+            <p class="header-description">Before we export fabrics, we export a philosophy — that trust travels across borders, and quality needs no translation.</p>
         </div>
     </div>
 </section>
@@ -51,26 +61,21 @@
             <div class="goal-overlay"></div>
             <div class="row align-items-center position-relative">
                 <div class="col-lg-7">
-                    <span class="goal-subtitle">Our Ambition</span>
-                    <h2 class="goal-title">Building a <span class="highlight">Future-Ready</span> Organization</h2>
-                    <p class="goal-text">Our collective goal is to lead the knitting industry through innovation, automation, and vertical integration, establishing DG Knitting as a sustainable and globally competitive organization.</p>
+                    <span class="goal-subtitle">Where We're Headed</span>
+                    <h2 class="goal-title">Built Here, <span class="highlight">Ready for There</span></h2>
+                    <p class="goal-text">Every yard of fabric we've produced for the Indian market has been a rehearsal for the global stage. Same relationships. Same personal touch. Same promise — now reaching new geographies.</p>
                 </div>
                 <div class="col-lg-5">
                     <div class="goal-stats">
                         <div class="goal-stat-item">
-                            <img src="assets/images/icons/machine-icon.svg" alt="Technology" class="goal-stat-icon">
-                            <span class="goal-stat-number">Modern</span>
-                            <span class="goal-stat-label">Technology</span>
+                            <i class="fas fa-microchip goal-stat-icon"></i>
+                            <span class="goal-stat-number">Ready</span>
+                            <span class="goal-stat-label">for Global Standards</span>
                         </div>
                         <div class="goal-stat-item">
-                            <img src="assets/images/icons/capacity-icon.svg" alt="Capacity" class="goal-stat-icon">
+                            <i class="fas fa-chart-line goal-stat-icon"></i>
                             <span class="goal-stat-number">3 Lac</span>
-                            <span class="goal-stat-label">Kg/Month</span>
-                        </div>
-                        <div class="goal-stat-item">
-                            <img src="assets/images/icons/years-icon.svg" alt="Years" class="goal-stat-icon">
-                            <span class="goal-stat-number">25+</span>
-                            <span class="goal-stat-label">Years</span>
+                            <span class="goal-stat-label">Kg/Month Capacity</span>
                         </div>
                     </div>
                 </div>
@@ -83,41 +88,40 @@
 <section class="focus-section">
     <div class="container">
         <div class="section-header text-center">
-            <span class="section-subtitle">Growth Drivers</span>
-            <h2 class="section-title">Strategic <span class="highlight">Focus Areas</span></h2>
+            <span class="section-subtitle">Our Global Preparation</span>
+            <h2 class="section-title">Laying the <span class="highlight">Foundation</span></h2>
         </div>
 
         <div class="focus-grid">
             <!-- Focus 1: Innovation -->
             <div class="focus-card">
                 <div class="focus-image">
-                    <img src="assets/images/export/innovation.jpg" alt="Innovation">
+                    <img src="assets/images/Export/rnd.webp" alt="Innovation" loading="lazy" width="400" height="300">
                     <div class="focus-image-overlay"></div>
                 </div>
                 <div class="focus-content">
-                    <h3>Product Innovation</h3>
-                    <p>Developing advanced knitted fabrics with unique properties for global markets.</p>
+                    <h3>Global-Ready Products</h3>
+                    <p>Developing fabrics that meet international compliance — from OEKO-TEX standards to specific market requirements.</p>
                     <div class="focus-tags">
-                        <span class="focus-tag">R&D</span>
-                        <span class="focus-tag">Development</span>
-                        <span class="focus-tag">Smart Textiles</span>
+                        <span class="focus-tag">Certifications</span>
+                        <span class="focus-tag">Compliance</span>
+                        <span class="focus-tag">Testing</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Focus 2: Strategic Growth -->
             <div class="focus-card">
                 <div class="focus-image">
-                    <img src="assets/images/export/growth.jpg" alt="Strategic Growth">
+                    <img src="assets/images/Export/statergy-growth.webp" alt="Strategic Growth" loading="lazy" width="400" height="300">
                     <div class="focus-image-overlay"></div>
                 </div>
                 <div class="focus-content">
-                    <h3>Strategic Growth</h3>
-                    <p>Building partnerships and capabilities for sustainable expansion.</p>
+                    <h3>Market Intelligence</h3>
+                    <p>Understanding textile preferences, consumption patterns, and cultural nuances of target international markets.</p>
                     <div class="focus-tags">
-                        <span class="focus-tag">Partnerships</span>
-                        <span class="focus-tag">Expansion</span>
-                        <span class="focus-tag">Markets</span>
+                        <span class="focus-tag">Research</span>
+                        <span class="focus-tag">Insights</span>
+                        <span class="focus-tag">Adaptation</span>
                     </div>
                 </div>
             </div>
@@ -125,16 +129,16 @@
             <!-- Focus 3: Infrastructure -->
             <div class="focus-card">
                 <div class="focus-image">
-                    <img src="assets/images/export/infrastructure.jpg" alt="Infrastructure">
+                    <img src="assets/images/export/Infrastructure.webp" alt="Infrastructure" loading="lazy" width="400" height="300">
                     <div class="focus-image-overlay"></div>
                 </div>
                 <div class="focus-content">
-                    <h3>Infrastructure</h3>
-                    <p>Developing in-house capabilities for complete control and efficiency.</p>
+                    <h3>Capacity Expansion</h3>
+                    <p>Scaling operations thoughtfully — adding capacity not just for volume, but for the precision global buyers expect.</p>
                     <div class="focus-tags">
-                        <span class="focus-tag">Integration</span>
-                        <span class="focus-tag">Automation</span>
-                        <span class="focus-tag">Technology</span>
+                        <span class="focus-tag">Scale</span>
+                        <span class="focus-tag">Precision</span>
+                        <span class="focus-tag">Consistency</span>
                     </div>
                 </div>
             </div>
@@ -142,16 +146,16 @@
             <!-- Focus 4: Process Excellence -->
             <div class="focus-card">
                 <div class="focus-image">
-                    <img src="assets/images/export/process.jpg" alt="Process Excellence">
+                    <img src="assets/images/export/excellence.webp" alt="Process Excellence" loading="lazy" width="400" height="300">
                     <div class="focus-image-overlay"></div>
                 </div>
                 <div class="focus-content">
-                    <h3>Process Excellence</h3>
-                    <p>Optimizing operations for faster execution without compromising quality.</p>
+                    <h3>Export Infrastructure</h3>
+                    <p>Building logistics capabilities, documentation processes, and shipping partnerships for seamless cross-border movement.</p>
                     <div class="focus-tags">
-                        <span class="focus-tag">Efficiency</span>
-                        <span class="focus-tag">Quality</span>
-                        <span class="focus-tag">Speed</span>
+                        <span class="focus-tag">Logistics</span>
+                        <span class="focus-tag">Documentation</span>
+                        <span class="focus-tag">Shipping</span>
                     </div>
                 </div>
             </div>
@@ -163,54 +167,54 @@
 <section class="values-section">
     <div class="container">
         <div class="section-header text-center">
-            <span class="section-subtitle">Our Foundation</span>
-            <h2 class="section-title">Core <span class="highlight">Values</span></h2>
+            <span class="section-subtitle">Constants That Travel</span>
+            <h2 class="section-title">Values We <span class="highlight">Carry Abroad</span></h2>
         </div>
 
         <div class="values-grid">
             <!-- Value 1: Trust -->
             <div class="value-card">
-                <div class="value-image">
-                    <img src="assets/images/values/trust.jpg" alt="Trust">
+                <div class="value-icon-wrapper">
+                    <i class="fas fa-handshake value-icon"></i>
                 </div>
                 <h3>TRUST</h3>
-                <p>We work with honesty and reliability in every partnership.</p>
+                <p>The same reliability our domestic partners count on — now available across time zones.</p>
             </div>
 
-            <!-- Value 2: Innovation -->
+            <!-- Value 2: Quality -->
             <div class="value-card">
-                <div class="value-image">
-                    <img src="assets/images/values/innovation.jpg" alt="Innovation">
+                <div class="value-icon-wrapper">
+                    <i class="fas fa-check-circle value-icon"></i>
                 </div>
-                <h3>INNOVATION</h3>
-                <p>We continuously create new ideas and products.</p>
+                <h3>QUALITY</h3>
+                <p>International standards aren't a destination — they're our starting point for every roll.</p>
             </div>
 
-            <!-- Value 3: Accuracy -->
+            <!-- Value 3: Indian Pride -->
             <div class="value-card">
-                <div class="value-image">
-                    <img src="assets/images/values/accuracy.jpg" alt="Accuracy">
+                <div class="value-icon-wrapper">
+                    <i class="fas fa-map-pin value-icon"></i>
                 </div>
-                <h3>ACCURACY</h3>
-                <p>We maintain discipline and precision in everything we do.</p>
+                <h3>MADE IN INDIA</h3>
+                <p>Proudly carrying Indian textile heritage and craftsmanship to the world.</p>
             </div>
 
-            <!-- Value 4: Speed -->
+            <!-- Value 4: Relationships -->
             <div class="value-card">
-                <div class="value-image">
-                    <img src="assets/images/values/speed.jpg" alt="Speed">
+                <div class="value-icon-wrapper">
+                    <i class="fas fa-heart value-icon"></i>
                 </div>
-                <h3>SPEED</h3>
-                <p>We take fast decisions with steady control.</p>
+                <h3>CONNECTIONS</h3>
+                <p>Distance doesn't diminish how personally we treat every partner.</p>
             </div>
 
             <!-- Value 5: Growth -->
             <div class="value-card">
-                <div class="value-image">
-                    <img src="assets/images/values/growth.jpg" alt="Growth">
+                <div class="value-icon-wrapper">
+                    <i class="fas fa-chart-line value-icon"></i>
                 </div>
-                <h3>GROWTH</h3>
-                <p>We invest in long-term sustainable development.</p>
+                <h3>AMBITION</h3>
+                <p>Growing thoughtfully — without losing what makes us, us.</p>
             </div>
         </div>
     </div>
@@ -220,8 +224,8 @@
 <section class="timeline-section">
     <div class="container">
         <div class="section-header text-center">
-            <span class="section-subtitle">The Journey</span>
-            <h2 class="section-title">Export <span class="highlight">Roadmap</span></h2>
+            <span class="section-subtitle">The Path Forward</span>
+            <h2 class="section-title">Export <span class="highlight">Milestones</span></h2>
         </div>
 
         <div class="timeline-visual">
@@ -231,41 +235,41 @@
             <div class="timeline-items">
                 <div class="timeline-item">
                     <div class="timeline-marker">
-                        <img src="assets/images/export/market-icon.svg" alt="Market Assessment">
+                        <i class="fas fa-clipboard-check"></i>
                     </div>
                     <div class="timeline-content">
-                        <h3>Market Assessment</h3>
-                        <p>Evaluating opportunities in key international markets.</p>
+                        <h3>Readiness Assessment</h3>
+                        <p>Evaluating our capabilities against target market requirements and certifications.</p>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-marker">
-                        <img src="assets/images/export/capability-icon.svg" alt="Capability Building">
+                        <i class="fas fa-flask"></i>
                     </div>
                     <div class="timeline-content">
-                        <h3>Capability Building</h3>
-                        <p>Strengthening infrastructure for global standards.</p>
+                        <h3>Sample Validation</h3>
+                        <p>Sending test samples to potential international partners for feedback and refinement.</p>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-marker">
-                        <img src="assets/images/export/partnership-icon.svg" alt="Strategic Partnerships">
+                        <i class="fas fa-file-signature"></i>
                     </div>
                     <div class="timeline-content">
-                        <h3>Strategic Partnerships</h3>
-                        <p>Building relationships with global partners.</p>
+                        <h3>First Collaborations</h3>
+                        <p>Initiating trial orders with select partners who share our relationship-first philosophy.</p>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-marker">
-                        <img src="assets/images/export/global-icon.svg" alt="Global Presence">
+                        <i class="fas fa-globe-asia"></i>
                     </div>
                     <div class="timeline-content">
-                        <h3>Global Presence</h3>
-                        <p>Establishing footprint in select markets.</p>
+                        <h3>Regional Presence</h3>
+                        <p>Establishing a steady footprint in key markets while maintaining our personal approach.</p>
                     </div>
                 </div>
             </div>
@@ -281,16 +285,16 @@
             <div class="row align-items-center">
                 <div class="col-lg-8">
                     <span class="confidential-badge">
-                        <img src="assets/images/icons/lock-icon.svg" alt="Confidential" class="badge-icon">
-                        Confidential
+                        <i class="fas fa-lock badge-icon"></i>
+                        For Serious Conversations
                     </span>
-                    <h2>Interested in strategic partnership?</h2>
-                    <p>We share detailed plans and financial targets with serious partners under NDA.</p>
+                    <h2>Exploring a global partnership?</h2>
+                    <p>We share detailed capability assessments, production timelines, and market-specific plans under mutual confidentiality.</p>
                 </div>
                 <div class="col-lg-4 text-lg-end">
                     <a href="contact.html" class="btn confidential-btn">
-                        <img src="assets/images/icons/handshake-icon.svg" alt="Partner" class="btn-icon">
-                        Inquire Confidentially
+                        <i class="fas fa-handshake btn-icon"></i>
+                        Let's Talk
                     </a>
                 </div>
             </div>
@@ -298,12 +302,13 @@
     </div>
 </section>
 
-<!-- Scripts (order as per index.html) -->
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/component.js"></script>
-<script src="js/navbar.js"></script>
-<script src="js/footer-loader.js"></script>
-<script src="js/script.js"></script>
+<div id="footer-container"></div>
+
+<script src="js/bootstrap.bundle.min.js" defer></script>
+<script src="js/component.js" defer></script>
+<script src="js/navbar.js" defer></script>
+<script src="js/footer-loader.js" defer></script>
+<script src="js/script.js" defer></script>
 
 </body>
 </html>

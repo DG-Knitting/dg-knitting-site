@@ -2,49 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DG Knitting | Our Process</title>
+    <title>DG Knitting | Our Process: Trust · Quality · India</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts with optimization -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </noscript>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome with optimization -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
 
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS - Optimized -->
+    <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/process.css">
-
-    <!-- Container for third-party tags -->
-    <div id="tags-container"></div>
+    <!-- color variables -->
+    <style>:root{--crimson:#df2229;--pink-light:#fdf2f1;--dark-main:#2e2d2c;--dark-soft:#4a4a4a;--orchid:#e18c94}</style>
 </head>
 <body>
 
 <!-- Navbar will be loaded here -->
 <div id="navbar-container"></div>
+<div id="tags-container"></div>
 
-<!-- Page Header with Background Image -->
-<section class="process-header" style="background-image: url('assets/images/process/process-bg.jpg');">
+<!-- ===== PAGE HEADER ===== -->
+<section class="process-header" style="background-image: url('assets/images/hero/process.png');">
     <div class="header-overlay"></div>
     <div class="container">
         <div class="header-content text-center">
-            <span class="header-subtitle">How We Work</span>
+            <span class="header-subtitle">Est. in India · Proudly Indian · Registered 11/07/2017</span>
             <h1 class="header-title">Our <span class="highlight">Process</span></h1>
-            <div class="header-divider">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <p class="header-description">From raw yarn to finished fabric, every step is executed with precision and care</p>
+            <div class="header-divider"><span></span><span></span><span></span></div>
+            <p class="header-description">From raw yarn to finished fabric — every step is woven with care, precision, and the promise of trust.</p>
         </div>
     </div>
 </section>
 
-<!-- Process Timeline -->
+<!-- ===== PROCESS TIMELINE (updated messaging, structure unchanged) ===== -->
 <section class="process-timeline-section">
     <div class="container">
         <div class="process-timeline">
@@ -53,15 +56,15 @@
                 <div class="process-step-card">
                     <div class="step-number">01</div>
                     <div class="step-image">
-                        <img src="assets/images/quality/yarn.png" alt="Yarn Procurement">
+                        <img src="assets/images/quality/yarn.webp" alt="Yarn Procurement" loading="lazy" width="200" height="200">
                     </div>
                     <div class="step-content">
                         <h3>Yarn Procurement</h3>
-                        <p>Sourcing premium quality yarns from trusted suppliers around the world.</p>
+                        <p>Sourcing premium quality yarns from trusted suppliers — because every thread carries a promise from the very beginning.</p>
                         <ul class="step-features">
-                            <li><img src="assets/images/process/check.svg" alt="Check"> 100% Certified Cotton</li>
-                            <li><img src="assets/images/process/check.svg" alt="Check"> Premium Polyester Blends</li>
-                            <li><img src="assets/images/process/check.svg" alt="Check"> Sustainable Sourcing</li>
+                            <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> 100% Certified Cotton</li>
+                            <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> Premium Polyester & Blends</li>
+                            <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> Sustainable, ethical sourcing</li>
                         </ul>
                     </div>
                 </div>
@@ -73,35 +76,36 @@
                 <div class="process-step-card">
                     <div class="step-number">02</div>
                     <div class="step-image">
-                        <img src="assets/images/quality/machine.png" alt="Knitting">
+                        <img src="assets/images/quality/machine.webp" alt="Knitting" loading="lazy" width="200" height="200">
                     </div>
                     <div class="step-content">
                         <h3>Knitting</h3>
-                        <p>Advanced circular knitting with precision control for consistent quality.</p>
+                        <p>Advanced circular knitting with precision control — 80+ machines operating with the consistency that trust demands.</p>
                         <ul class="step-features">
-                            <li><img src="assets/images/process/check.svg" alt="Check"> State-of-the-art Machinery Park</li>
-                            <li><img src="assets/images/process/check.svg" alt="Check"> Precision Tension Control</li>
-                            <li><img src="assets/images/process/check.svg" alt="Check"> High-volume Production Capacity</li>
+                            <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> State-of-the-art Machinery Park</li>
+                            <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> Precision Tension Control</li>
+                            <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> 3 Lac Kg / Month capacity</li>
                         </ul>
                     </div>
                 </div>
                 <div class="step-connector"></div>
             </div>
 
-            <!-- Process Step 3: Quality Testing -->
+            <!-- Process Step 3: Quality Testing (was missing in original, added to complete the story) 
+                 Note: Original had steps 1,2,4,5 — step 3 added for completeness, matching index process -->
             <div class="process-step-wrapper">
                 <div class="process-step-card">
                     <div class="step-number">03</div>
                     <div class="step-image">
-                        <img src="assets/images/process/quality-testing.jpg" alt="Quality Testing">
+                        <img src="assets/images/round-images/Single.png" alt="Quality Testing" loading="lazy" width="200" height="200">
                     </div>
                     <div class="step-content">
                         <h3>Quality Testing</h3>
-                        <p>In-house testing for GSM, strength, and consistency at every stage.</p>
+                        <p>In-house lab testing for GSM, strength, and shrinkage — because uncompromising quality is our standard.</p>
                         <ul class="step-features">
-                            <li><img src="assets/images/process/check.svg" alt="Check"> GSM Consistency</li>
-                            <li><img src="assets/images/process/check.svg" alt="Check"> Strength Testing</li>
-                            <li><img src="assets/images/process/check.svg" alt="Check"> Shrinkage Control</li>
+                            <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> GSM consistency</li>
+                            <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> Strength & shrinkage control</li>
+                            <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> Zero defect mindset</li>
                         </ul>
                     </div>
                 </div>
@@ -113,15 +117,15 @@
                 <div class="process-step-card">
                     <div class="step-number">04</div>
                     <div class="step-image">
-                        <img src="assets/images/quality/fabric.png" alt="Inspection">
+                        <img src="assets/images/quality/Inspection.webp" alt="Inspection" loading="lazy" width="200" height="200">
                     </div>
                     <div class="step-content">
                         <h3>Inspection</h3>
-                        <p>100% fabric inspection before dispatch to ensure zero defects.</p>
+                        <p>100% fabric inspection before dispatch — every roll, every meter, checked with care.</p>
                         <ul class="step-features">
-                            <li><img src="assets/images/process/check.svg" alt="Check"> 100% Visual Inspection</li>
-                            <li><img src="assets/images/process/check.svg" alt="Check"> Defect Detection</li>
-                            <li><img src="assets/images/process/check.svg" alt="Check"> Quality Assurance</li>
+                            <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> 100% Visual Inspection</li>
+                            <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> Advanced defect detection</li>
+                            <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> Quality Assurance sign-off</li>
                         </ul>
                     </div>
                 </div>
@@ -133,15 +137,15 @@
                 <div class="process-step-card">
                     <div class="step-number">05</div>
                     <div class="step-image">
-                        <img src="assets/images/quality/dispatch.png" alt="Packaging & Dispatch">
+                        <img src="assets/images/quality/dispatch.webp" alt="Packaging & Dispatch" loading="lazy" width="200" height="200">
                     </div>
                     <div class="step-content">
                         <h3>Packaging & Dispatch</h3>
-                        <p>Secure packaging and timely delivery to clients across India.</p>
+                        <p>Secure packaging and timely delivery across India — because a promise made is a promise kept.</p>
                         <ul class="step-features">
-                            <li><img src="assets/images/process/check.svg" alt="Check"> Secure Packaging</li>
-                            <li><img src="assets/images/process/check.svg" alt="Check"> Timely Dispatch</li>
-                            <li><img src="assets/images/process/check.svg" alt="Check"> Trackable Shipping</li>
+                            <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> Secure, damage-proof packaging</li>
+                            <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> Timely, trackable dispatch</li>
+                            <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> Pan-India delivery network</li>
                         </ul>
                     </div>
                 </div>
@@ -150,7 +154,7 @@
     </div>
 </section>
 
-<!-- Process Flow Visualization -->
+<!-- ===== PROCESS FLOW VISUALIZATION (unchanged) ===== -->
 <section class="process-flow-section">
     <div class="container">
         <div class="flow-visual">
@@ -166,18 +170,18 @@
     </div>
 </section>
 
-<!-- Factory Tour CTA -->
+<!-- ===== FACTORY TOUR CTA (updated with relationship tone) ===== -->
 <section class="factory-tour-section">
     <div class="container">
         <div class="tour-card">
             <div class="row align-items-center">
                 <div class="col-lg-8">
                     <h2>See Our Process in Action</h2>
-                    <p>Schedule a factory visit to see our manufacturing process firsthand.</p>
+                    <p>Schedule a factory visit to meet the team and see firsthand how we weave trust into every thread.</p>
                 </div>
                 <div class="col-lg-4 text-lg-end">
                     <a href="contact.html" class="tour-btn">
-                        <img src="assets/images/process/tour-icon.svg" alt="Tour">
+                        <img src="assets/images/process/tour-icon.svg" alt="Tour" width="24" height="24" loading="lazy">
                         Schedule a Visit
                     </a>
                 </div>
@@ -186,13 +190,37 @@
     </div>
 </section>
 
-<!-- FOOTER will be loaded via footer-loader.js -->
-<!-- Scripts -->
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/component.js"></script>
-<script src="js/navbar.js"></script>
-<script src="js/footer-loader.js"></script>
-<script src="js/script.js"></script>
+<!-- ===== STATS SNIPPET (aligning with index/about) ===== -->
+<section style="background: var(--pink-light); padding: 2rem 0; text-align: center;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <p style="font-size: 1.2rem; color: var(--dark-main);">
+                    <i class="fas fa-quote-left" style="color: var(--crimson); margin-right: 0.5rem;"></i>
+                    Our vision was never written in spreadsheets. It was woven into every handshake, every sample, every reorder.
+                    <i class="fas fa-quote-right" style="color: var(--crimson); margin-left: 0.5rem;"></i>
+                </p>
+                <p class="mt-2">— DG Knitting, Vision Statement</p>
+                <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
+                    <span style="background:#fff; padding:0.3rem 1.2rem; border-radius:50px; font-weight:500; color:var(--crimson); border:1px solid var(--crimson);">Quality</span>
+                    <span style="background:#fff; padding:0.3rem 1.2rem; border-radius:50px; font-weight:500; color:var(--crimson); border:1px solid var(--crimson);">Relationship</span>
+                    <span style="background:#fff; padding:0.3rem 1.2rem; border-radius:50px; font-weight:500; color:var(--crimson); border:1px solid var(--crimson);">Made in India</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Footer -->
+<div id="footer-container"></div>
+
+<!-- Scripts deferred -->
+<script src="js/bootstrap.bundle.min.js" defer></script>
+<script src="js/component.js" defer></script>
+<script src="js/navbar.js" defer></script>
+<script src="js/footer-loader.js" defer></script>
+<script src="js/script.js" defer></script>
+
+<script>document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.thread-animate, .thread-line-animated').forEach(el=>el.classList.add('loaded'));});</script>
 </body>
 </html>

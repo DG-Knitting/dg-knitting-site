@@ -2,53 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DG Knitting | Our Fabric Range</title>
+    <title>DG Knitting | Premium Fabric Range: Trust · Quality · India</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts with optimization -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </noscript>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome with optimization -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
 
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS - Optimized -->
+    <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/fabric.css">
-
-    <!-- Container for third-party tags -->
-    <div id="tags-container"></div>
+    <!-- color variables -->
+    <style>:root{--crimson:#df2229;--pink-light:#fdf2f1;--dark-main:#2e2d2c;--dark-soft:#4a4a4a;--orchid:#e18c94}</style>
 </head>
 <body>
 
 <!-- Navbar will be loaded here -->
 <div id="navbar-container"></div>
+<div id="tags-container"></div>
 
-<!-- Page Header -->
+<!-- ===== PAGE HEADER ===== -->
 <section class="fabrics-header">
     <div class="thread-background">
-        <div class="thread-1"></div>
-        <div class="thread-2"></div>
-        <div class="thread-3"></div>
+        <div class="thread-1"></div><div class="thread-2"></div><div class="thread-3"></div>
     </div>
     <div class="container">
         <div class="header-content text-center">
-            <span class="header-subtitle">Our Collection</span>
+            <span class="header-subtitle">Est. in India · Proudly Indian · Registered 11/07/2017</span>
             <h1 class="header-title">Premium <span class="highlight">Fabric Range</span></h1>
-            <div class="header-divider">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <p class="header-description">Warp Knitting • Circular Knitting • Flat Knitting — All under one roof</p>
+            <div class="header-divider"><span></span><span></span><span></span></div>
+            <p class="header-description">Warp · Circular · Flat Knitting — All under one roof. Every fabric carries the DG promise: trust, quality, and relationships that last.</p>
         </div>
     </div>
 </section>
 
-<!-- Knitting Type Navigation -->
+<!-- ===== Knitting Type Navigation ===== -->
 <section class="knitting-nav-section">
     <div class="container">
         <div class="nav-pills-wrapper">
@@ -69,54 +70,15 @@
     </div>
 </section>
 
-<!-- All Fabrics Grid (Single unified grid for filtering) -->
+<!-- ===== FABRICS GRID ===== -->
 <section class="fabrics-main-section">
     <div class="container">
         <div class="fabrics-grid" id="fabricsGrid">
             
-            <!-- ===== WARP KNITTING FABRICS ===== -->
-            <!-- Sportswear Fabric -->
+            <!-- Warp: Curtains -->
             <div class="fabric-card" data-knitting-type="warp">
                 <div class="fabric-image">
-                    <img src="assets/images/fabrics/warp-sportswear.jpg" alt="Sportswear Fabric" loading="lazy">
-                </div>
-                <div class="fabric-details">
-                    <h3>Sportswear</h3>
-                    <p class="fabric-desc">High-performance warp knits with excellent breathability and 4-way stretch.</p>
-                    <div class="fabric-tags">
-                        <span>Polyester</span>
-                        <span>Nylon</span>
-                        <span>Spandex</span>
-                    </div>
-                    <a href="contact.html?fabric=warp-sportswear&type=warp" class="sample-link">
-                        <i class="fas fa-flask"></i> Request Sample
-                    </a>
-                </div>
-            </div>
-
-            <!-- Garment Fabric -->
-            <div class="fabric-card" data-knitting-type="warp">
-                <div class="fabric-image">
-                    <img src="assets/images/fabrics/warp-garment.jpg" alt="Garment Fabric" loading="lazy">
-                </div>
-                <div class="fabric-details">
-                    <h3>Garment</h3>
-                    <p class="fabric-desc">Smooth, lightweight warp knits perfect for dresses, linings, and apparel.</p>
-                    <div class="fabric-tags">
-                        <span>Polyester</span>
-                        <span>Viscose</span>
-                        <span>Blends</span>
-                    </div>
-                    <a href="contact.html?fabric=warp-garment&type=warp" class="sample-link">
-                        <i class="fas fa-flask"></i> Request Sample
-                    </a>
-                </div>
-            </div>
-
-            <!-- Curtains -->
-            <div class="fabric-card" data-knitting-type="warp">
-                <div class="fabric-image">
-                    <img src="assets/images/fabrics/warp-curtains.jpg" alt="Curtain Fabric" loading="lazy">
+                    <img src="assets/images/fabrics/Curtain.webp" alt="Curtain Fabric - Warp Knitted" loading="lazy">
                 </div>
                 <div class="fabric-details">
                     <h3>Curtains</h3>
@@ -132,10 +94,10 @@
                 </div>
             </div>
 
-            <!-- Sofa Fabric -->
+            <!-- Warp: Sofa --->
             <div class="fabric-card" data-knitting-type="warp">
                 <div class="fabric-image">
-                    <img src="assets/images/fabrics/warp-sofa.jpg" alt="Sofa Fabric" loading="lazy">
+                    <img src="assets/images/placeholder.jpg" alt="Sofa Fabric - Warp Knitted (Image Coming Soon)" loading="lazy">
                 </div>
                 <div class="fabric-details">
                     <h3>Sofa</h3>
@@ -151,53 +113,14 @@
                 </div>
             </div>
 
-            <!-- Shutting Fabric -->
-            <div class="fabric-card" data-knitting-type="warp">
-                <div class="fabric-image">
-                    <img src="assets/images/fabrics/warp-shutting.jpg" alt="Shutting Fabric" loading="lazy">
-                </div>
-                <div class="fabric-details">
-                    <h3>Shutting</h3>
-                    <p class="fabric-desc">Sturdy warp knits for industrial applications and reinforcement.</p>
-                    <div class="fabric-tags">
-                        <span>High Tenacity</span>
-                        <span>Polyester</span>
-                        <span>Nylon</span>
-                    </div>
-                    <a href="contact.html?fabric=warp-shutting&type=warp" class="sample-link">
-                        <i class="fas fa-flask"></i> Request Sample
-                    </a>
-                </div>
-            </div>
-
-            <!-- Shooting Fabric -->
-            <div class="fabric-card" data-knitting-type="warp">
-                <div class="fabric-image">
-                    <img src="assets/images/fabrics/warp-shooting.jpg" alt="Shooting Fabric" loading="lazy">
-                </div>
-                <div class="fabric-details">
-                    <h3>Shooting</h3>
-                    <p class="fabric-desc">Technical warp knits for specific industrial and specialty applications.</p>
-                    <div class="fabric-tags">
-                        <span>Technical</span>
-                        <span>Custom</span>
-                        <span>Engineered</span>
-                    </div>
-                    <a href="contact.html?fabric=warp-shooting&type=warp" class="sample-link">
-                        <i class="fas fa-flask"></i> Request Sample
-                    </a>
-                </div>
-            </div>
-
-            <!-- ===== CIRCULAR KNITTING FABRICS ===== -->
-            <!-- Interlock -->
+            <!-- Circular: Interlock -->
             <div class="fabric-card" data-knitting-type="circular">
                 <div class="fabric-image">
-                    <img src="assets/images/product/Interlock.jpg" alt="Interlock Fabric" loading="lazy">
+                    <img src="assets/images/fabrics/Interlock-tencil.webp" alt="Interlock Fabric - Circular Knitted" loading="lazy">
                 </div>
                 <div class="fabric-details">
                     <h3>Interlock</h3>
-                    <p class="fabric-desc">Double-knit fabric with smooth finish on both sides. Stable and structured.</p>
+                    <p class="fabric-desc">Double-knit fabric with smooth finish on both sides. Stable and structured for polos and dresses.</p>
                     <div class="fabric-tags">
                         <span>180-220 GSM</span>
                         <span>100% Cotton</span>
@@ -209,14 +132,14 @@
                 </div>
             </div>
 
-            <!-- Rib -->
+            <!-- Circular: Rib -->
             <div class="fabric-card" data-knitting-type="circular">
                 <div class="fabric-image">
-                    <img src="assets/images/product/Rib-Knit.jpg" alt="Rib Knit Fabric" loading="lazy">
+                    <img src="assets/images/fabrics/Rib.webp" alt="Rib Knit Fabric - Circular Knitted" loading="lazy">
                 </div>
                 <div class="fabric-details">
                     <h3>Rib</h3>
-                    <p class="fabric-desc">Textured stretch fabric with vertical lines. Ideal for cuffs and collars.</p>
+                    <p class="fabric-desc">Textured stretch fabric with vertical lines. Ideal for cuffs, collars, and necklines.</p>
                     <div class="fabric-tags">
                         <span>200-260 GSM</span>
                         <span>Cotton/Spandex</span>
@@ -228,14 +151,14 @@
                 </div>
             </div>
 
-            <!-- Single Jersey -->
+            <!-- Circular: Single Jersey --->
             <div class="fabric-card" data-knitting-type="circular">
                 <div class="fabric-image">
-                    <img src="assets/images/product/Single-Jersey.jpg" alt="Single Jersey Fabric" loading="lazy">
+                    <img src="assets/images/fabrics/single-jersey.webp" alt="Single Jersey Fabric - Circular Knitted (Image Coming Soon)" loading="lazy">
                 </div>
                 <div class="fabric-details">
                     <h3>Single Jersey</h3>
-                    <p class="fabric-desc">Classic knit with smooth face and textured back. Perfect for t-shirts.</p>
+                    <p class="fabric-desc">Classic knit with smooth face and textured back. Perfect for t-shirts and casual wear.</p>
                     <div class="fabric-tags">
                         <span>180-220 GSM</span>
                         <span>100% Cotton</span>
@@ -247,125 +170,10 @@
                 </div>
             </div>
 
-            <!-- Garment Circular -->
-            <div class="fabric-card" data-knitting-type="circular">
-                <div class="fabric-image">
-                    <img src="assets/images/fabrics/circular-garment.jpg" alt="Garment Circular Fabric" loading="lazy">
-                </div>
-                <div class="fabric-details">
-                    <h3>Garment</h3>
-                    <p class="fabric-desc">Versatile circular knits for all types of apparel and fashion wear.</p>
-                    <div class="fabric-tags">
-                        <span>Various GSM</span>
-                        <span>Cotton/Blends</span>
-                        <span>Apparel</span>
-                    </div>
-                    <a href="contact.html?fabric=circular-garment&type=circular" class="sample-link">
-                        <i class="fas fa-flask"></i> Request Sample
-                    </a>
-                </div>
-            </div>
-
-            <!-- Sportswear Circular -->
-            <div class="fabric-card" data-knitting-type="circular">
-                <div class="fabric-image">
-                    <img src="assets/images/product/Lycra.jpg" alt="Sportswear Circular" loading="lazy">
-                </div>
-                <div class="fabric-details">
-                    <h3>Sportswear</h3>
-                    <p class="fabric-desc">Performance circular knits with moisture-wicking and stretch properties.</p>
-                    <div class="fabric-tags">
-                        <span>Lycra</span>
-                        <span>Performance</span>
-                        <span>Activewear</span>
-                    </div>
-                    <a href="contact.html?fabric=circular-sportswear&type=circular" class="sample-link">
-                        <i class="fas fa-flask"></i> Request Sample
-                    </a>
-                </div>
-            </div>
-
-            <!-- Shutting Circular -->
-            <div class="fabric-card" data-knitting-type="circular">
-                <div class="fabric-image">
-                    <img src="assets/images/fabrics/circular-shutting.jpg" alt="Shutting Circular" loading="lazy">
-                </div>
-                <div class="fabric-details">
-                    <h3>Shutting</h3>
-                    <p class="fabric-desc">Durable circular knits for industrial and technical applications.</p>
-                    <div class="fabric-tags">
-                        <span>High Strength</span>
-                        <span>Durable</span>
-                        <span>Technical</span>
-                    </div>
-                    <a href="contact.html?fabric=circular-shutting&type=circular" class="sample-link">
-                        <i class="fas fa-flask"></i> Request Sample
-                    </a>
-                </div>
-            </div>
-
-            <!-- Shooting Circular -->
-            <div class="fabric-card" data-knitting-type="circular">
-                <div class="fabric-image">
-                    <img src="assets/images/fabrics/circular-shooting.jpg" alt="Shooting Circular" loading="lazy">
-                </div>
-                <div class="fabric-details">
-                    <h3>Shooting</h3>
-                    <p class="fabric-desc">Specialty circular knits for specific industrial requirements.</p>
-                    <div class="fabric-tags">
-                        <span>Custom</span>
-                        <span>Specialty</span>
-                        <span>Engineered</span>
-                    </div>
-                    <a href="contact.html?fabric=circular-shooting&type=circular" class="sample-link">
-                        <i class="fas fa-flask"></i> Request Sample
-                    </a>
-                </div>
-            </div>
-
-            <!-- Fleece -->
-            <div class="fabric-card" data-knitting-type="circular">
-                <div class="fabric-image">
-                    <img src="assets/images/product/Fleece.jpg" alt="Fleece Fabric" loading="lazy">
-                </div>
-                <div class="fabric-details">
-                    <h3>Fleece</h3>
-                    <p class="fabric-desc">Soft, warm, and comfortable. Perfect for winter wear and hoodies.</p>
-                    <div class="fabric-tags">
-                        <span>280-320 GSM</span>
-                        <span>Cotton/Poly</span>
-                        <span>Winter Wear</span>
-                    </div>
-                    <a href="contact.html?fabric=fleece&type=circular" class="sample-link">
-                        <i class="fas fa-flask"></i> Request Sample
-                    </a>
-                </div>
-            </div>
-
-            <!-- French Terry -->
-            <div class="fabric-card" data-knitting-type="circular">
-                <div class="fabric-image">
-                    <img src="assets/images/product/French-Terry.jpg" alt="French Terry" loading="lazy">
-                </div>
-                <div class="fabric-details">
-                    <h3>French Terry</h3>
-                    <p class="fabric-desc">Smooth face with looped back. Ideal for joggers and jackets.</p>
-                    <div class="fabric-tags">
-                        <span>240-280 GSM</span>
-                        <span>Cotton/Poly</span>
-                        <span>Casual Wear</span>
-                    </div>
-                    <a href="contact.html?fabric=french-terry&type=circular" class="sample-link">
-                        <i class="fas fa-flask"></i> Request Sample
-                    </a>
-                </div>
-            </div>
-
-            <!-- ===== FLAT KNITTING FABRICS ===== -->
-            <!-- Collars -->
+            <!-- Flat: Collars -->
             <div class="fabric-card" data-knitting-type="flat">
                 <div class="fabric-image">
-                    <img src="assets/images/fabrics/flat-collars.jpg" alt="Knitted Collars" loading="lazy">
+                    <img src="assets/images/fabrics/collar.webp" alt="Knitted Collars - Flat Knitted" loading="lazy">
                 </div>
                 <div class="fabric-details">
                     <h3>Collars</h3>
@@ -381,10 +189,10 @@
                 </div>
             </div>
 
-            <!-- Cuffs -->
+            <!-- Flat: Cuffs -->
             <div class="fabric-card" data-knitting-type="flat">
                 <div class="fabric-image">
-                    <img src="assets/images/fabrics/flat-cuffs.jpg" alt="Knitted Cuffs" loading="lazy">
+                    <img src="assets/images/fabrics/cuff.webp" alt="Knitted Cuffs - Flat Knitted" loading="lazy">
                 </div>
                 <div class="fabric-details">
                     <h3>Cuffs</h3>
@@ -400,24 +208,63 @@
                 </div>
             </div>
 
-            <!-- Collar & Cuff Sets -->
-            <div class="fabric-card" data-knitting-type="flat">
+            <!-- Common: Garment (Warp + Circular) -->
+            <div class="fabric-card" data-knitting-type="warp circular">
                 <div class="fabric-image">
-                    <img src="assets/images/fabrics/flat-sets.jpg" alt="Collar & Cuff Sets" loading="lazy">
+                    <img src="assets/images/fabrics/kids-garment.webp" alt="Garment Fabric - Warp & Circular Knitted" loading="lazy">
                 </div>
                 <div class="fabric-details">
-                    <h3>Complete Sets</h3>
-                    <p class="fabric-desc">Matching collar and cuff sets for a professional, coordinated finish.</p>
+                    <h3>Garment Fabric</h3>
+                    <p class="fabric-desc">Versatile fabric available in both warp and circular knitting. Smooth finish, excellent drape.</p>
                     <div class="fabric-tags">
-                        <span>Ready to Sew</span>
-                        <span>Custom Colors</span>
-                        <span>Consistent</span>
+                        <span>Cotton</span>
+                        <span>Viscose</span>
+                        <span>Blends</span>
                     </div>
-                    <a href="contact.html?fabric=collar-cuff-sets&type=flat" class="sample-link">
+                    <a href="contact.html?fabric=garment-common&type=both" class="sample-link">
                         <i class="fas fa-flask"></i> Request Sample
                     </a>
                 </div>
             </div>
+
+            <!-- Common: Sportswear (Warp + Circular) -->
+            <div class="fabric-card" data-knitting-type="warp circular">
+                <div class="fabric-image">
+                    <img src="assets/images/fabrics/Sportswear.webp" alt="Sportswear Fabric - Warp & Circular Knitted" loading="lazy">
+                </div>
+                <div class="fabric-details">
+                    <h3>Sportswear</h3>
+                    <p class="fabric-desc">Premium performance fabric available in both warp and circular knitting. Breathable, stretchable.</p>
+                    <div class="fabric-tags">
+                        <span>Polyester</span>
+                        <span>Spandex</span>
+                        <span>Moisture-wicking</span>
+                    </div>
+                    <a href="contact.html?fabric=sportswear-common&type=both" class="sample-link">
+                        <i class="fas fa-flask"></i> Request Sample
+                    </a>
+                </div>
+            </div>
+
+            <!-- Common: Suitings & Shirtings (Warp + Circular) --->
+            <div class="fabric-card" data-knitting-type="warp circular">
+                <div class="fabric-image">
+                    <img src="assets/images/placeholder.jpg" alt="Suitings & Shirtings Fabric - Warp & Circular Knitted (Image Coming Soon)" loading="lazy">
+                </div>
+                <div class="fabric-details">
+                    <h3>Suitings & Shirtings</h3>
+                    <p class="fabric-desc">Premium suiting and shirting fabrics available in both warp and circular knitting.</p>
+                    <div class="fabric-tags">
+                        <span>Cotton</span>
+                        <span>Polyester</span>
+                        <span>Blends</span>
+                    </div>
+                    <a href="contact.html?fabric=suitings-common&type=both" class="sample-link">
+                        <i class="fas fa-flask"></i> Request Sample
+                    </a>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -427,14 +274,14 @@
     <div class="container">
         <div class="specs-grid">
             <div class="spec-item">
-                <i class="fas fa-weight-hanging"></i>
+                <i class="fas fa-weight-scale"></i>
                 <div>
                     <strong>GSM Range</strong>
                     <span>80 to 400+ GSM</span>
                 </div>
             </div>
             <div class="spec-item">
-                <i class="fas fa-thread"></i>
+                <i class="fas fa-shirt"></i>
                 <div>
                     <strong>Yarn Types</strong>
                     <span>Cotton • Poly • Nylon • Blends • Lycra</span>
@@ -448,7 +295,7 @@
                 </div>
             </div>
             <div class="spec-item">
-                <i class="fas fa-palette"></i>
+                <i class="fas fa-brush"></i>
                 <div>
                     <strong>Finishes</strong>
                     <span>Anti-pill • Moisture-wicking • Brushed • Compact</span>
@@ -458,14 +305,14 @@
     </div>
 </section>
 
-<!-- Sample Request CTA -->
+<!-- CTA Section -->
 <section class="fabric-cta-section">
     <div class="container">
         <div class="cta-card">
             <div class="row align-items-center">
                 <div class="col-lg-8">
                     <h2>Looking for something specific?</h2>
-                    <p>Request samples or discuss your custom fabric requirements with our team.</p>
+                    <p>Request samples or discuss your custom fabric requirements — we reply personally.</p>
                 </div>
                 <div class="col-lg-4 text-lg-end">
                     <a href="contact.html" class="cta-btn">
@@ -486,9 +333,7 @@
             <span class="close-modal">&times;</span>
         </div>
         <div class="modal-body">
-            <div class="selected-fabric-info" id="selectedFabricInfo">
-                <!-- Will be filled by JavaScript -->
-            </div>
+            <div class="selected-fabric-info" id="selectedFabricInfo"></div>
             <form id="sampleForm">
                 <input type="hidden" id="fabricName" name="fabricName">
                 <input type="hidden" id="fabricType" name="fabricType">
@@ -533,13 +378,20 @@
     </div>
 </div>
 
-<!-- Scripts -->
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/component.js"></script>
-<script src="js/navbar.js"></script>
-<script src="js/footer-loader.js"></script>
-<script src="js/script.js"></script>
-<script src="js/fabric.js"></script>
+<!-- Footer -->
+<div id="footer-container"></div>
 
+<script src="js/bootstrap.bundle.min.js" defer></script>
+<script src="js/component.js" defer></script>
+<script src="js/navbar.js" defer></script>
+<script src="js/footer-loader.js" defer></script>
+<script src="js/script.js" defer></script>
+<script src="js/fabric.js" defer></script>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+    document.querySelectorAll('.thread-animate, .thread-line-animated').forEach(el=>el.classList.add('loaded'));
+});
+</script>
 </body>
 </html>

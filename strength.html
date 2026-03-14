@@ -2,68 +2,150 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DG Knitting | Production Strength</title>
+    <title>DG Knitting | Our Strength: Trust · Quality · India</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts with optimization -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </noscript>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome with optimization -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
 
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS - Optimized -->
+    <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/strength.css">
+    <!-- color variables -->
+    <style>
+        :root {
+            --crimson: #df2229;
+            --pink-light: #fdf2f1;
+            --dark-main: #2e2d2c;
+            --dark-soft: #4a4a4a;
+            --orchid: #e18c94;
+        }
+        
+        /* Partner card logo styling */
+        .partner-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 25px 15px;
+            height: 160px;
+        }
+        
+        .partner-card img {
+            width: 130px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 12px;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        
+        .partner-card:hover img {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+        
+        .partner-card p {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--dark-main);
+            margin: 0;
+            text-align: center;
+        }
 
-    <!-- Container for third-party tags -->
-    <div id="tags-container"></div>
+        /* Text-based partner styling */
+.text-partner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 25px 15px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(223, 34, 41, 0.1);
+    transition: all 0.3s ease;
+    height: 160px;
+}
+
+.text-partner:hover {
+    transform: translateY(-5px);
+    border-color: var(--crimson);
+    box-shadow: 0 25px 50px rgba(223, 34, 41, 0.1);
+}
+
+.text-partner p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--crimson);
+    margin: 0;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.text-partner:hover p {
+    transform: scale(1.05);
+    text-shadow: 2px 2px 10px rgba(223, 34, 41, 0.2);
+}
+
+    </style>
 </head>
 <body>
 
 <!-- Navbar will be loaded here -->
 <div id="navbar-container"></div>
+<div id="tags-container"></div>
 
-<!-- Page Header with Background Image -->
-<section class="strength-header" style="background-image: url('assets/images/strength/strength-bg.jpg');">
+<!-- ===== PAGE HEADER ===== -->
+<section class="strength-header" style="background-image: url('assets/images/hero/about.webp');">
     <div class="header-overlay"></div>
     <div class="container">
         <div class="header-content text-center">
-            <span class="header-subtitle">Our Capability</span>
+            <span class="header-subtitle">Est. in India · Proudly Indian · Registered 11/07/2017</span>
             <h1 class="header-title">Production <span class="highlight">Strength</span></h1>
-            <div class="header-divider">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <p class="header-description">State-of-the-art infrastructure and unmatched production capacity</p>
+            <div class="header-divider"><span></span><span></span><span></span></div>
+            <p class="header-description">Modern machinery · 3 Lac Kg/month capacity · Built on relationships, powered by precision.</p>
         </div>
     </div>
 </section>
 
-<!-- Main Strength Stats -->
+<!-- ===== MAIN STRENGTH STATS ===== -->
 <section class="strength-stats-section">
     <div class="container">
         <div class="stats-grid">
             <!-- Machines -->
             <div class="stat-card">
                 <div class="stat-image">
-                    <img src="assets/images/quality/machine.png" alt="Machines">
+                    <img src="assets/images/quality/machine.webp" alt="Machines" loading="lazy" width="400" height="300">
                 </div>
                 <div class="stat-content">
                     <div class="stat-icon">
-                        <img src="assets/images/quality/machine.png" alt="Machines">
+                        <img src="assets/images/quality/machine.webp" alt="Machines" loading="lazy" width="60" height="60">
                     </div>
-                    <h2 class="stat-number">Advanced</h2>
+                    <h2 class="stat-number">Modern</h2>
                     <h3 class="stat-title">Machinery Park</h3>
-                    <p class="stat-description">State-of-the-art circular knitting machines from world-leading manufacturers ensuring precision and consistency.</p>
+                    <p class="stat-description">State-of-the-art circular knitting machines from world-leading manufacturers — every machine operated with the same care we put into every relationship.</p>
                     <ul class="stat-features">
-                        <li><img src="assets/images/strength/check.svg" alt="Check"> German & Italian technology</li>
-                        <li><img src="assets/images/strength/check.svg" alt="Check"> Automated systems</li>
-                        <li><img src="assets/images/strength/check.svg" alt="Check"> 24/7 operation capability</li>
+                        <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> Precision engineering</li>
+                        <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> Automated, consistent output</li>
+                        <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> 24/7 capability, human touch</li>
                     </ul>
                 </div>
             </div>
@@ -71,19 +153,19 @@
             <!-- Capacity -->
             <div class="stat-card">
                 <div class="stat-image">
-                    <img src="assets/images/quality/dispatch.png" alt="Production Capacity">
+                    <img src="assets/images/quality/dispatch.webp" alt="Production Capacity" loading="lazy" width="400" height="300">
                 </div>
                 <div class="stat-content">
                     <div class="stat-icon">
-                        <img src="assets/images/quality/dispatch.png" alt="Capacity">
+                        <img src="assets/images/quality/dispatch.webp" alt="Capacity" loading="lazy" width="60" height="60">
                     </div>
                     <h2 class="stat-number">3 Lac</h2>
                     <h3 class="stat-title">Kg / Month</h3>
-                    <p class="stat-description">High-volume production capacity to meet bulk orders with consistent quality.</p>
+                    <p class="stat-description">High-volume production capacity to meet bulk orders — without compromising the quality that defines the DG standard.</p>
                     <ul class="stat-features">
-                        <li><img src="assets/images/strength/check.svg" alt="Check"> Bulk order fulfillment</li>
-                        <li><img src="assets/images/strength/check.svg" alt="Check"> Just-in-time delivery</li>
-                        <li><img src="assets/images/strength/check.svg" alt="Check"> Scalable production</li>
+                        <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> Bulk order fulfillment</li>
+                        <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> Just-in-time delivery</li>
+                        <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> Scalable, relationship-ready</li>
                     </ul>
                 </div>
             </div>
@@ -91,20 +173,19 @@
             <!-- Yarn Types -->
             <div class="stat-card">
                 <div class="stat-image">
-                    <img src="assets/images/quality/yarn.png" alt="Yarn Types">
+                    <img src="assets/images/quality/yarn.webp" alt="Yarn Types" loading="lazy" width="400" height="300">
                 </div>
                 <div class="stat-content">
                     <div class="stat-icon">
-                        <img src="assets/images/quality/yarn.png" alt="Yarn Types">
+                        <img src="assets/images/quality/yarn.webp" alt="Yarn Types" loading="lazy" width="60" height="60">
                     </div>
-                    <h2 class="stat-number">Multiple</h2>
-                    <h3 class="stat-title">Yarn Types</h3>
-                    <p class="stat-description">Wide range of yarn options to create diverse fabric properties and textures.</p>
+                    <h2 class="stat-number">Premium</h2>
+                    <h3 class="stat-title">Yarn Portfolio</h3>
+                    <p class="stat-description">Sourcing the finest yarns — because every thread carries a promise. From certified cotton to performance blends.</p>
                     <ul class="stat-features">
-                        <li><img src="assets/images/strength/check.svg" alt="Check"> Cotton</li>
-                        <li><img src="assets/images/strength/check.svg" alt="Check"> Polyester</li>
-                        <li><img src="assets/images/strength/check.svg" alt="Check"> PC Blends</li>
-                        <li><img src="assets/images/strength/check.svg" alt="Check"> Lycra / Spandex</li>
+                        <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> 100% certified cotton</li>
+                        <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> Polyester, PC blends</li>
+                        <li><img src="assets/images/svg/check.webp" alt="Check" width="16" height="16" loading="lazy"> Lycra / Spandex for stretch</li>
                     </ul>
                 </div>
             </div>
@@ -112,40 +193,40 @@
     </div>
 </section>
 
-<!-- Facility Overview -->
+<!-- ===== FACILITY OVERVIEW ===== -->
 <section class="facility-section">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="facility-image">
-                    <img src="assets/images/strength/facility.jpg" alt="Manufacturing Facility">
+                    <img src="assets/images/quality/facility.jpg" alt="Manufacturing Facility" loading="lazy" width="600" height="400">
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="facility-content">
-                    <span class="facility-subtitle">Our Facility</span>
+                    <span class="facility-subtitle">Our Facility · Made for India</span>
                     <h2>State-of-the-Art <span class="highlight">Manufacturing Unit</span></h2>
-                    <p>Spread across a spacious facility with modern infrastructure and climate-controlled environment for optimal production conditions.</p>
+                    <p>Spread across a spacious, climate-controlled facility in Surat. Here, machines hum with precision — but it's the people, the relationships, and the pride in Indian manufacturing that truly set us apart.</p>
                     <div class="facility-stats">
                         <div class="facility-stat">
-                            <img src="assets/images/strength/area-icon.svg" alt="Area">
+                            <i class="fas fa-building facility-stat-icon"></i>
                             <div>
                                 <strong>Modern</strong>
-                                <span>Production Facility</span>
+                                <span>50,000+ sq.ft. facility</span>
                             </div>
                         </div>
                         <div class="facility-stat">
-                            <img src="assets/images/strength/staff-icon.svg" alt="Team">
+                            <i class="fas fa-users facility-stat-icon"></i>
                             <div>
                                 <strong>Expert</strong>
-                                <span>Technical Team</span>
+                                <span>Skilled team, personal touch</span>
                             </div>
                         </div>
                         <div class="facility-stat">
-                            <img src="assets/images/strength/shift-icon.svg" alt="Operations">
+                            <i class="fas fa-clock facility-stat-icon"></i>
                             <div>
                                 <strong>24/7</strong>
-                                <span>Operations Capability</span>
+                                <span>Operations · rooted in trust</span>
                             </div>
                         </div>
                     </div>
@@ -155,43 +236,69 @@
     </div>
 </section>
 
-<!-- Technology Partners -->
+<!-- ===== TECHNOLOGY PARTNERS ===== -->
 <section class="partners-section">
     <div class="container">
         <div class="section-header text-center">
-            <span class="section-subtitle">Our Partners</span>
+            <span class="section-subtitle">Our Partners in Precision</span>
             <h2 class="section-title">Technology <span class="highlight">Partners</span></h2>
+            <p class="section-description">Collaborating with world leaders to deliver quality you can trust.</p>
         </div>
-
         <div class="partners-grid">
             <div class="partner-card">
-                <img src="assets/images/strength/partner-mayer.png" alt="Mayer & Cie">
-                <p>Mayer & Cie</p>
-            </div>
-            <div class="partner-card">
-                <img src="assets/images/strength/partner-terrot.png" alt="Terrot">
+                <img src="assets/images/svg/Terrot_logo.svg" alt="Terrot" loading="lazy">
                 <p>Terrot</p>
             </div>
             <div class="partner-card">
-                <img src="assets/images/strength/partner-pailung.png" alt="Pailung">
+                <img src="assets/images/svg/Pailung.svg" alt="Pailung" loading="lazy">
                 <p>Pailung</p>
             </div>
             <div class="partner-card">
-                <img src="assets/images/strength/partner-fukuhara.png" alt="Fukuhara">
-                <p>Fukuhara</p>
+                <img src="assets/images/svg/satoni.svg" alt="Satoni" loading="lazy">
+                <p>Satoni</p>
+            </div>
+            <div class="partner-card text-partner">
+                <p>WELKNIT</p>
+            </div>
+            <div class="partner-card text-partner">
+                <p>KAL MEIYER</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- CTA Section -->
+<!-- ===== STATS BANNER ===== -->
+<section class="strength-extra-stats" style="background: var(--pink-light); padding: 3rem 0;">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-md-3 col-6">
+                <div class="fs-1 fw-bold" style="color: var(--crimson);">₹45 Cr+</div>
+                <p>Annual Turnover · India only</p>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="fs-1 fw-bold" style="color: var(--crimson);">15+</div>
+                <p>States Served</p>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="fs-1 fw-bold" style="color: var(--crimson);">9+</div>
+                <p>Years of Excellence (since 2017)</p>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="fs-1 fw-bold" style="color: var(--crimson);">🤝</div>
+                <p>Built on relationships</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CTA ===== -->
 <section class="strength-cta-section">
     <div class="container">
         <div class="cta-card">
             <div class="row align-items-center g-4">
                 <div class="col-lg-8">
-                    <h2 class="cta-title">Ready to partner with us?</h2>
-                    <p class="cta-text">Leverage our production strength for your next project</p>
+                    <h2 class="cta-title">Ready to build a lasting partnership?</h2>
+                    <p class="cta-text">Leverage our production strength — backed by trust, quality, and a personal commitment to your success.</p>
                 </div>
                 <div class="col-lg-4 text-lg-end">
                     <a href="contact.html" class="cta-btn">
@@ -204,13 +311,17 @@
     </div>
 </section>
 
-<!-- FOOTER will be loaded via footer-loader.js -->
-<!-- Scripts -->
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/component.js"></script>
-<script src="js/navbar.js"></script>
-<script src="js/footer-loader.js"></script>
-<script src="js/script.js"></script>
+<!-- Footer -->
+<div id="footer-container"></div>
 
+<!-- Scripts deferred -->
+<script src="js/bootstrap.bundle.min.js" defer></script>
+<script src="js/component.js" defer></script>
+<script src="js/navbar.js" defer></script>
+<script src="js/footer-loader.js" defer></script>
+<script src="js/script.js" defer></script>
+
+<!-- thread animation class -->
+<script>document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.thread-animate, .thread-line-animated').forEach(el=>el.classList.add('loaded'));});</script>
 </body>
 </html>

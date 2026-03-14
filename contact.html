@@ -2,30 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DG Knitting | Contact Us</title>
+    <title>DG Knitting | Let's Talk: Start a Conversation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts with optimization -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </noscript>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome with optimization -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
 
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS - Optimized with preload and non-blocking load -->
+    <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
 
-    <!-- Custom CSS -->
+    <!-- Custom CSS (critical) - loaded normally -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/contact.css">
-
-    <!-- Container for third-party tags -->
-    <div id="tags-container"></div>
+    
+    <!-- Ensure color variables match brand -->
+    <style>:root{--crimson:#df2229;--pink-light:#fdf2f1;--dark-main:#2e2d2c;--dark-soft:#4a4a4a;--orchid:#e18c94}</style>
 </head>
 <body>
 
 <!-- Navbar will be loaded here -->
 <div id="navbar-container"></div>
+
+<!-- Container for third-party tags -->
+<div id="tags-container"></div>
 
 <!-- Page Header -->
 <section class="page-header">
@@ -36,14 +46,14 @@
     </div>
     <div class="container">
         <div class="header-content text-center">
-            <span class="header-subtitle">Get in Touch</span>
-            <h1 class="header-title">Contact <span class="highlight">Us</span></h1>
+            <span class="header-subtitle">Every Great Partnership Begins Here</span>
+            <h1 class="header-title">Let's <span class="highlight">Connect</span></h1>
             <div class="header-divider">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <p class="header-description">We'd love to hear from you. Whether you have a question about our fabrics, need a quote, or want to discuss a partnership, our team is ready to assist.</p>
+            <p class="header-description">Not just inquiries — we welcome conversations. Whether you're looking for samples, have a technical question, or simply want to understand how we work.</p>
         </div>
     </div>
 </section>
@@ -52,24 +62,24 @@
 <section class="contact-info-section">
     <div class="container">
         <div class="info-grid">
-           <!-- Phone -->
-<div class="info-card">
-    <div class="info-icon">
-        <i class="fas fa-phone-alt"></i>
-    </div>
-    <h3>Call Us</h3>
-    <p>Mon - Sat, 9:00 AM - 7:00 PM</p>
-    <a href="tel:+919327456808" class="info-link">Sales: +91 93274 56808</a>
-    <a href="tel:+919173806837" class="info-link">Support: +91 91738 06837</a>
-</div>
+            <!-- Phone -->
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3>Reach Out Directly</h3>
+                <p>We answer calls personally, 9 AM - 7 PM, Mon-Sat</p>
+                <a href="tel:+919327456808" class="info-link">Sales: +91 93274 56808</a>
+                <a href="tel:+919173806837" class="info-link">Support: +91 91738 06837</a>
+            </div>
 
             <!-- Email -->
             <div class="info-card">
                 <div class="info-icon">
                     <i class="fas fa-envelope"></i>
                 </div>
-                <h3>Email Us</h3>
-                <p>We'll respond within 24 hours</p>
+                <h3>Drop Us a Line</h3>
+                <p>We read every email — expect a thoughtful reply within 24 hours</p>
                 <a href="mailto:info@dgknitting.com" class="info-link">info@dgknitting.com</a>
                 <a href="mailto:sales@dgknitting.com" class="info-link">sales@dgknitting.com</a>
             </div>
@@ -79,8 +89,8 @@
                 <div class="info-icon">
                     <i class="fas fa-map-marker-alt"></i>
                 </div>
-                <h3>Visit Us</h3>
-                <p>Head Office</p>
+                <h3>Come Say Hello</h3>
+                <p>Our doors are open — tea and conversations ready</p>
                 <address class="info-address">
                     Ground floor, Sangini Trade Centre, 178/183,<br> 
                     Surat - Kadodara Rd, Saroli, Surat, Gujarat 395010
@@ -92,8 +102,8 @@
                 <div class="info-icon">
                     <i class="fas fa-share-alt"></i>
                 </div>
-                <h3>Follow Us</h3>
-                <p>Stay connected on social media</p>
+                <h3>Find Us Here</h3>
+                <p>Behind every post, there's a person</p>
                 <div class="info-social">
                     <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
@@ -113,9 +123,9 @@
             <div class="col-lg-7">
                 <div class="form-wrapper">
                     <div class="form-header">
-                        <span class="form-subtitle">Send a Message</span>
-                        <h2 class="form-title">Let's Start a <span class="highlight">Conversation</span></h2>
-                        <p class="form-description">Fill out the form below and we'll get back to you as soon as possible.</p>
+                        <span class="form-subtitle">Tell Us What You Have in Mind</span>
+                        <h2 class="form-title">Start a <span class="highlight">Conversation</span></h2>
+                        <p class="form-description">The more we understand your world, the better we can serve you. Share a few details and we'll take it from there.</p>
                     </div>
 
                     <form id="contactForm" class="contact-form">
@@ -150,9 +160,9 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
-                                    <label for="subject">Subject <span class="required">*</span></label>
+                                    <label for="subject">What brings you here? <span class="required">*</span></label>
                                     <select class="form-control" id="subject" name="subject" required>
-                                        <option value="" disabled selected>Select a subject</option>
+                                        <option value="" disabled selected>Select an option</option>
                                         <option value="quote">Request a Quote</option>
                                         <option value="sample">Request Fabric Sample</option>
                                         <option value="technical">Technical Consultation</option>
@@ -164,8 +174,8 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
-                                    <label for="message">Message <span class="required">*</span></label>
-                                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                    <label for="message">Tell us more <span class="required">*</span></label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Share your requirements, questions, or just introduce yourself..."></textarea>
                                     <div class="focus-border"></div>
                                 </div>
                             </div>
@@ -173,7 +183,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="consent" required>
                                     <label class="form-check-label" for="consent">
-                                        I agree to the <a href="#" class="privacy-link">privacy policy</a> and consent to being contacted.
+                                        I'm okay with you holding my details — and I know you'll treat them with care. <a href="#" class="privacy-link">Privacy policy</a>
                                     </label>
                                 </div>
                             </div>
@@ -199,12 +209,13 @@
                             style="border:0;" 
                             allowfullscreen="" 
                             loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="DG Knitting Location">
                         </iframe>
                     </div>
 
                     <div class="business-hours">
-                        <h3>Business Hours</h3>
+                        <h3>When to Find Us</h3>
                         <ul class="hours-list">
                             <li>
                                 <span class="day">Monday - Saturday</span>
@@ -212,7 +223,7 @@
                             </li>
                             <li>
                                 <span class="day">Sunday</span>
-                                <span class="time closed">Closed</span>
+                                <span class="time closed">Rest Day</span>
                             </li>
                         </ul>
                     </div>
@@ -222,8 +233,8 @@
                             <i class="fas fa-headset"></i>
                         </div>
                         <div class="emergency-content">
-                            <h4>Need urgent assistance?</h4>
-                            <p>For urgent inquiries, please call our helpline</p>
+                            <h4>Urgent? We're here.</h4>
+                            <p>If timelines are tight, call our helpline</p>
                             <a href="tel:+919876543210" class="emergency-phone">+91 98765 43210</a>
                         </div>
                     </div>
@@ -237,61 +248,64 @@
 <section class="faq-section">
     <div class="container">
         <div class="section-header text-center">
-            <span class="section-subtitle">Quick Answers</span>
-            <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+            <span class="section-subtitle">Common Questions</span>
+            <h2 class="section-title">Before You <span class="highlight">Reach Out</span></h2>
         </div>
 
         <div class="faq-grid">
             <div class="faq-item">
                 <div class="faq-question">
-                    <h3>Do you provide fabric samples?</h3>
+                    <h3>Can I see samples before ordering?</h3>
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Yes, we provide fabric samples for all our products. Please fill out the contact form or email us at sales@dgknitting.com with your requirements.</p>
+                    <p>Absolutely. We believe fabric should be felt, not just described. Let us know what you're looking for, and we'll send samples your way.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <h3>What is your minimum order quantity?</h3>
+                    <h3>Do you work with small quantities?</h3>
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Our MOQ varies by product. Typically, it's 500 kg per style. However, we can discuss smaller quantities for trial orders.</p>
+                    <p>Every long partnership starts with a first step. While our standard MOQ is 500 kg, we're happy to discuss trial quantities for new relationships.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <h3>How long does delivery take?</h3>
+                    <h3>What's your typical turnaround?</h3>
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Delivery typically takes 7-14 days depending on your location and order quantity. We'll provide exact timelines when you place your order.</p>
+                    <p>Most orders ship within 7-14 days. Once we understand your timeline, we'll work backwards to make sure you're never waiting.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <h3>Do you export internationally?</h3>
+                    <h3>Do you work with international clients?</h3>
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Currently we serve the Indian market, but we're planning to start exports in 2025-26. For international inquiries, please contact us for future opportunities.</p>
+                    <p>Currently we're focused on serving India with excellence. We're preparing for global expansion in 2025-26 — stay connected with us for updates.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Scripts (order as per index.html) -->
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/component.js"></script>
-<script src="js/navbar.js"></script>
-<script src="js/footer-loader.js"></script>
-<script src="js/script.js"></script>
-<script src="js/contact.js"></script>
+<!-- Footer will be loaded here -->
+<div id="footer-container"></div>
+
+<!-- Scripts with defer for better performance -->
+<script src="js/bootstrap.bundle.min.js" defer></script>
+<script src="js/component.js" defer></script>
+<script src="js/navbar.js" defer></script>
+<script src="js/footer-loader.js" defer></script>
+<script src="js/script.js" defer></script>
+<script src="js/contact.js" defer></script>
 
 </body>
 </html>

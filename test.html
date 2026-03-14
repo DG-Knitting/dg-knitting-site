@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>DG Knitting – Brand Introduction</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --gold: #C8A96E;
+    --gold-light: #E8D5A3;
+    --cream: #F7F3EC;
+    --charcoal: #1A1A1A;
+    --thread: #8B6F47;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--charcoal);
+    color: var(--cream);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* THREAD TEXTURE OVERLAY */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 3px,
+        rgba(200,169,110,0.03) 3px,
+        rgba(200,169,110,0.03) 4px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 8px,
+        rgba(200,169,110,0.02) 8px,
+        rgba(200,169,110,0.02) 9px
+      );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200,169,110,0.08) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 6s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.6; }
+    50% { transform: translate(-50%, -50%) scale(1.15); opacity: 1; }
+  }
+
+  .hero-tag {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 28px;
+    animation: fadeUp 1s ease both;
+    position: relative;
+  }
+
+  .hero-tag::before, .hero-tag::after {
+    content: '—';
+    margin: 0 12px;
+    opacity: 0.5;
+  }
+
+  .brand-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(72px, 14vw, 160px);
+    font-weight: 300;
+    line-height: 0.9;
+    letter-spacing: -2px;
+    color: var(--cream);
+    animation: fadeUp 1s 0.2s ease both;
+    position: relative;
+  }
+
+  .brand-name span {
+    color: var(--gold);
+    font-style: italic;
+  }
+
+  .brand-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(18px, 3vw, 28px);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--gold-light);
+    margin-top: 20px;
+    letter-spacing: 2px;
+    animation: fadeUp 1s 0.4s ease both;
+    position: relative;
+  }
+
+  .divider {
+    width: 1px;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+    margin: 40px auto;
+    animation: fadeUp 1s 0.6s ease both;
+    position: relative;
+  }
+
+  .hero-statement {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(20px, 3.5vw, 34px);
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 680px;
+    color: var(--cream);
+    animation: fadeUp 1s 0.8s ease both;
+    position: relative;
+  }
+
+  .hero-statement em {
+    color: var(--gold);
+    font-style: italic;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* STAT STRIP */
+  .stat-strip {
+    background: var(--gold);
+    color: var(--charcoal);
+    padding: 24px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .stat-strip .stat-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .stat-strip .stat-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .stat-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--charcoal);
+    opacity: 0.4;
+  }
+
+  /* SECTIONS */
+  section {
+    position: relative;
+    z-index: 1;
+    padding: 100px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 24px;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(36px, 6vw, 64px);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--cream);
+    margin-bottom: 32px;
+  }
+
+  .section-title em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .section-body {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.9;
+    color: rgba(247,243,236,0.75);
+    max-width: 620px;
+  }
+
+  .section-body strong {
+    color: var(--gold-light);
+    font-weight: 600;
+  }
+
+  /* TWO-COLUMN */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 80px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (max-width: 700px) {
+    .two-col { grid-template-columns: 1fr; }
+    .stat-strip { flex-direction: column; gap: 8px; }
+  }
+
+  .value-card {
+    border-left: 1px solid rgba(200,169,110,0.3);
+    padding-left: 28px;
+  }
+
+  .value-card .icon {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .value-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--cream);
+    margin-bottom: 12px;
+  }
+
+  .value-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(247,243,236,0.65);
+    font-weight: 300;
+  }
+
+  /* VISION BLOCK */
+  .vision-block {
+    background: rgba(200,169,110,0.06);
+    border: 1px solid rgba(200,169,110,0.15);
+    border-radius: 2px;
+    padding: 60px 50px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto 100px;
+  }
+
+  .vision-block::before {
+    content: '\201C';
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 120px;
+    color: rgba(200,169,110,0.15);
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    line-height: 1;
+  }
+
+  .vision-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(22px, 4vw, 36px);
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--cream);
+    position: relative;
+  }
+
+  .vision-quote em {
+    color: var(--gold);
+    font-style: normal;
+  }
+
+  .vision-attr {
+    margin-top: 24px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.7;
+  }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid rgba(200,169,110,0.15);
+    padding: 40px;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(200,169,110,0.5);
+    position: relative;
+    z-index: 1;
+  }
+
+  /* SCROLL ANIMATION */
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <p class="hero-tag">Est. in India &nbsp;|&nbsp; Proudly Indian</p>
+  <h1 class="brand-name">DG<span>Knitting</span></h1>
+  <p class="brand-sub">Where Every Thread Carries a Promise</p>
+  <div class="divider"></div>
+  <p class="hero-statement">
+    We don't measure success in numbers.<br/>
+    We measure it in <em>trust built</em>, <em>relationships held</em>,<br/>
+    and quality that speaks for itself.
+  </p>
+</div>
+
+<!-- STAT STRIP -->
+<div class="stat-strip">
+  <span class="stat-number">₹45 Cr+</span>
+  <span class="stat-dot"></span>
+  <span class="stat-text">Annual Turnover</span>
+  <span class="stat-dot"></span>
+  <span class="stat-text">India Only</span>
+  <span class="stat-dot"></span>
+  <span class="stat-text">Built on Relationships</span>
+</div>
+
+<!-- WHO WE ARE -->
+<section class="reveal">
+  <p class="section-label">Our Identity</p>
+  <h2 class="section-title">More than a<br/><em>knitting company.</em></h2>
+  <p class="section-body">
+    DG Knitting was built on a simple belief — that in a world obsessed with scale, 
+    the most powerful currency is still <strong>trust</strong>. From the very first sample 
+    we sent a client, to the tonnes of orders that followed, every relationship we have 
+    ever built has been personal, intentional, and lasting.<br/><br/>
+    With a ₹45 crore turnover rooted entirely within India, we haven't chased the world. 
+    We've <strong>earned our home market</strong> — stitch by stitch, partner by partner.
+  </p>
+</section>
+
+<!-- TWO PILLARS -->
+<div class="two-col">
+  <div class="value-card reveal">
+    <div class="icon">🧵</div>
+    <h3>Uncompromising Quality</h3>
+    <p>Every yarn, every weave, every finished piece carries the DG standard. 
+    Quality at DG Knitting isn't a checkbox — it's a commitment we make 
+    before you even place your first order.</p>
+  </div>
+  <div class="value-card reveal">
+    <div class="icon">🤝</div>
+    <h3>Relationships First</h3>
+    <p>From a single sample to bulk tonnage — you are never just an order number. 
+    We walk with you through every stage, building a partnership that grows 
+    stronger with every delivery.</p>
+  </div>
+</div>
+
+<!-- VISION QUOTE -->
+<div class="vision-block reveal">
+  <p class="vision-quote">
+    Our vision was never written in spreadsheets.<br/>
+    It was woven into every <em>handshake, every sample, every reorder</em> —<br/>
+    because when you choose DG Knitting, you don't just get a supplier.<br/>
+    You get a <em>partner for life.</em>
+  </p>
+  <p class="vision-attr">— DG Knitting, Vision Statement</p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  DG Knitting &nbsp;·&nbsp; Quality &amp; Relationship &nbsp;·&nbsp; Made in India
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+  reveals.forEach(r => observer.observe(r));
+</script>
+</body>
+</html>

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (!contactForm) return;
     
-    // Test connection
+    // Test connection silently (no UI)
     testSheetDBConnection();
     
     contactForm.addEventListener('submit', async function(e) {
@@ -132,65 +132,19 @@ Message: ${messageValue}`;
     });
 });
 
-// Test SheetDB connection
+// Test SheetDB connection silently (no UI)
 async function testSheetDBConnection() {
     try {
         const response = await fetch(SHEETDB_API_URL);
         if (response.ok) {
             console.log('✅ SheetDB connected');
-            addConnectionStatus('connected');
         } else {
             console.log('⚠️ SheetDB returned status:', response.status);
-            addConnectionStatus('warning');
         }
     } catch (error) {
         console.log('⚠️ Connection issue - email backup ready');
-        addConnectionStatus('disconnected');
     }
-}
-
-// Add status indicator
-function addConnectionStatus(status) {
-    const formWrapper = document.querySelector('.form-wrapper');
-    if (!formWrapper) return;
-    
-    const existing = document.querySelector('.connection-status');
-    if (existing) existing.remove();
-    
-    const div = document.createElement('div');
-    div.className = 'connection-status';
-    
-    if (status === 'connected') {
-        div.innerHTML = '<i class="fas fa-check-circle"></i> Form ready';
-        div.style.cssText = `
-            background: #d4edda;
-            color: #155724;
-            padding: 12px 15px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            border: 1px solid #c3e6cb;
-            font-size: 0.9rem;
-        `;
-    } else {
-        div.innerHTML = '<i class="fas fa-envelope"></i> Email backup available';
-        div.style.cssText = `
-            background: #fff3cd;
-            color: #856404;
-            padding: 12px 15px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            border: 1px solid #ffeeba;
-            font-size: 0.9rem;
-        `;
-    }
-    
-    formWrapper.prepend(div);
+    // Removed UI status message display
 }
 
 // Show success
@@ -216,7 +170,6 @@ function showSuccessMessage(firstName, email, subject) {
     `;
 }
 
-// ========== FAQ ACCORDION FUNCTIONALITY ==========
 document.addEventListener('DOMContentLoaded', function() {
     const faqItems = document.querySelectorAll('.faq-item');
     
@@ -225,17 +178,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const question = item.querySelector('.faq-question');
             
             question.addEventListener('click', function() {
-                // Close other items
+
                 faqItems.forEach(otherItem => {
                     if (otherItem !== item && otherItem.classList.contains('active')) {
                         otherItem.classList.remove('active');
                     }
                 });
                 
-                // Toggle current item
                 item.classList.toggle('active');
                 
-                // Log for debugging
                 console.log('FAQ toggled:', item.classList.contains('active') ? 'open' : 'closed');
             });
         });

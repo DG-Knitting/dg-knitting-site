@@ -1,6 +1,5 @@
-/* Export Header with Image */
 .export-header {
-    margin-top: 75px;
+    margin-top: 10px;
     padding: 120px 0 100px;
     position: relative;
     background-size: cover;
@@ -198,15 +197,15 @@
 }
 
 .goal-stat-icon {
-    width: 50px;
-    height: 50px;
+    font-size: 2.5rem;
     margin-bottom: 10px;
-    filter: brightness(0) invert(1);
+    color: white;
+    display: block;
 }
 
 .goal-stat-number {
     display: block;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 5px;
@@ -306,7 +305,7 @@
     border: 1px solid rgba(223, 34, 41, 0.1);
 }
 
-/* Values Section - Image Based */
+/* Values Section - Icon Based (updated from images) */
 .values-section {
     padding: 80px 0;
     background: white;
@@ -322,7 +321,8 @@
 .value-card {
     background: white;
     border-radius: 20px;
-    overflow: hidden;
+    padding: 30px 20px;
+    text-align: center;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.03);
     border: 1px solid rgba(223, 34, 41, 0.1);
     transition: all 0.3s ease;
@@ -334,27 +334,37 @@
     border-color: var(--crimson);
 }
 
-.value-image {
-    height: 150px;
-    overflow: hidden;
+.value-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: var(--pink-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
 }
 
-.value-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+.value-card:hover .value-icon-wrapper {
+    background: var(--crimson);
 }
 
-.value-card:hover .value-image img {
-    transform: scale(1.1);
+.value-icon {
+    font-size: 2.5rem;
+    color: var(--crimson);
+    transition: all 0.3s ease;
+}
+
+.value-card:hover .value-icon {
+    color: white;
 }
 
 .value-card h3 {
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--crimson);
-    margin: 20px 20px 10px;
+    margin-bottom: 10px;
     letter-spacing: 1px;
 }
 
@@ -362,7 +372,7 @@
     color: var(--dark-soft);
     font-size: 0.95rem;
     line-height: 1.6;
-    margin: 0 20px 20px;
+    margin: 0;
 }
 
 /* Timeline Section - Visual Timeline */
@@ -440,9 +450,9 @@
     box-shadow: 0 15px 40px rgba(223, 34, 41, 0.3);
 }
 
-.timeline-marker img {
-    width: 30px;
-    height: 30px;
+.timeline-marker i {
+    font-size: 1.5rem;
+    color: var(--crimson);
 }
 
 .timeline-content {
@@ -508,9 +518,8 @@
 }
 
 .badge-icon {
-    width: 20px;
-    height: 20px;
-    filter: brightness(0) invert(1);
+    font-size: 1rem;
+    color: white;
 }
 
 .confidential-card h2 {
@@ -549,13 +558,12 @@
 }
 
 .btn-icon {
-    width: 20px;
-    height: 20px;
-    transition: filter 0.3s ease;
+    font-size: 1rem;
+    transition: all 0.3s ease;
 }
 
 .confidential-btn:hover .btn-icon {
-    filter: brightness(0) invert(1);
+    color: white;
 }
 
 /* Responsive Design */

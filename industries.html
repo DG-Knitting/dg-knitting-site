@@ -2,30 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DG Knitting | Industries We Serve</title>
+    <title>DG Knitting | Industries We Serve: Partners in Growth</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts with optimization -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </noscript>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome with optimization -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
 
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS - Optimized with preload and non-blocking load -->
+    <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
 
-    <!-- Custom CSS -->
+    <!-- Custom CSS (critical) - loaded normally -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/industries.css">
-
-    <!-- Container for third-party tags -->
-    <div id="tags-container"></div>
+    
+    <!-- Ensure color variables match brand -->
+    <style>:root{--crimson:#df2229;--pink-light:#fdf2f1;--dark-main:#2e2d2c;--dark-soft:#4a4a4a;--orchid:#e18c94}</style>
 </head>
 <body>
 
 <!-- Navbar will be loaded here -->
 <div id="navbar-container"></div>
+
+<!-- Container for third-party tags -->
+<div id="tags-container"></div>
 
 <!-- Page Header -->
 <section class="industries-header">
@@ -36,79 +46,88 @@
     </div>
     <div class="container">
         <div class="header-content text-center">
-            <span class="header-subtitle">Our Clients</span>
-            <h1 class="header-title">Industries <span class="highlight">We Serve</span></h1>
+            <span class="header-subtitle">Every partnership begins with a conversation</span>
+            <h1 class="header-title">Beyond Suppliers — <span class="highlight">We're Co-Creators</span></h1>
             <div class="header-divider">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <p class="header-description">Partnering with diverse sectors across the textile and fashion ecosystem</p>
+            <p class="header-description">From local workshops to national brands — we grow alongside every partner who trusts us with their vision.</p>
         </div>
     </div>
 </section>
 
-<!-- Industries Grid -->
 <section class="industries-section">
     <div class="container">
         <div class="industries-grid">
-            <!-- Garment Factories -->
+            
             <div class="industry-card">
                 <div class="industry-image">
-                    <img src="assets/images/clients/garment.jpg" alt="Garment Factories" width="400" height="300" loading="lazy">
+                    <img src="assets/images/clients/garment.webp" alt="Garment Manufacturers" width="400" height="300" loading="lazy">
                 </div>
                 <div class="industry-content">
-                    <h3>Garment Factories</h3>
-                    <p>High-quality knitted fabrics for bulk garment production with consistent quality and timely delivery.</p>
-                    <a href="contact.html" class="industry-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    <h3>Garment Manufacturers</h3>
+                    <p>Your production deadlines meet our rhythm. We understand the pressure of factory floors — consistent fabric quality, on-time rolls, and a team that picks up the phone when you need answers.</p>
+                    <a href="contact.html" class="industry-link">Start a conversation <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
 
-            <!-- Wholesalers -->
             <div class="industry-card">
                 <div class="industry-image">
-                    <img src="assets/images/clients/wholesaler.jpg" alt="Wholesalers" width="400" height="300" loading="lazy">
+                    <img src="assets/images/clients/wholesaler.webp" alt="Fabric Distributors" width="400" height="300" loading="lazy">
                 </div>
                 <div class="industry-content">
-                    <h3>Wholesalers</h3>
-                    <p>Wide range of fabric options for wholesalers serving multiple brands and markets across India.</p>
-                    <a href="contact.html" class="industry-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    <h3>Fabric Distributors</h3>
+                    <p>Your network spans cities; our inventory spans possibilities. Whether it's running basics or seasonal specialties, we ensure your shelves never run empty and your customers never wait.</p>
+                    <a href="contact.html" class="industry-link">Explore partnership <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
 
             <!-- Export Houses -->
             <div class="industry-card">
                 <div class="industry-image">
-                    <img src="assets/images/clients/export-house.jpg" alt="Export Houses" width="400" height="300" loading="lazy">
+                    <img src="assets/images/clients/export-house.webp" alt="Export Houses" width="400" height="300" loading="lazy">
                 </div>
                 <div class="industry-content">
                     <h3>Export Houses</h3>
-                    <p>Premium fabrics meeting international quality standards for global shipments and buyers.</p>
-                    <a href="export.html" class="industry-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    <p>International buyers demand precision. Our fabrics carry the consistency, finish, and documentation that cross borders with confidence. We're your behind-the-scenes partner for global success.</p>
+                    <a href="export.html" class="industry-link">Global readiness <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
 
             <!-- Fashion Brands -->
             <div class="industry-card">
                 <div class="industry-image">
-                    <img src="assets/images/clients/fashion.jpg" alt="Fashion Brands" width="400" height="300" loading="lazy">
+                    <img src="assets/images/clients/fashion.webp" alt="Fashion Labels" width="400" height="300" loading="lazy">
                 </div>
                 <div class="industry-content">
-                    <h3>Fashion Brands</h3>
-                    <p>Innovative and trend-forward fabrics for leading fashion labels and independent designers.</p>
-                    <a href="contact.html" class="industry-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    <h3>Fashion Labels & Designers</h3>
+                    <p>Your creativity deserves fabrics that translate sketches into reality. From sampling to final production runs, we work closely with designers to bring unique textures and feels to life.</p>
+                    <a href="contact.html" class="industry-link">Discuss your vision <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
+        </div>
+        
+        <!-- Added relationship-focused note at bottom -->
+        <div class="text-center mt-5 pt-4">
+            <p style="color: var(--dark-soft); max-width: 700px; margin: 0 auto; font-style: italic;">
+                <i class="fas fa-quote-left" style="color: var(--crimson); opacity: 0.5; margin-right: 8px;"></i>
+                No matter the industry, our approach remains the same: understand your world, 
+                respect your timelines, and deliver fabric you're proud to call your own.
+                <i class="fas fa-quote-right" style="color: var(--crimson); opacity: 0.5; margin-left: 8px;"></i>
+            </p>
         </div>
     </div>
 </section>
 
-<!-- Scripts (order as per index.html) -->
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/component.js"></script>
-<script src="js/navbar.js"></script>
-<script src="js/footer-loader.js"></script>
-<script src="js/script.js"></script>
+<div id="footer-container"></div>
+
+<script src="js/bootstrap.bundle.min.js" defer></script>
+<script src="js/component.js" defer></script>
+<script src="js/navbar.js" defer></script>
+<script src="js/footer-loader.js" defer></script>
+<script src="js/script.js" defer></script>
 
 </body>
 </html>
