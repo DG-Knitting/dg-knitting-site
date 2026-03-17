@@ -79,6 +79,24 @@
         margin: 0 auto;
     }
 }
+
+.process-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;          /* important for circle crop */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fef1f2;
+}
+
+.process-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* makes image fill circle */
+}
+
   </style>
 </head>
 <body>
@@ -197,7 +215,7 @@
   </div>
 </section>
 
-<!-- ===== VISION STATEMENT (full width) ===== -->
+<!-- ===== VISION STATEMENT ===== -->
 <section class="quality-section section-padding" style="background:var(--pink-light);">
   <div class="container">
     <div class="row justify-content-center">
@@ -216,7 +234,7 @@
   </div>
 </section>
 
-<!-- ===== FABRIC RANGE (Updated with top fabrics) ===== -->
+<!-- ===== FABRIC RANGE ===== -->
 <section id="fabrics" class="fabrics-section section-padding">
     <div class="container">
         <div class="section-header text-center">
@@ -227,7 +245,7 @@
         
         <div class="fabrics-grid">
             
-            <!-- Card 1: Curtains (Warp) -->
+            <!-- Card 1: Curtains -->
             <div class="fabric-card">
                 <div class="fabric-image">
                     <img src="assets/images/fabrics/Curtain.webp" alt="Curtain Fabric" loading="lazy" width="300" height="300">
@@ -238,7 +256,7 @@
                 </div>
             </div>
 
-            <!-- Card 2: Interlock (Circular) -->
+            <!-- Card 2: Interlock -->
             <div class="fabric-card">
                 <div class="fabric-image">
                     <img src="assets/images/fabrics/Interlock-tencil.webp" alt="Interlock Fabric" loading="lazy" width="300" height="300">
@@ -249,7 +267,7 @@
                 </div>
             </div>
 
-            <!-- Card 3: Rib (Circular) -->
+            <!-- Card 3: Rib -->
             <div class="fabric-card">
                 <div class="fabric-image">
                     <img src="assets/images/fabrics/Rib.webp" alt="Rib Knit Fabric" loading="lazy" width="300" height="300">
@@ -260,7 +278,7 @@
                 </div>
             </div>
 
-            <!-- Card 4: Single Jersey (Circular) -->
+            <!-- Card 4: Single Jersey -->
             <div class="fabric-card">
                 <div class="fabric-image">
                     <img src="assets/images/fabrics/single-jersey.webp" alt="Single Jersey Fabric" loading="lazy" width="300" height="300">
@@ -271,7 +289,7 @@
                 </div>
             </div>
 
-            <!-- Card 5: Garment Fabric (Common) -->
+            <!-- Card 5: Garment Fabric -->
             <div class="fabric-card">
                 <div class="fabric-image">
                     <img src="assets/images/fabrics/kids-garment.webp" alt="Garment Fabric" loading="lazy" width="300" height="300">
@@ -282,7 +300,7 @@
                 </div>
             </div>
 
-            <!-- Card 6: Sportswear (Common) -->
+            <!-- Card 6: Sportswear -->
             <div class="fabric-card">
                 <div class="fabric-image">
                     <img src="assets/images/fabrics/Sportswear.webp" alt="Sportswear Fabric" loading="lazy" width="300" height="300">
@@ -303,7 +321,7 @@
     </div>
 </section>
 
-<!-- ===== PRODUCTION STRENGTH (small update to reflect India focus) ===== -->
+<!-- ===== PRODUCTION STRENGTH ===== -->
 <section id="strength" class="strength-section section-padding">
   <div class="container">
     <div class="section-header text-center">
@@ -318,7 +336,7 @@
   </div>
 </section>
 
-<!-- ===== PROCESS (unchanged, still reflects quality) ===== -->
+<!-- ===== PROCESS ===== -->
 <section id="process" class="process-section section-padding">
   <div class="container">
     <div class="section-header text-center">
@@ -337,13 +355,13 @@
   </div>
 </section>
 
-<!-- ===== QUALITY COMMITMENT (adds the "Uncompromising Quality") ===== -->
+<!-- ===== QUALITY COMMITMENT ===== -->
 <section id="quality" class="quality-section section-padding">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
         <div class="quality-content">
-          <span class="section-subtitle">🧵 uncompromising quality</span>
+          <span class="section-subtitle">Uncompromising quality</span>
           <h2 class="section-title">Our <span class="highlight">Quality Commitment</span></h2>
           <p class="quality-text">Every yarn, every weave, every finished piece carries the DG standard. Quality at DG Knitting isn't a checkbox — it's a commitment we make before you even place your first order.</p>
           <ul class="quality-list">
