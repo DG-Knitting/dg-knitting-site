@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | DG Knitting – Data Protection & Trust</title>
+  <meta name="description" content="DG Knitting privacy policy — how we collect, use, and protect your data. Full compliance with Indian DPDP Act 2023 & GDPR principles. Transparency is our thread.">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Bootstrap (grid + utilities only, no interference with navbar/footer) -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <!-- Core site styles (navbar, footer, buttons, typography, etc.) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/footer.css">
+  
+  <style>
+    /* ========== PRIVACY PAGE SPECIFIC STYLES (no navbar/footer overrides) ========== */
+    :root {
+      --crimson: #df2229;
+      --pink-light: #fdf2f1;
+      --dark-main: #2e2d2c;
+      --dark-soft: #4a4a4a;
+      --orchid: #e18c94;
+    }
+
+    /* Fix global underline issue: override bootstrap link underline ONLY for privacy content */
+    .privacy-card a,
+    .policy-block a,
+    .contact-grievance a,
+    .grievance-item a,
+    .policy-signature a {
+      text-decoration: none !important;
+      border-bottom: none !important;
+      transition: color 0.2s ease;
+    }
+    .privacy-card a:hover,
+    .policy-block a:hover,
+    .contact-grievance a:hover {
+      text-decoration: none !important;
+      color: var(--orchid) !important;
+    }
+
+    /* Remove any unexpected bootstrap underline from general nav/footer but we don't touch them */
+    .privacy-header .header-subtitle,
+    .privacy-header .header-title,
+    .privacy-header .header-description,
+    .badge-privacy,
+    .policy-block h2,
+    .policy-block h3,
+    .policy-block p,
+    .policy-block li {
+      text-decoration: none;
+    }
+
+    /* refined privacy page styling — matches brand DNA but elevated */
+    .privacy-header {
+      margin-top: 10px;
+      padding: 100px 0 70px;
+      background: linear-gradient(125deg, #ffffff 0%, var(--pink-light) 100%);
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .privacy-header::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -10%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(223,34,41,0.03) 0%, rgba(223,34,41,0) 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .privacy-header::after {
+      content: '';
+      position: absolute;
+      bottom: -20%;
+      left: -5%;
+      width: 350px;
+      height: 350px;
+      background: radial-gradient(circle, rgba(225,140,148,0.04) 0%, rgba(225,140,148,0) 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .privacy-header .header-content {
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+    .privacy-header .header-subtitle {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--crimson);
+      margin-bottom: 20px;
+      background: rgba(223,34,41,0.08);
+      padding: 6px 20px;
+      border-radius: 60px;
+      backdrop-filter: blur(2px);
+    }
+    .privacy-header .header-subtitle i {
+      font-size: 0.8rem;
+    }
+    .privacy-header .header-title {
+      font-size: clamp(2.3rem, 5vw, 3.6rem);
+      font-weight: 800;
+      margin-bottom: 20px;
+      color: var(--dark-main);
+      font-family: 'Playfair Display', serif;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, var(--dark-main) 0%, #1a1a1a 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .privacy-header .header-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 20px 0 25px;
+    }
+    .privacy-header .header-divider span {
+      height: 2px;
+      background: linear-gradient(90deg, var(--crimson), var(--orchid));
+    }
+    .privacy-header .header-divider span:nth-child(1),
+    .privacy-header .header-divider span:nth-child(3) {
+      width: 70px;
+      opacity: 0.4;
+    }
+    .privacy-header .header-divider span:nth-child(2) {
+      width: 40px;
+      opacity: 0.8;
+    }
+    .privacy-header .header-description {
+      font-size: 1.08rem;
+      color: var(--dark-soft);
+      line-height: 1.7;
+      max-width: 780px;
+      margin: 0 auto;
+      font-weight: 400;
+    }
+    .effective-date {
+      background: white;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 22px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-top: 28px;
+      color: var(--crimson);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+      border: 1px solid rgba(223,34,41,0.15);
+    }
+
+    /* main card design */
+    .privacy-content-section {
+      padding: 60px 0 80px;
+      background: white;
+    }
+    .privacy-card {
+      background: #fff;
+      border-radius: 42px;
+      padding: 50px 55px;
+      box-shadow: 0 20px 35px -12px rgba(0,0,0,0.08);
+      border: 1px solid rgba(223, 34, 41, 0.06);
+      transition: all 0.35s ease;
+    }
+    .privacy-card:hover {
+      border-color: rgba(223, 34, 41, 0.12);
+      box-shadow: 0 30px 50px -20px rgba(0,0,0,0.12);
+    }
+    .policy-block {
+      margin-bottom: 2.8rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+      padding-bottom: 2rem;
+    }
+    .policy-block:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .policy-block h2 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      font-family: 'Playfair Display', serif;
+      color: var(--crimson);
+      margin-bottom: 1rem;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .policy-block h2 i {
+      font-size: 1.6rem;
+      opacity: 0.7;
+      color: var(--orchid);
+    }
+    .policy-block h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.8rem;
+      color: var(--dark-main);
+      font-family: 'Playfair Display', serif;
+    }
+    .policy-block p, .policy-block li {
+      color: var(--dark-soft);
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+    .policy-block ul, .policy-block ol {
+      padding-left: 1.6rem;
+      margin-top: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .policy-block li {
+      margin-bottom: 0.5rem;
+    }
+    .policy-block strong {
+      color: var(--dark-main);
+      font-weight: 700;
+    }
+    .badge-privacy {
+      background: var(--pink-light);
+      color: var(--crimson);
+      padding: 0.3rem 1.2rem;
+      border-radius: 40px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.3px;
+      border: 1px solid rgba(223,34,41,0.1);
+    }
+    .contact-grievance {
+      background: linear-gradient(115deg, var(--pink-light) 0%, #ffffff 100%);
+      border-radius: 28px;
+      padding: 28px 32px;
+      margin-top: 28px;
+      border-left: 5px solid var(--crimson);
+      box-shadow: 0 6px 14px rgba(223,34,41,0.05);
+    }
+    .contact-grievance h4 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin-bottom: 0.8rem;
+      color: var(--crimson);
+      font-family: 'Playfair Display', serif;
+    }
+    .grievance-detail {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 10px;
+    }
+    .grievance-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: white;
+      padding: 8px 20px;
+      border-radius: 60px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+      border: 1px solid rgba(0,0,0,0.03);
+    }
+    .grievance-item i {
+      color: var(--crimson);
+      font-size: 1rem;
+    }
+    .policy-signature {
+      background: var(--pink-light);
+      padding: 24px 30px;
+      border-radius: 28px;
+      margin-top: 35px;
+      text-align: center;
+      font-style: normal;
+      border: 1px dashed rgba(223,34,41,0.25);
+    }
+    .policy-signature i {
+      font-size: 2rem;
+      color: var(--crimson);
+      opacity: 0.5;
+      margin-bottom: 10px;
+    }
+    /* CTA section same as other pages */
+    .contact-cta-section .cta-card {
+      background: linear-gradient(135deg, var(--crimson), var(--orchid));
+      border-radius: 30px;
+      padding: 50px;
+      transition: transform 0.25s ease, box-shadow 0.3s;
+    }
+    .contact-cta-section .cta-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 35px -10px rgba(223,34,41,0.3);
+    }
+    .cta-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+    }
+    .cta-text {
+      color: rgba(255,255,255,0.92);
+    }
+    .cta-btn {
+      background: white;
+      color: var(--crimson);
+      border: none;
+      border-radius: 60px;
+      padding: 12px 32px;
+      font-weight: 600;
+      transition: all 0.25s;
+    }
+    .cta-btn:hover {
+      background: var(--crimson);
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 768px) {
+      .privacy-card { padding: 28px 22px; }
+      .policy-block h2 { font-size: 1.45rem; }
+      .privacy-header { padding: 70px 0 50px; }
+      .privacy-header .header-title { font-size: 1.9rem; }
+      .contact-grievance { padding: 20px; }
+      .grievance-detail { flex-direction: column; gap: 12px; }
+      .cta-title { font-size: 1.5rem; }
+    }
+    @media (max-width: 576px) {
+      .privacy-header { margin-top: 65px; }
+      .policy-block h2 i { display: none; }
+    }
+    /* remove any global bootstrap link underline that could leak */
+    a:not(.nav-link):not(.footer-links a):not(.social-link):not(.cta-btn):not(.contact-btn) {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar container (loaded via external JS) -->
+<div id="navbar-container"></div>
+<div id="tags-container"></div>
+
+<!-- Privacy Header -->
+<section class="privacy-header">
+  <div class="container">
+    <div class="header-content text-center">
+      <span class="header-subtitle">
+        <i class="fas fa-lock"></i> Transparency & Trust
+      </span>
+      <h1 class="header-title">Privacy Policy</h1>
+      <div class="header-divider">
+        <span></span><span></span><span></span>
+      </div>
+      <p class="header-description">DG Knitting is committed to protecting your personal data. This policy explains how we collect, use, and safeguard your information — in alignment with the <strong>Digital Personal Data Protection Act, 2023 (India)</strong> and <strong>GDPR</strong> principles.</p>
+      <div class="effective-date">
+        <i class="fas fa-calendar-alt"></i> Effective: 01 April 2026
+        <i class="fas fa-shield-alt ms-2"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Privacy Main Content -->
+<section class="privacy-content-section">
+  <div class="container">
+    <div class="privacy-card">
+      
+      <!-- 1. Contact Information -->
+      <div class="policy-block">
+        <span class="badge-privacy"><i class="fas fa-building"></i> Data Controller</span>
+        <h2><i class="fas fa-address-card"></i> 1. Contact Information</h2>
+        <p>DG Knitting is the data controller responsible for your personal data. If you have any questions about this policy or your rights, please reach out to us:</p>
+        <p><strong><i class="fas fa-envelope me-1"></i> Email:</strong> <a href="mailto:marketing@dg-knitting.com">marketing@dg-knitting.com</a><br>
+        <strong><i class="fas fa-phone-alt me-1"></i> Phone:</strong> +91 73806837<br>
+        <strong><i class="fas fa-map-marker-alt me-1"></i> Address:</strong> Ground floor, Sangini Trade Centre, 178/183, Surat - Kadodara Rd, Saroli, Surat, Gujarat 395010</p>
+      </div>
+
+      <!-- 2. Information We Collect -->
+      <div class="policy-block">
+        <h2><i class="fas fa-database"></i> 2. Information We Collect</h2>
+        <p>We may collect and process the following categories of personal information:</p>
+        <ul>
+          <li><strong>Contact details:</strong> name, email address, phone number, billing/shipping address.</li>
+          <li><strong>Technical data:</strong> IP address, browser type, device information, and website usage via cookies.</li>
+          <li><strong>Order & transaction data:</strong> purchase history, product preferences, and payment details (processed securely).</li>
+          <li><strong>Communication data:</strong> information you provide when contacting support, filling forms, or subscribing to marketing.</li>
+        </ul>
+      </div>
+
+      <!-- 3. How We Use Your Data -->
+      <div class="policy-block">
+        <h2><i class="fas fa-chart-line"></i> 3. How We Use Your Information</h2>
+        <p>Your data enables us to:</p>
+        <ul>
+          <li>Process and fulfill your orders, manage your account.</li>
+          <li>Improve our website, products, and customer experience.</li>
+          <li>Respond to inquiries, support tickets, or complaints.</li>
+          <li>Send marketing communications (only with your explicit consent).</li>
+          <li>Comply with legal obligations (tax, accounting, fraud prevention).</li>
+        </ul>
+      </div>
+
+      <!-- 4. Legal Basis -->
+      <div class="policy-block">
+        <h2><i class="fas fa-gavel"></i> 4. Legal Basis for Processing</h2>
+        <p>We rely on the following lawful grounds:</p>
+        <ul>
+          <li><strong>Consent:</strong> for marketing, non-essential cookies, and certain data sharing.</li>
+          <li><strong>Contractual necessity:</strong> to process orders and provide requested services.</li>
+          <li><strong>Legal obligation:</strong> to comply with Indian tax and commercial laws (record retention up to 7 years).</li>
+          <li><strong>Legitimate interests:</strong> to improve services, prevent fraud, and enhance security.</li>
+        </ul>
+      </div>
+
+      <!-- 5. Data Retention -->
+      <div class="policy-block">
+        <h2><i class="fas fa-clock"></i> 5. Data Retention</h2>
+        <p>We retain personal data only as long as necessary:</p>
+        <ul>
+          <li>Transaction records: up to 7 years as required by Indian law.</li>
+          <li>Marketing data: until you withdraw consent or unsubscribe.</li>
+          <li>Customer inquiries: up to 1 year after resolution.</li>
+          <li>Cookie-based analytics: up to 2 years (depending on cookie type).</li>
+        </ul>
+      </div>
+
+      <!-- 6. Sharing Your Data -->
+      <div class="policy-block">
+        <h2><i class="fas fa-share-alt"></i> 6. Sharing Your Data</h2>
+        <p>We never sell your personal information. We may share data with trusted partners:</p>
+        <ul>
+          <li>Payment processors, logistics partners, and IT service providers.</li>
+          <li>Analytics tools (Google Analytics, Meta Pixel) and advertising platforms.</li>
+          <li>Hosting & cloud infrastructure providers.</li>
+        </ul>
+        <p>All partners are bound by strict data protection agreements and may only process data on our behalf.</p>
+      </div>
+
+      <!-- 7. International Transfers -->
+      <div class="policy-block">
+        <h2><i class="fas fa-globe-asia"></i> 7. International Data Transfers</h2>
+        <p>Some of our service providers (e.g., Google, Meta) operate globally. Your data may be transferred outside India or the EEA. For EU residents, we ensure adequate safeguards via Standard Contractual Clauses (SCCs). For Indian residents, transfers comply with DPDP Act requirements.</p>
+      </div>
+
+      <!-- 8. Cookies & Tracking -->
+      <div class="policy-block">
+        <h2><i class="fas fa-cookie-bite"></i> 8. Cookies & Tracking Technologies</h2>
+        <p>We use cookies and similar technologies to enhance your browsing, analyze traffic, and personalize content. Essential cookies are necessary for site functionality; non-essential cookies (analytics, marketing) require your consent. You can manage your preferences via our cookie banner or browser settings.</p>
+        <p><strong>Third-party cookies:</strong> Google Analytics, Google Ads, and social media platforms may set their own cookies. Their privacy policies apply independently.</p>
+        <p>You may withdraw consent at any time via "Cookie Preferences" on our website or by contacting us.</p>
+      </div>
+
+      <!-- 9. Consent & Choices -->
+      <div class="policy-block">
+        <h2><i class="fas fa-check-circle"></i> 9. Your Consent & Choices</h2>
+        <p>We request consent before placing non-essential cookies. You can:</p>
+        <ul>
+          <li>Adjust cookie settings via our consent banner.</li>
+          <li>Block cookies in your browser (may affect site functionality).</li>
+          <li>Opt out of marketing emails by clicking "unsubscribe" or emailing <a href="mailto:marketing@dg-knitting.com">marketing@dg-knitting.com</a>.</li>
+        </ul>
+      </div>
+
+      <!-- 10. Children's Privacy -->
+      <div class="policy-block">
+        <h2><i class="fas fa-child"></i> 10. Children's Privacy</h2>
+        <p>Our services are not directed to individuals under 18. In India, we require parental consent for minors below 18. In the EU, we do not knowingly collect data from children under 16 without verifiable consent. If we discover such data, we will delete it promptly.</p>
+      </div>
+
+      <!-- 11. Your Data Rights -->
+      <div class="policy-block">
+        <h2><i class="fas fa-user-shield"></i> 11. Your Rights</h2>
+        <p>Under applicable laws (India DPDP Act & GDPR), you have the right to:</p>
+        <ul>
+          <li>Access the personal data we hold about you.</li>
+          <li>Rectify inaccurate or incomplete data.</li>
+          <li>Request erasure of your data (right to be forgotten).</li>
+          <li>Restrict or object to processing.</li>
+          <li>Data portability.</li>
+          <li>Withdraw consent at any time.</li>
+          <li>Lodge a complaint with a supervisory authority.</li>
+        </ul>
+      </div>
+
+      <!-- 12. Exercising Your Rights -->
+      <div class="policy-block">
+        <h2><i class="fas fa-envelope-open-text"></i> 12. How to Exercise Your Rights</h2>
+        <p>To submit a request, contact us at <strong>marketing@dg-knitting.com</strong>. We will respond within 30 days as required by law. For verification, we may need to confirm your identity.</p>
+      </div>
+
+      <!-- 13. Opt-out -->
+      <div class="policy-block">
+        <h2><i class="fas fa-bell-slash"></i> 13. Opt-out of Marketing & Tracking</h2>
+        <p>You can stop marketing messages by:</p>
+        <ul>
+          <li>Using the unsubscribe link in our emails.</li>
+          <li>Emailing <strong>marketing@dg-knitting.com</strong> with "Unsubscribe".</li>
+          <li>Managing cookie preferences on our website.</li>
+        </ul>
+      </div>
+
+      <!-- 14. Security Measures -->
+      <div class="policy-block">
+        <h2><i class="fas fa-shield-virus"></i> 14. Security Measures</h2>
+        <p>We implement robust safeguards: SSL encryption, restricted access controls, regular security audits, and secure data processing protocols to protect your personal information from unauthorized access, disclosure, or loss.</p>
+      </div>
+
+      <!-- 15. Grievance Redressal -->
+      <div class="policy-block">
+        <h2><i class="fas fa-handshake"></i> 15. Grievance Redressal</h2>
+        <p>In compliance with the Digital Personal Data Protection Act, 2023, we have appointed a Grievance Officer:</p>
+        <div class="contact-grievance">
+          <h4><i class="fas fa-user-tie me-2"></i> Vikas R. Giri</h4>
+          <div class="grievance-detail">
+            <div class="grievance-item"><i class="fas fa-envelope"></i> <a href="mailto:grievance@dg-knitting.com">grievance@dg-knitting.com</a></div>
+            <div class="grievance-item"><i class="fas fa-phone"></i> +91 9173806837</div>
+          </div>
+          <p class="mt-3 mb-0"><small>Alternatively, you may write to <strong>marketing@dg-knitting.com</strong> with subject line "Grievance". We aim to resolve all complaints promptly as per legal timelines.</small></p>
+        </div>
+      </div>
+
+      <!-- 16. Third-Party Links -->
+      <div class="policy-block">
+        <h2><i class="fas fa-external-link-alt"></i> 16. Third-Party Links</h2>
+        <p>Our website may contain links to external sites. We are not responsible for the privacy practices of those third parties. We encourage you to read their privacy policies.</p>
+      </div>
+
+      <!-- 17. Updates & Signature -->
+      <div class="policy-block">
+        <h2><i class="fas fa-sync-alt"></i> 17. Updates to This Policy</h2>
+        <p>We may revise this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Effective Date". Please review periodically. Your continued use of our services constitutes acceptance of any changes.</p>
+        <div class="policy-signature">
+          <i class="fas fa-quote-right"></i>
+          <p class="mb-0 fst-italic" style="font-size: 1.05rem;">"DG Knitting — Where every thread carries a promise, including the promise to protect your privacy."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section (consistent brand) -->
+<section class="contact-cta-section section-padding" style="padding: 60px 0;">
+  <div class="container">
+    <div class="cta-card" style="background: linear-gradient(135deg, var(--crimson), var(--orchid)); padding: 50px; border-radius: 30px;">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h2 class="cta-title">Have privacy questions?</h2>
+          <p class="cta-text">We're here to ensure your data is handled with care. Reach out to our team anytime.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="contact.html" class="btn primary-btn cta-btn" style="background: white; color: var(--crimson); border: none; border-radius: 60px; padding: 12px 32px; font-weight: 600;"><i class="fas fa-envelope me-2"></i>Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer container -->
+<div id="footer-container"></div>
+
+<!-- Scripts (navbar & footer loaders - consistent with other pages) -->
+<script src="js/bootstrap.bundle.min.js" defer></script>
+<script src="js/component.js" defer></script>
+<script src="js/navbar.js" defer></script>
+<script src="js/footer-loader.js" defer></script>
+<script src="js/script.js" defer></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // set active nav link for privacy page
+    if (typeof setActiveNavLink === 'function') {
+      setActiveNavLink('privacy');
+    }
+    // optional thread animation
+    if (document.querySelector('.thread-animate')) {
+      document.querySelectorAll('.thread-animate, .thread-line-animated').forEach(el => el.classList.add('loaded'));
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Kids Garment Fabrics: Comfort & Performance | DG Knitting</title>
+    <meta name="description" content="Designing the comfort-performance tradeoff in children's clothing. Expert insights on fabric selection for kidswear manufacturing.">
+    <meta name="keywords" content="kids garment fabrics, children clothing fabric, kidswear textile, DG Knitting, fabric blog">
+    
+    <meta property="og:title" content="Kids Garment Fabrics: Designing the Comfort Performance Tradeoff | DG Knitting">
+    <meta property="og:description" content="Expert guide on selecting fabrics for children's clothing. Skin comfort, durability, shape retention, and manufacturing consistency.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.dgknitting.com/blog/kids-garment-fabrics">
+    
+    <link rel="canonical" href="https://www.dgknitting.com/blog/kids-garment-fabrics">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+    <style>
+        
+        :root {
+            --crimson: #df2229;
+            --pink-light: #fdf2f1;
+            --dark-main: #2e2d2c;
+            --dark-soft: #4a4a4a;
+            --orchid: #e18c94;
+            --transition: all 0.2s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark-main);
+            background: white;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, .blog-header .header-title, .section-title {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .blog-header {
+            position: relative;
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, #fff 0%, var(--pink-light) 100%);
+            overflow: hidden;
+            margin-top: 0;
+        }
+        
+        .blog-header .header-content {
+            position: relative;
+            z-index: 5;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .blog-header .header-subtitle {
+            display: inline-block;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--crimson);
+            margin-bottom: 20px;
+            position: relative;
+            padding: 0 15px;
+        }
+        
+        .blog-header .header-subtitle::before,
+        .blog-header .header-subtitle::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 30px;
+            height: 1px;
+            background: var(--crimson);
+            opacity: 0.3;
+        }
+        
+        .blog-header .header-subtitle::before { left: -30px; }
+        .blog-header .header-subtitle::after { right: -30px; }
+        
+        .blog-header .header-title {
+            font-size: clamp(2.5rem, 5vw, 3.8rem);
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: var(--dark-main);
+            line-height: 1.2;
+        }
+        
+        .blog-header .highlight {
+            color: var(--crimson);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .blog-header .header-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+        
+        .blog-header .header-divider span {
+            height: 2px;
+            background: var(--crimson);
+        }
+        
+        .blog-header .header-divider span:nth-child(1),
+        .blog-header .header-divider span:nth-child(3) {
+            width: 60px;
+            opacity: 0.2;
+        }
+        
+        .blog-header .header-divider span:nth-child(2) {
+            width: 30px;
+            opacity: 0.5;
+        }
+        
+        .blog-header .header-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.2rem;
+            color: var(--dark-soft);
+            line-height: 1.8;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        
+        /* Thread Background */
+        .thread-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .thread-1, .thread-2, .thread-3 {
+            position: absolute;
+            background: linear-gradient(90deg, transparent, var(--crimson), transparent);
+            opacity: 0.05;
+            height: 1px;
+            width: 100%;
+        }
+        
+        .thread-1 { top: 20%; transform: rotate(2deg); }
+        .thread-2 { top: 50%; transform: rotate(-1deg); }
+        .thread-3 { top: 80%; transform: rotate(3deg); }
+        
+        /* ===== SECTION STYLES ===== */
+        .section-padding {
+            padding: 80px 0;
+            position: relative;
+        }
+        
+        .section-subtitle {
+            display: inline-block;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--crimson);
+            margin-bottom: 15px;
+        }
+        
+        .section-title {
+            font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            color: var(--dark-main);
+        }
+        
+        .section-title .highlight {
+            color: var(--crimson);
+        }
+        
+        .section-description {
+            font-size: 1.1rem;
+            color: var(--dark-soft);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        .intro-text {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--dark-soft);
+            margin-bottom: 20px;
+        }
+        
+        .dropcap {
+            float: left;
+            font-size: 4rem;
+            line-height: 0.8;
+            margin-right: 12px;
+            color: var(--crimson);
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            border: 1px solid rgba(223, 34, 41, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(223, 34, 41, 0.08);
+            border-color: var(--crimson);
+        }
+        
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--pink-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .feature-icon i {
+            font-size: 2rem;
+            color: var(--crimson);
+        }
+        
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            color: var(--dark-main);
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 12px;
+        }
+        
+        .feature-list li {
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .feature-list li i {
+            color: var(--crimson);
+            font-size: 0.8rem;
+        }
+        
+        .two-column-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+            margin: 40px 0;
+        }
+        
+        .problem-card {
+            background: var(--pink-light);
+            padding: 30px;
+            border-radius: 24px;
+            margin: 30px 0;
+            border-left: 4px solid var(--crimson);
+        }
+        
+        .problem-card h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--crimson);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .insight-box {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            margin: 20px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            border: 1px solid rgba(223,34,41,0.1);
+        }
+        
+        .insight-box h4 {
+            color: var(--crimson);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .quote-block {
+            background: var(--pink-light);
+            padding: 40px;
+            border-radius: 24px;
+            border-left: 4px solid var(--crimson);
+            margin: 40px 0;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--dark-soft);
+        }
+        
+        .btn {
+            padding: 12px 35px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        
+        .primary-btn {
+            background: var(--crimson);
+            color: white;
+            border-color: var(--crimson);
+        }
+        
+        .primary-btn:hover {
+            background: transparent;
+            color: var(--crimson);
+        }
+        
+        .secondary-btn {
+            background: transparent;
+            color: var(--crimson);
+            border: 2px solid var(--crimson);
+        }
+        
+        .secondary-btn:hover {
+            background: var(--crimson);
+            color: white;
+        }
+        
+        .conclusion-cta {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        /* Connect Section */
+        .connect-section {
+            padding: 60px 0 100px;
+            background: white;
+        }
+        
+        .connect-card {
+            background: var(--pink-light);
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid rgba(223, 34, 41, 0.2);
+        }
+        
+        .connect-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--dark-main);
+            margin-bottom: 20px;
+        }
+        
+        .connect-card p {
+            font-size: 1.2rem;
+            color: var(--dark-soft);
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        .connect-links {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .connect-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--dark-main);
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 12px 25px;
+            background: white;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .connect-link i {
+            color: var(--crimson);
+            font-size: 1.3rem;
+        }
+        
+        .connect-link:hover {
+            background: var(--crimson);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(223, 34, 41, 0.2);
+        }
+        
+        .connect-link:hover i {
+            color: white;
+        }
+        
+        .text-center { text-align: center; }
+        .mt-5 { margin-top: 3rem; }
+        .mb-4 { margin-bottom: 1.5rem; }
+        
+        @media (max-width: 768px) {
+            .section-padding { padding: 60px 0; }
+            .two-column-layout { grid-template-columns: 1fr; gap: 30px; }
+            .blog-header { padding: 80px 0 50px; }
+            .connect-card { padding: 30px 20px; }
+            .connect-card h3 { font-size: 1.5rem; }
+            .connect-links { flex-direction: column; align-items: center; }
+            .blog-header .header-title { font-size: 1.8rem; }
+            .feature-grid { grid-template-columns: 1fr; }
+            .problem-card { padding: 20px; }
+        }
+        
+        /* Animation Classes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fadeInUp {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        
+        .application-tag {
+            background: var(--pink-light);
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 50px;
+            margin: 5px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+<div id="navbar-container"></div>
+
+<div id="tags-container"></div>
+
+<section class="blog-header">
+    <div class="thread-background">
+        <div class="thread-1"></div>
+        <div class="thread-2"></div>
+        <div class="thread-3"></div>
+    </div>
+    <div class="container">
+        <div class="header-content text-center">
+            <span class="header-subtitle">Kidswear Textile Engineering</span>
+            <h1 class="header-title">Kids Garment Fabrics: Designing the <span class="highlight">Comfort Performance Tradeoff</span></h1>
+            <div class="header-divider">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p class="header-description">In children clothing, the structural aspect of the clothing is fabric. A strategic business decision that affects product returns, brand reputation and customer loyalty.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding" style="padding-top: 0;">
+    <div class="container">
+        <p class="intro-text"><span class="dropcap">C</span>ontrary to adult clothes, which tend to focus more on style than functionality, kidswear has to resist a relatively large number of stressors: constant movement, frequent abrasion, high-temperature washing, and a high number of stains. To manufacturers and brand owners, it is not just a design choice when it comes to selecting the right fabric but rather a strategic business decision that has a direct effect on product returns, brand reputation as well as customer loyalty.</p>
+        
+        <p class="intro-text">An effective children clothing textile should be able to balance the seemingly conflicting features. It should be gentle enough to that of delicate skin but strong enough to withstand the playgrounds and washing machines. It should be able to expand with active movement but then contract with the purpose of restoring its shape. The modern competitive textile environment has removed the principle of mere fabric sales and integrated the design of certain performance properties that fulfill the needs of children and their parents in the real-life environment.</p>
+        
+        <h2 class="section-title mt-5">Setting the Performance <span class="highlight">Requirements of Kids wear</span></h2>
+        <p class="intro-text">Children are not small-scale adults. Their body structure and way of life dictate a hard set of demands on their clothes. A textile that is good when used in a dress shirt of a man will not be effective in a school uniform or play wear of a child. The initial step in the process of fabric selection would be the understanding of such special needs.</p>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-child"></i></div>
+                <h3>Dermatological Comfort</h3>
+                <p>Skin of children is delicate, thin and sensitive to infections. Rough fibers, harsh chemical remains may lead to friction dermatitis and pain. Tactile quality is critical for T-shirts, underwear, and uniform shirts.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Mechanical Durability</h3>
+                <p>Running, climbing, sliding—fabric must resist tearing, seam slippage, and abrasion. Withstands dozens of laundry cycles without pilling or fraying.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+                <h3>Dynamic Flexibility</h3>
+                <p>Combines elasticity and recovery to allow freedom of movement while maintaining intended fit. Prevents restriction and shape loss over time.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-wind"></i></div>
+                <h3>Thermoregulation</h3>
+                <p>Children have higher metabolic rate. Breathability prevents overheating and perspiration, maintaining stable microclimate between skin and garment.</p>
+            </div>
+        </div>
+        
+        <h2 class="section-title mt-5">Discussing the Ultimate Problems of <span class="highlight">Kids wear Fabrics</span></h2>
+        <p class="intro-text">Most suppliers boast of general fabric properties, whereas what makes a garment fabric reliable when used in creating kid's garments is how it handles failure points (vitally) in common. These are the main concerns that the manufactures need to examine.</p>
+        
+        <div class="problem-card">
+            <h3><i class="fas fa-hand-holding-heart" style="margin-right: 10px;"></i> The Problem of Surface Hardness and Sensitivity of Skin</h3>
+            <p>The softness cannot be compromised, but it takes something more than simply picking up a fine fiber. The problem with most manufacturers is that, when softened initially; it can become soft fast when laundered because of fiber fatigue or by washing away temporary chemical softeners.</p>
+            <div class="insight-box">
+                <h4>Genuine skin-friendly fabric is soft permanently:</h4>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> <strong>Fiber Choice:</strong> Long-staple fibers or combed yarns produce better surface with fewer sticking ends.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Knitting Structure:</strong> Single jersey or interlock structures produce naturally soft hand-feel without heavy chemical finishes.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Mechanical Finishing:</strong> Brushing, sanding or bio-polishing (enzymes) creates softness that cannot be lost after repeated washing.</li>
+                </ul>
+                <p class="mt-3"><em>The hidden problem is concurrence. A cloth that initially feels smooth on the bolt but which takes five laundry washings to become rough is a liability.</em></p>
+            </div>
+        </div>
+        
+        <div class="problem-card">
+            <h3><i class="fas fa-circle-exclamation" style="margin-right: 10px;"></i> The Probability of Pill and Abrasion</h3>
+            <p>Pilling — development of tiny, unattractive balls of fiber on the clothing surface — is among the most frequent grievances on children clothing. Fabric engineering should be aimed at combating these issues:</p>
+            <ul class="feature-list">
+                <li><i class="fas fa-check-circle"></i> <strong>Yarn Twist:</strong> Higher twists keep fiber tighter, preventing pilling.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Fabric Density:</strong> Tight-knitted compact structure resists abrasion better than loose open knit.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Fiber Blends:</strong> Cotton blended with high-tenacity polyester or nylon with carefully controlled ratios improves abrasion resistance.</li>
+            </ul>
+        </div>
+        
+        <div class="problem-card">
+            <h3><i class="fas fa-arrows-spin" style="margin-right: 10px;"></i> The Problem of Stability of Dimensions and Retention of Shapes</h3>
+            <p>One of the leading causes of returns is a garment that does not fit when big or becomes smaller after the first wash. Key areas of control include:</p>
+            <ul class="feature-list">
+                <li><i class="fas fa-check-circle"></i> <strong>Knitting Tension:</strong> Varying tension can result in areas prone to stretching or relaxation.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Relaxation Shrinkage:</strong> Fabrics not relaxed sufficiently release stresses during consumer wash, causing unpredictable shrinkage.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Stretch and Recovery Balance:</strong> Controlled by knitting structure and precise elastane tension for returning to original size.</li>
+            </ul>
+        </div>
+        
+        <div class="problem-card">
+            <h3><i class="fas fa-palette" style="margin-right: 10px;"></i> The Problem of Color Stickiness and Saturation</h3>
+            <p>Bright, saturated colors are typical for kids wear. Repetitive washing, sun exposure, and body oils may result in quick fading. The cause is in dyeing and finishing:</p>
+            <ul class="feature-list">
+                <li><i class="fas fa-check-circle"></i> <strong>Dye Penetration:</strong> Dye must penetrate fiber core, not just surface.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Fixation:</strong> Proper fixatives and controlled temperatures chemically fix dye to fiber.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Wash and Light Fastness Testing:</strong> Ensures fabric will not fade or bleed onto other clothes.</li>
+            </ul>
+        </div>
+        
+        <!-- Problem 5 -->
+        <div class="problem-card">
+            <h3><i class="fas fa-chart-line" style="margin-right: 10px;"></i> The Bulk Production Consistency Challenge</h3>
+            <p>For garment manufacturers, unpredictability in bulk fabric orders is a major operational risk. A perfectly performing sample yardage may not match bulk production showing differences in shade, weight, width, or hand-feel.</p>
+            <p>Lack of consistency causes: increased wastage, sewing problems (puckering, needle cuts), and final fit variations leading to high return rates. A good fabric partner must have stringent quality control at all levels: yarn acquisition, greige knitting, dyeing, and finishing.</p>
+        </div>
+        
+        <h2 class="section-title mt-5">Customization: Resolving <span class="highlight">Targeted Performance Requirement</span></h2>
+        <p class="intro-text">There is no particular cloth that can be used to satisfy all the categories of kidswear. The necessity of play shorts is totally different from a blazer or winter jacket.</p>
+        
+        <div class="two-column-layout">
+            <div>
+                <div class="insight-box" style="background: var(--pink-light);">
+                    <h3 style="color: var(--crimson);">T-Shirts and Tops</h3>
+                    <p>Very softness, high breathability, low shrinkage. Cotton single jersey with bio-polish finish.</p>
+                </div>
+                <div class="insight-box" style="background: var(--pink-light);">
+                    <h3 style="color: var(--crimson);">School Uniforms</h3>
+                    <p>Durability, color consistency, pilling and fading resistant. Polyester-cotton tight-knit for strength and formal look.</p>
+                </div>
+            </div>
+            <div>
+                <div class="insight-box" style="background: var(--pink-light);">
+                    <h3 style="color: var(--crimson);">Activewear & Playwear</h3>
+                    <p>Stretch, recovery, moisture management. Lightweight breathable knit with low elastane (5-7%) for freedom and shape retention.</p>
+                </div>
+                <div class="insight-box" style="background: var(--pink-light);">
+                    <h3 style="color: var(--crimson);">Structured Garments</h3>
+                    <p>Shape retention and stability. Dense knitting with stabilizing finishes to maintain crisp structure.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="quote-block">
+            <p style="font-size: 1.2rem; font-weight: 600; margin-bottom: 15px;">Conclusion: Quality as an Intolerable Standard</p>
+            <p>The quality of fabric is the invisible thread in the garment market of kids that bind comfort, durability and brand trust. The fabric used determines the way in which the garment would feel against the skin of a child, how it will stand after a season of use and washing and how it would be seen by the consumer as the brand.</p>
+            <p>The fundamental problems like the sensitivity of the skin, mechanical wear, shape retention and color stability need to be addressed by changing the perception of fabric as a commodity to that of an engineered element. To manufacturers, it is to have suppliers who are more committed to consistency and quality control as the main principles so that each meter of fabric applied to the production of children clothes can satisfy the high performance standards of their daily life.</p>
+            <p><strong>The strategy at DG Knitting is based on these particular challenges.</strong> This will aim to create fabrics that fulfill the core expectation of children clothes namely, to be as strong as the child who wears it, and the comfort factor is always central.</p>
+        </div>
+        
+        <div class="conclusion-cta">
+            <a href="../contact.html" class="btn primary-btn">Request Samples</a>
+            <a href="tel:+919327456808" class="btn secondary-btn">Call for Inquiry</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONNECT SECTION ===== -->
+<section class="connect-section">
+    <div class="container">
+        <div class="connect-card">
+            <h3>Connect with DG Knitting</h3>
+            <p>To discuss kidswear fabric requirements, sample orders, or bulk production specifications, reach out to our textile specialists.</p>
+            <div class="connect-links">
+                <a href="mailto:sales@dgknitting.com" class="connect-link">
+                    <i class="fas fa-envelope"></i> sales@dgknitting.com
+                </a>
+                <a href="tel:+919327456808" class="connect-link">
+                    <i class="fas fa-phone-alt"></i> +91 93274 56808
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Container -->
+<div id="footer-container"></div>
+
+<script>
+    // Scroll animation observer
+    document.addEventListener('DOMContentLoaded', function() {
+        const animateElements = document.querySelectorAll('.feature-card, .problem-card, .insight-box, .quote-block');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        animateElements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+        
+        // Back to Top Button
+        if (!document.querySelector('.back-to-top')) {
+            const backToTop = document.createElement('button');
+            backToTop.className = 'back-to-top';
+            backToTop.innerHTML = '<i class="fas fa-arrow-up"></i>';
+            backToTop.style.cssText = `
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                width: 50px;
+                height: 50px;
+                background: var(--crimson);
+                color: white;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                display: none;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+                box-shadow: 0 5px 15px rgba(223, 34, 41, 0.3);
+                z-index: 999;
+                transition: all 0.3s ease;
+            `;
+            document.body.appendChild(backToTop);
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) {
+                    backToTop.style.display = 'flex';
+                } else {
+                    backToTop.style.display = 'none';
+                }
+            });
+            
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+        
+        // Scroll progress indicator
+        const progressBar = document.createElement('div');
+        progressBar.className = 'scroll-progress';
+        progressBar.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: var(--crimson);
+            width: 0%;
+            z-index: 9999;
+            transition: width 0.1s ease;
+        `;
+        document.body.appendChild(progressBar);
+        
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            progressBar.style.width = scrolled + '%';
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        
+        console.log('Kids Garment Fabrics Blog Page Loaded - DG Knitting');
+    });
+</script>
+
+<!-- Scripts - relative paths -->
+<script src="js/bootstrap.bundle.min.js" defer></script>
+<script src="js/component.js" defer></script>
+<script src="js/navbar.js" defer></script>
+<script src="js/footer-loader.js" defer></script>
+<script src="js/script.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+[
+  {
+    "timestamp": {
+      "$date": {
+        "$numberLong": "1775730600000"
+      }
+    },
+    "productId": "507f1f77bcf86cd799439011",
+    "sku": "FAB-1001",
+    "action": "stock_update",
+    "quantityChange": -5,
+    "newQuantity": 495,
+    "userId": "507f1f77bcf86cd799439012"
+  }
+]

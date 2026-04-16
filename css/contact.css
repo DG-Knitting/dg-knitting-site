@@ -1,3 +1,4 @@
+/* ========== PAGE HEADER ========== */
 .page-header {
     margin-top: 10px;
     padding: 80px 0 60px;
@@ -51,6 +52,12 @@
     color: var(--dark-main);
 }
 
+.header-title .highlight {
+    color: var(--crimson);
+    position: relative;
+    display: inline-block;
+}
+
 .header-divider {
     display: flex;
     align-items: center;
@@ -83,7 +90,7 @@
     margin: 0 auto;
 }
 
-/* Contact Info Cards */
+/* ========== CONTACT INFO CARDS ========== */
 .contact-info-section {
     padding: 60px 0;
     background: white;
@@ -201,14 +208,13 @@
     transform: translateY(-3px);
 }
 
-/* Contact Form Section */
+/* ========== CONTACT FORM SECTION ========== */
 .contact-form-section {
     padding: 80px 0;
     background: linear-gradient(135deg, var(--pink-light), #ffffff);
     position: relative;
 }
 
-/* Form Wrapper */
 .form-wrapper {
     background: white;
     border-radius: 30px;
@@ -242,6 +248,10 @@
     margin-bottom: 15px;
 }
 
+.form-title .highlight {
+    color: var(--crimson);
+}
+
 .form-description {
     color: var(--dark-soft);
     font-size: 1rem;
@@ -250,13 +260,13 @@
     margin: 0 auto;
 }
 
-/* Form Fields */
-.contact-form .form-group {
+/* Form Groups */
+.form-group {
     position: relative;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
-.contact-form label {
+.form-group label {
     display: block;
     font-size: 0.9rem;
     font-weight: 500;
@@ -264,12 +274,12 @@
     margin-bottom: 8px;
 }
 
-.contact-form .required {
+.required {
     color: var(--crimson);
     margin-left: 3px;
 }
 
-.contact-form .form-control {
+.form-control {
     width: 100%;
     padding: 12px 15px;
     border: 1px solid #e0e0e0;
@@ -280,14 +290,14 @@
     transition: all 0.3s ease;
 }
 
-.contact-form .form-control:focus {
+.form-control:focus {
     outline: none;
     border-color: var(--crimson);
     background: white;
     box-shadow: 0 5px 15px rgba(223, 34, 41, 0.05);
 }
 
-.contact-form select.form-control {
+select.form-control {
     appearance: none;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232e2d2c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
     background-repeat: no-repeat;
@@ -295,7 +305,7 @@
     background-size: 15px;
 }
 
-.contact-form textarea.form-control {
+textarea.form-control {
     resize: vertical;
     min-height: 120px;
 }
@@ -316,9 +326,81 @@
     width: 100%;
 }
 
+/* Phone Input Group */
+.phone-input-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.country-code-selector {
+    width: 130px;
+    flex-shrink: 0;
+}
+
+.country-code {
+    background-color: var(--pink-light);
+    border: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+    padding: 12px 8px;
+    cursor: pointer;
+}
+
+.phone-input-group input {
+    flex: 1;
+}
+
+/* Field Hints */
+.field-hint {
+    display: block;
+    font-size: 0.7rem;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+/* Character Counter */
+.char-counter {
+    text-align: right;
+    font-size: 0.7rem;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+.char-counter.warning {
+    color: #ffc107;
+}
+
+.char-counter.danger {
+    color: #dc3545;
+}
+
+/* Validation States */
+.form-control.valid {
+    border-color: #28a745;
+    background-color: #f0fff4;
+}
+
+.form-control.invalid {
+    border-color: #dc3545;
+    background-color: #fff8f8;
+}
+
+/* Error Messages */
+.error-message {
+    color: #dc3545;
+    font-size: 0.75rem;
+    margin-top: 5px;
+    display: none;
+    animation: slideDown 0.3s ease;
+}
+
 /* Checkbox */
 .form-check {
-    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+    margin: 0;
 }
 
 .form-check-input {
@@ -339,7 +421,6 @@
 .form-check-label {
     font-size: 0.9rem;
     color: var(--dark-soft);
-    margin-left: 5px;
     cursor: pointer;
 }
 
@@ -396,15 +477,21 @@
     box-shadow: 0 20px 40px rgba(223, 34, 41, 0.2);
 }
 
-.submit-btn i {
-    transition: transform 0.3s ease;
-}
-
 .submit-btn:hover i {
     transform: translateX(5px);
 }
 
-/* Map Wrapper */
+.submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.submit-btn:disabled::before {
+    display: none;
+}
+
+/* ========== MAP WRAPPER ========== */
 .map-wrapper {
     background: white;
     border-radius: 30px;
@@ -506,6 +593,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .emergency-icon i {
@@ -538,16 +626,44 @@
     color: var(--orchid);
 }
 
-/* FAQ Section */
+/* ========== FAQ SECTION ========== */
 .faq-section {
     padding: 80px 0;
     background: white;
     position: relative;
 }
 
+.section-header {
+    margin-bottom: 50px;
+}
+
+.section-subtitle {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--crimson);
+    margin-bottom: 10px;
+    background: rgba(223, 34, 41, 0.05);
+    padding: 5px 18px;
+    border-radius: 50px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-main);
+    margin-bottom: 15px;
+}
+
+.section-title .highlight {
+    color: var(--crimson);
+}
+
 .faq-grid {
     max-width: 900px;
-    margin: 50px auto 0;
+    margin: 0 auto;
     display: grid;
     gap: 20px;
 }
@@ -608,7 +724,59 @@
     margin: 0;
 }
 
-/* Responsive Design */
+/* ========== FORM SUCCESS MESSAGE ========== */
+.form-success {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.form-success i {
+    font-size: 4rem;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.form-success h3 {
+    font-size: 1.8rem;
+    color: var(--dark-main);
+    margin-bottom: 15px;
+}
+
+.form-success p {
+    color: var(--dark-soft);
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+.form-success .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--crimson);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.form-success .btn:hover {
+    background: var(--orchid);
+    transform: translateY(-2px);
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
 @media (max-width: 1200px) {
     .info-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -656,6 +824,14 @@
         flex-direction: column;
         text-align: center;
     }
+    
+    .phone-input-group {
+        flex-direction: column;
+    }
+    
+    .country-code-selector {
+        width: 100%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -685,69 +861,8 @@
     .faq-question h3 {
         font-size: 1rem;
     }
-}
-
-/* Form Success Message */
-.form-success {
-    text-align: center;
-    padding: 50px 30px;
-}
-
-.form-success i {
-    font-size: 4rem;
-    color: #28a745;
-    margin-bottom: 20px;
-}
-
-.form-success h3 {
-    font-size: 1.8rem;
-    color: var(--dark-main);
-    margin-bottom: 15px;
-}
-
-.form-success p {
-    color: var(--dark-soft);
-    font-size: 1rem;
-    margin-bottom: 25px;
-}
-
-.form-success .btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background: var(--crimson);
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.form-success .btn:hover {
-    background: var(--orchid);
-    transform: translateY(-2px);
-}
-
-/* ========== ALERT WARNING ========== */
-.alert-warning {
-    background: #fff3cd;
-    border: 1px solid #ffeeba;
-    color: #856404;
-    padding: 15px 20px;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 0.95rem;
-}
-
-.alert-warning i {
-    color: #856404;
-    font-size: 1.2rem;
-}
-
-.alert-warning a {
-    color: #533f03;
-    font-weight: 600;
-    text-decoration: underline;
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
 }

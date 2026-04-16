@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.dgknitting.com/sitemap.xml
+Sitemap: https://www.dgknitting.com/image-sitemap.xml
+
+# Disallow admin or component directories (not meant for public indexing)
+Disallow: /component/
+Disallow: /assets/svg/
+Disallow: /assets/images/svg/
+
+# Optional: Disallow test/development pages
+Disallow: /test.html
+
+# Disallow common asset folders (optional, but helps save crawl budget)
+Disallow: /css/
+Disallow: /js/
+Disallow: /assets/video/
+
+# Block any potential duplicate or parameter-driven URLs (if applicable)
+Disallow: /*?*

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- HOMEPAGE -->
+  <url>
+    <loc>https://www.dg-knitting.com/index.html</loc>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/hero/hero.webp</image:loc><image:title>DG Knitting Hero Banner</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/hero/hero-2.webp</image:loc><image:title>Knitting Factory Showcase</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/clients/export-house.webp</image:loc><image:title>Export House Client</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/clients/fashion.webp</image:loc><image:title>Fashion Brand Client</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/clients/garment.webp</image:loc><image:title>Garment Manufacturer Client</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/clients/wholesaler.webp</image:loc><image:title>Wholesaler Client</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/round-images/dispatch.png</image:loc><image:title>Dispatch &amp; Logistics</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/round-images/fabrics.png</image:loc><image:title>Premium Fabrics Showcase</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/round-images/machine.png</image:loc><image:title>Knitting Machinery</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/round-images/yarn.png</image:loc><image:title>High Quality Yarn</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/logo.png</image:loc><image:title>DG Knitting Logo</image:title></image:image>
+  </url>
+
+  <!-- ABOUT US -->
+  <url>
+    <loc>https://www.dg-knitting.com/about-us.html</loc>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/hero/about.webp</image:loc><image:title>About DG Knitting - Company Overview</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/hero/manufacturing-plant.webp</image:loc><image:title>Manufacturing Plant</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/Saroli-office-front.webp</image:loc><image:title>Saroli Office Front View</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/team/Production.webp</image:loc><image:title>Production Team</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/team/quality-team.webp</image:loc><image:title>Quality Control Team</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/team/inovation-staff.webp</image:loc><image:title>Innovation &amp; R&amp;D Staff</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/team/maintanence.webp</image:loc><image:title>Maintenance Team</image:title></image:image>
+  </url>
+
+  <!-- FABRIC PAGE -->
+  <url>
+    <loc>https://www.dg-knitting.com/fabric.html</loc>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/fabrics/Interlock.webp</image:loc><image:title>Interlock Knit Fabric</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/fabrics/single-jersey.webp</image:loc><image:title>Single Jersey Fabric</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/fabrics/Rib.webp</image:loc><image:title>Rib Knit Fabric</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/fabrics/scuba.webp</image:loc><image:title>Scuba Fabric</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/fabrics/Sportswear.webp</image:loc><image:title>Sportswear Fabric</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/fabrics/kids-garment.webp</image:loc><image:title>Kids Garment Fabric</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/fabrics/collar.webp</image:loc><image:title>Collar Fabric</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/fabrics/cuff.webp</image:loc><image:title>Cuff Fabric</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/fabrics/Curtain.webp</image:loc><image:title>Curtain Fabric</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/fabrics/Curtain2.webp</image:loc><image:title>Curtain Fabric Collection 2</image:title></image:image>
+  </url>
+
+  <!-- INTERLOCK PRODUCT -->
+  <url>
+    <loc>https://www.dg-knitting.com/interlock-fabric-for-garment-manufacturing.html</loc>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/fabrics/Interlock.webp</image:loc><image:title>Interlock Fabric for Garment Manufacturing</image:title></image:image>
+  </url>
+
+  <!-- SCUBA FABRIC -->
+  <url>
+    <loc>https://www.dg-knitting.com/scuba-fabric.html</loc>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/fabrics/scuba.webp</image:loc><image:title>Scuba Fabric Collection</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/fabrics/scuba-c.webp</image:loc><image:title>Scuba Fabric - Closeup</image:title></image:image>
+  </url>
+
+  <!-- SPORTSWEAR FABRIC -->
+  <url>
+    <loc>https://www.dg-knitting.com/sportswear-fabric.html</loc>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/fabrics/Sportswear.webp</image:loc><image:title>Sportswear Performance Fabric</image:title></image:image>
+  </url>
+
+  <!-- KIDS GARMENT -->
+  <url>
+    <loc>https://www.dg-knitting.com/kids-garment-fabrics.html</loc>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/fabrics/kids-garment.webp</image:loc><image:title>Kids Garment Soft Fabrics</image:title></image:image>
+  </url>
+
+  <!-- QUALITY PAGE -->
+  <url>
+    <loc>https://www.dg-knitting.com/quality.html</loc>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/quality/dispatch.webp</image:loc><image:title>Quality Dispatch Process</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/quality/fabric.webp</image:loc><image:title>Fabric Quality Inspection</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/quality/Inspection.webp</image:loc><image:title>Quality Inspection Process</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/quality/machine.webp</image:loc><image:title>Quality Machinery</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/quality/yarn.webp</image:loc><image:title>Yarn Quality Control</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/Qaulity-Lab/quality_60.webp</image:loc><image:title>Quality Lab Equipment 60</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/Qaulity-Lab/Quality_lab.webp</image:loc><image:title>Quality Laboratory</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/Testing-equipment/Crockmeter.webp</image:loc><image:title>Crockmeter - Colorfastness Testing</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/Testing-equipment/GSMCutter.webp</image:loc><image:title>GSM Cutter - Fabric Weight Testing</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/Testing-equipment/MartindaleTester.webp</image:loc><image:title>Martindale Tester - Abrasion Testing</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/Testing-equipment/PHtester.webp</image:loc><image:title>pH Tester - Chemical Testing</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/Testing-equipment/TensileTester.webp</image:loc><image:title>Tensile Tester - Strength Testing</image:title></image:image>
+  </url>
+
+  <!-- EXPORT PAGE -->
+  <url>
+    <loc>https://www.dg-knitting.com/export.html</loc>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/hero/export.webp</image:loc><image:title>Export Vision Banner</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/Export/excellence.webp</image:loc><image:title>Export Excellence</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/Export/Infrastructure.webp</image:loc><image:title>Export Infrastructure</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/Export/rnd.webp</image:loc><image:title>R&amp;D for Export Markets</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/Export/statergy-growth.webp</image:loc><image:title>Strategy &amp; Growth Plan</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/clients/export-house.webp</image:loc><image:title>Export House Partnership</image:title></image:image>
+  </url>
+
+  <!-- STRENGTH PAGE -->
+  <url>
+    <loc>https://www.dg-knitting.com/strength.html</loc>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/round-images/machine.png</image:loc><image:title>Production Strength - Machinery</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/round-images/dispatch.png</image:loc><image:title>Production Strength - Dispatch Capacity</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/svg/Pailung.svg</image:loc><image:title>Pailung Machinery Partner</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/svg/Terrot_logo.svg</image:loc><image:title>Terrot Machinery Partner</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/svg/satoni.svg</image:loc><image:title>Satoni Machinery Partner</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/svg/welknit.svg</image:loc><image:title>Welknit Machinery Partner</image:title></image:image>
+  </url>
+
+  <!-- PROCESS PAGE -->
+  <url>
+    <loc>https://www.dg-knitting.com/process.html</loc>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/hero/process.png</image:loc><image:title>Manufacturing Process Workflow</image:title></image:image>
+  </url>
+
+  <!-- INDUSTRIES PAGE -->
+  <url>
+    <loc>https://www.dg-knitting.com/industries.html</loc>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/clients/fashion.webp</image:loc><image:title>Fashion Industry Supply</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/clients/garment.webp</image:loc><image:title>Garment Industry Supply</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/clients/wholesaler.webp</image:loc><image:title>Wholesale Industry Supply</image:title></image:image>
+  </url>
+
+  <!-- CAREER PAGE -->
+  <url>
+    <loc>https://www.dg-knitting.com/career.html</loc>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/team/Production.webp</image:loc><image:title>Career Opportunities - Production</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/team/quality-team.webp</image:loc><image:title>Career Opportunities - Quality</image:title></image:image>
+  </url>
+
+  <!-- BLOG PAGE -->
+  <url>
+    <loc>https://www.dg-knitting.com/blog.html</loc>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/fabrics/Interlock.webp</image:loc><image:title>Blog - Interlock Fabric Insights</image:title></image:image>
+    <image:image><image:loc>https://www.dg-knitting.com/assets/images/quality/Inspection.webp</image:loc><image:title>Blog - Quality Inspection</image:title></image:image>
+  </url>
+
+</urlset>

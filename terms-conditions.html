@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions | DG Knitting – Legal Agreement & Trust</title>
+  <meta name="description" content="DG Knitting terms and conditions – governing website use, orders, intellectual property, and dispute resolution. Compliance with Indian laws and our promise of transparency.">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Bootstrap (grid + utilities) -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <!-- Core site styles (navbar, footer, buttons, typography) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/footer.css">
+  
+  <style>
+    /* ========== TERMS PAGE SPECIFIC STYLES (mirrors privacy policy layout) ========== */
+    :root {
+      --crimson: #df2229;
+      --pink-light: #fdf2f1;
+      --dark-main: #2e2d2c;
+      --dark-soft: #4a4a4a;
+      --orchid: #e18c94;
+    }
+
+    /* Remove underline for legal links inside content */
+    .terms-card a,
+    .policy-block a,
+    .contact-grievance a,
+    .grievance-item a,
+    .policy-signature a {
+      text-decoration: none !important;
+      border-bottom: none !important;
+      transition: color 0.2s ease;
+    }
+    .terms-card a:hover,
+    .policy-block a:hover,
+    .contact-grievance a:hover {
+      text-decoration: none !important;
+      color: var(--orchid) !important;
+    }
+
+    /* Header section – identical to privacy-policy header */
+    .terms-header {
+      margin-top: 10px;
+      padding: 100px 0 70px;
+      background: linear-gradient(125deg, #ffffff 0%, var(--pink-light) 100%);
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .terms-header::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -10%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(223,34,41,0.03) 0%, rgba(223,34,41,0) 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .terms-header::after {
+      content: '';
+      position: absolute;
+      bottom: -20%;
+      left: -5%;
+      width: 350px;
+      height: 350px;
+      background: radial-gradient(circle, rgba(225,140,148,0.04) 0%, rgba(225,140,148,0) 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .terms-header .header-content {
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+    .terms-header .header-subtitle {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--crimson);
+      margin-bottom: 20px;
+      background: rgba(223,34,41,0.08);
+      padding: 6px 20px;
+      border-radius: 60px;
+      backdrop-filter: blur(2px);
+    }
+    .terms-header .header-subtitle i {
+      font-size: 0.8rem;
+    }
+    .terms-header .header-title {
+      font-size: clamp(2.3rem, 5vw, 3.6rem);
+      font-weight: 800;
+      margin-bottom: 20px;
+      color: var(--dark-main);
+      font-family: 'Playfair Display', serif;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, var(--dark-main) 0%, #1a1a1a 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .terms-header .header-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 20px 0 25px;
+    }
+    .terms-header .header-divider span {
+      height: 2px;
+      background: linear-gradient(90deg, var(--crimson), var(--orchid));
+    }
+    .terms-header .header-divider span:nth-child(1),
+    .terms-header .header-divider span:nth-child(3) {
+      width: 70px;
+      opacity: 0.4;
+    }
+    .terms-header .header-divider span:nth-child(2) {
+      width: 40px;
+      opacity: 0.8;
+    }
+    .terms-header .header-description {
+      font-size: 1.08rem;
+      color: var(--dark-soft);
+      line-height: 1.7;
+      max-width: 780px;
+      margin: 0 auto;
+      font-weight: 400;
+    }
+    .effective-date {
+      background: white;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 22px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-top: 28px;
+      color: var(--crimson);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+      border: 1px solid rgba(223,34,41,0.15);
+    }
+
+    /* main card design */
+    .terms-content-section {
+      padding: 60px 0 80px;
+      background: white;
+    }
+    .terms-card {
+      background: #fff;
+      border-radius: 42px;
+      padding: 50px 55px;
+      box-shadow: 0 20px 35px -12px rgba(0,0,0,0.08);
+      border: 1px solid rgba(223, 34, 41, 0.06);
+      transition: all 0.35s ease;
+    }
+    .terms-card:hover {
+      border-color: rgba(223, 34, 41, 0.12);
+      box-shadow: 0 30px 50px -20px rgba(0,0,0,0.12);
+    }
+    .policy-block {
+      margin-bottom: 2.8rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+      padding-bottom: 2rem;
+    }
+    .policy-block:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .policy-block h2 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      font-family: 'Playfair Display', serif;
+      color: var(--crimson);
+      margin-bottom: 1rem;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .policy-block h2 i {
+      font-size: 1.6rem;
+      opacity: 0.7;
+      color: var(--orchid);
+    }
+    .policy-block h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.8rem;
+      color: var(--dark-main);
+      font-family: 'Playfair Display', serif;
+    }
+    .policy-block p, .policy-block li {
+      color: var(--dark-soft);
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+    .policy-block ul, .policy-block ol {
+      padding-left: 1.6rem;
+      margin-top: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .policy-block li {
+      margin-bottom: 0.5rem;
+    }
+    .policy-block strong {
+      color: var(--dark-main);
+      font-weight: 700;
+    }
+    .badge-privacy {
+      background: var(--pink-light);
+      color: var(--crimson);
+      padding: 0.3rem 1.2rem;
+      border-radius: 40px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.3px;
+      border: 1px solid rgba(223,34,41,0.1);
+    }
+    .contact-grievance {
+      background: linear-gradient(115deg, var(--pink-light) 0%, #ffffff 100%);
+      border-radius: 28px;
+      padding: 28px 32px;
+      margin-top: 28px;
+      border-left: 5px solid var(--crimson);
+      box-shadow: 0 6px 14px rgba(223,34,41,0.05);
+    }
+    .contact-grievance h4 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin-bottom: 0.8rem;
+      color: var(--crimson);
+      font-family: 'Playfair Display', serif;
+    }
+    .grievance-detail {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 10px;
+    }
+    .grievance-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: white;
+      padding: 8px 20px;
+      border-radius: 60px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+      border: 1px solid rgba(0,0,0,0.03);
+    }
+    .grievance-item i {
+      color: var(--crimson);
+      font-size: 1rem;
+    }
+    .policy-signature {
+      background: var(--pink-light);
+      padding: 24px 30px;
+      border-radius: 28px;
+      margin-top: 35px;
+      text-align: center;
+      font-style: normal;
+      border: 1px dashed rgba(223,34,41,0.25);
+    }
+    .policy-signature i {
+      font-size: 2rem;
+      color: var(--crimson);
+      opacity: 0.5;
+      margin-bottom: 10px;
+    }
+    /* CTA section same as other pages */
+    .contact-cta-section .cta-card {
+      background: linear-gradient(135deg, var(--crimson), var(--orchid));
+      border-radius: 30px;
+      padding: 50px;
+      transition: transform 0.25s ease, box-shadow 0.3s;
+    }
+    .contact-cta-section .cta-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 35px -10px rgba(223,34,41,0.3);
+    }
+    .cta-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+    }
+    .cta-text {
+      color: rgba(255,255,255,0.92);
+    }
+    .cta-btn {
+      background: white;
+      color: var(--crimson);
+      border: none;
+      border-radius: 60px;
+      padding: 12px 32px;
+      font-weight: 600;
+      transition: all 0.25s;
+    }
+    .cta-btn:hover {
+      background: var(--crimson);
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 768px) {
+      .terms-card { padding: 28px 22px; }
+      .policy-block h2 { font-size: 1.45rem; }
+      .terms-header { padding: 70px 0 50px; }
+      .terms-header .header-title { font-size: 1.9rem; }
+      .contact-grievance { padding: 20px; }
+      .grievance-detail { flex-direction: column; gap: 12px; }
+      .cta-title { font-size: 1.5rem; }
+    }
+    @media (max-width: 576px) {
+      .terms-header { margin-top: 65px; }
+      .policy-block h2 i { display: none; }
+    }
+    /* ensure no unwanted global underline */
+    a:not(.nav-link):not(.footer-links a):not(.social-link):not(.cta-btn):not(.contact-btn) {
+      text-decoration: none;
+    }
+    /* highlight legal emphasis */
+    .legal-emphasis {
+      color: var(--crimson);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar container (loaded via external JS) -->
+<div id="navbar-container"></div>
+<div id="tags-container"></div>
+
+<!-- Terms Header -->
+<section class="terms-header">
+  <div class="container">
+    <div class="header-content text-center">
+      <span class="header-subtitle">
+        <i class="fas fa-gavel"></i> Legal Agreement
+      </span>
+      <h1 class="header-title">Terms & Conditions</h1>
+      <div class="header-divider">
+        <span></span><span></span><span></span>
+      </div>
+      <p class="header-description">These Terms and Conditions govern your use of the DG Knitting website, orders, and relationship with us. By accessing our platform, you agree to be bound by these terms — crafted with transparency and compliance with Indian laws.</p>
+      <div class="effective-date">
+        <i class="fas fa-calendar-alt"></i> Effective: 01 April 2026
+        <i class="fas fa-file-signature ms-2"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Terms Main Content -->
+<section class="terms-content-section">
+  <div class="container">
+    <div class="terms-card">
+      
+      <!-- 1. Contact Information -->
+      <div class="policy-block">
+        <span class="badge-privacy"><i class="fas fa-building"></i> Legal Entity</span>
+        <h2><i class="fas fa-address-card"></i> 1. Contact Information</h2>
+        <p><strong>DG Knitting</strong> (referred to as "Company", "we", "us", or "our") operates the website at <strong>https://dgknitting.com/</strong>. For any legal or business inquiries, please reach out:</p>
+        <p><strong><i class="fas fa-envelope me-1"></i> Marketing Team Email:</strong> <a href="mailto:marketing@dg-knitting.com">marketing@dg-knitting.com</a><br>
+        <strong><i class="fas fa-phone-alt me-1"></i> Phone:</strong> +91 9173806837<br>
+        <strong><i class="fas fa-map-marker-alt me-1"></i> Address:</strong> Ground floor, Sangini Trade Centre, 178/183, Surat - Kadodara Rd, Saroli, Surat, Gujarat 395010, India.</p>
+        <p class="mt-2 small text-muted"><i class="fas fa-info-circle"></i> For official communications, please address the Marketing Team. Individual employee names are not required for contractual validity.</p>
+      </div>
+
+      <!-- 2. Eligibility -->
+      <div class="policy-block">
+        <h2><i class="fas fa-user-check"></i> 2. Eligibility</h2>
+        <p>By using this Site, you confirm that:</p>
+        <ul>
+          <li>You are at least 18 years of age, or</li>
+          <li>You are under 18 but have obtained verifiable parental or legal guardian consent to use the Site; and</li>
+          <li>You will abide by all applicable laws, including the laws of India.</li>
+        </ul>
+      </div>
+
+      <!-- 3. Account Registration -->
+      <div class="policy-block">
+        <h2><i class="fas fa-id-card"></i> 3. Account Registration & Security</h2>
+        <p>Certain features may require account registration. You are responsible for maintaining the confidentiality of your credentials. You agree to provide accurate, current, and complete information and to update it promptly. Notify us immediately of any unauthorised use at <a href="mailto:marketing@dg-knitting.com">marketing@dg-knitting.com</a>.</p>
+      </div>
+
+      <!-- 4. Products & Orders -->
+      <div class="policy-block">
+        <h2><i class="fas fa-boxes"></i> 4. Products and Orders</h2>
+        <p><strong>Product Descriptions:</strong> We strive for accuracy, but colours and textures may vary depending on screen resolution. <strong>Pricing:</strong> All prices are in Indian Rupees (INR) and inclusive of applicable taxes (GST). <strong>Order Acceptance:</strong> We reserve the right to cancel or refuse any order due to stock unavailability, pricing errors, or suspected fraud. <strong>Cancellations:</strong> Requests are considered only if made before order processing; contact us immediately.</p>
+      </div>
+
+      <!-- 5. Prohibited Conduct -->
+      <div class="policy-block">
+        <h2><i class="fas fa-ban"></i> 5. Prohibited Conduct</h2>
+        <p>You agree not to:</p>
+        <ul>
+          <li>Violate any Indian or international law while using the Site.</li>
+          <li>Transmit viruses, malware, or any harmful code.</li>
+          <li>Attempt unauthorized access to our servers, accounts, or data.</li>
+          <li>Copy, reproduce, or distribute Site content without written permission.</li>
+          <li>Harass, defame, or abuse any user or DG Knitting personnel.</li>
+          <li>Disrupt the security or normal operation of the website.</li>
+        </ul>
+      </div>
+
+      <!-- 6. Intellectual Property -->
+      <div class="policy-block">
+        <h2><i class="fas fa-copyright"></i> 6. Intellectual Property</h2>
+        <p>All content — including logos, graphics, product images, text, and software — is owned by DG Knitting or its licensors and protected under Indian copyright and trademark laws. You are granted a limited, non-transferable, revocable license to access the Site for personal, non-commercial use. You may not alter, reproduce, or create derivative works without explicit written consent.</p>
+      </div>
+
+      <!-- 7. User Generated Content -->
+      <div class="policy-block">
+        <h2><i class="fas fa-comment-dots"></i> 7. User-Generated Content</h2>
+        <p>If you submit reviews, testimonials, or other content, you grant DG Knitting a royalty-free, perpetual, irrevocable, worldwide license to use, modify, and display such content on our website and marketing materials. You warrant that your content does not infringe third-party rights. We may remove any offensive or illegal material.</p>
+      </div>
+
+      <!-- 8. Payments & Third-Party Services -->
+      <div class="policy-block">
+        <h2><i class="fas fa-credit-card"></i> 8. Payments and Third-Party Services</h2>
+        <p>We utilise secure third-party payment gateways. By placing an order, you agree to the terms of those processors. We are not liable for issues directly caused by payment gateway failures (e.g., declined transactions). You represent that you are authorised to use the selected payment method.</p>
+      </div>
+
+      <!-- 9. Shipping & Returns (summary) -->
+      <div class="policy-block">
+        <h2><i class="fas fa-truck"></i> 9. Shipping, Delivery & Returns</h2>
+        <p>Shipping timelines and costs are provided at checkout. Risk of loss transfers to the carrier upon dispatch. We are not liable for carrier delays or force majeure. Our Return Policy (available on the Site) governs returns; custom or made-to-order fabrics are non-refundable unless defective.</p>
+      </div>
+
+      <!-- 10. Disclaimer of Warranties -->
+      <div class="policy-block">
+        <h2><i class="fas fa-shield-alt"></i> 10. Disclaimer of Warranties</h2>
+        <p>The Site and products are provided "as is" without warranties of any kind. To the maximum extent permitted by law, we disclaim all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement. We do not guarantee that the Site will be error-free, uninterrupted, or secure.</p>
+      </div>
+
+      <!-- 11. Limitation of Liability -->
+      <div class="policy-block">
+        <h2><i class="fas fa-balance-scale"></i> 11. Limitation of Liability</h2>
+        <p>To the fullest extent allowed under Indian law, DG Knitting shall not be liable for any indirect, incidental, special, or consequential damages (including lost profits or data loss). Our total liability shall not exceed the amount you paid for the product or service giving rise to the claim.</p>
+      </div>
+
+      <!-- 12. Indemnification -->
+      <div class="policy-block">
+        <h2><i class="fas fa-handshake"></i> 12. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless DG Knitting, its directors, employees, and agents from any claims, damages, or expenses (including legal fees) arising from your violation of these Terms, misuse of the Site, or infringement of any third-party rights.</p>
+      </div>
+
+      <!-- 13. Third-Party Links -->
+      <div class="policy-block">
+        <h2><i class="fas fa-external-link-alt"></i> 13. Third-Party Links</h2>
+        <p>The Site may contain links to external websites. We have no control over and assume no responsibility for their content or privacy practices. Access them at your own risk.</p>
+      </div>
+
+      <!-- 14. Termination -->
+      <div class="policy-block">
+        <h2><i class="fas fa-power-off"></i> 14. Termination</h2>
+        <p>We may suspend or terminate your access to the Site without prior notice for any violation of these Terms, fraudulent activity, or illegal conduct. Upon termination, your right to use the Site ceases immediately. Clauses regarding intellectual property, indemnification, and limitation of liability survive termination.</p>
+      </div>
+
+      <!-- 15. Grievance Redressal (India DPDP Act) -->
+      <div class="policy-block">
+        <h2><i class="fas fa-user-tie"></i> 15. Grievance Redressal (India Compliance)</h2>
+        <p>In compliance with the Digital Personal Data Protection Act, 2023, and applicable consumer laws, we have designated a Grievance Officer:</p>
+        <div class="contact-grievance">
+          <h4><i class="fas fa-envelope-open-text me-2"></i> Grievance Officer, DG Knitting</h4>
+          <div class="grievance-detail">
+            <div class="grievance-item"><i class="fas fa-envelope"></i> <a href="mailto:grievance@dg-knitting.com">grievance@dg-knitting.com</a></div>
+            <div class="grievance-item"><i class="fas fa-phone"></i> +91 9173806837</div>
+          </div>
+          <p class="mt-3 mb-0"><small>For any complaints regarding these Terms, orders, or content, contact the Grievance Officer. We aim to acknowledge within 48 hours and resolve within 30 days as per legal timelines.</small></p>
+        </div>
+      </div>
+
+      <!-- 16. Dispute Resolution & Governing Law -->
+      <div class="policy-block">
+        <h2><i class="fas fa-gavel"></i> 16. Dispute Resolution & Governing Law</h2>
+        <p><strong>Governing Law:</strong> These Terms are governed by the laws of India. <strong>Jurisdiction:</strong> The courts in Surat, Gujarat have exclusive jurisdiction over any disputes arising from these Terms. Before filing a legal claim, you agree to attempt informal resolution by contacting <a href="mailto:marketing@dg-knitting.com">marketing@dg-knitting.com</a>. If unresolved, either party may proceed to arbitration or court in Surat, India.</p>
+      </div>
+
+      <!-- 17. Amendments & Entire Agreement -->
+      <div class="policy-block">
+        <h2><i class="fas fa-sync-alt"></i> 17. Amendments & Entire Agreement</h2>
+        <p>We may revise these Terms from time to time. The "Last Updated" date at the top indicates changes. Your continued use of the Site after modifications constitutes acceptance. These Terms, together with the Privacy Policy and Return Policy, form the entire agreement between you and DG Knitting regarding your use of the Site.</p>
+        <div class="policy-signature">
+          <i class="fas fa-quote-right"></i>
+          <p class="mb-0 fst-italic" style="font-size: 1.05rem;">"DG Knitting — Where every thread carries a promise, including the integrity of our legal commitments."</p>
+        </div>
+      </div>
+
+      <!-- 18. Force Majeure & Severability -->
+      <div class="policy-block">
+        <h2><i class="fas fa-cloud-sun"></i> 18. Force Majeure & Severability</h2>
+        <p>We are not liable for delays caused by events beyond our reasonable control (natural disasters, war, strikes, pandemics, government orders). If any provision of these Terms is deemed unenforceable, the remainder shall continue in full force and effect.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section (consistent brand) -->
+<section class="contact-cta-section section-padding" style="padding: 60px 0;">
+  <div class="container">
+    <div class="cta-card" style="background: linear-gradient(135deg, var(--crimson), var(--orchid)); padding: 50px; border-radius: 30px;">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h2 class="cta-title">Have questions about our Terms?</h2>
+          <p class="cta-text">Our team is here to clarify any legal or business queries. Reach out to us directly.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="contact.html" class="btn primary-btn cta-btn" style="background: white; color: var(--crimson); border: none; border-radius: 60px; padding: 12px 32px; font-weight: 600;"><i class="fas fa-envelope me-2"></i>Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer container -->
+<div id="footer-container"></div>
+
+<!-- Scripts (navbar & footer loaders) -->
+<script src="js/bootstrap.bundle.min.js" defer></script>
+<script src="js/component.js" defer></script>
+<script src="js/navbar.js" defer></script>
+<script src="js/footer-loader.js" defer></script>
+<script src="js/script.js" defer></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // set active nav link for terms page (if function exists)
+    if (typeof setActiveNavLink === 'function') {
+      setActiveNavLink('terms');
+    }
+    // optional thread animation
+    if (document.querySelector('.thread-animate')) {
+      document.querySelectorAll('.thread-animate, .thread-line-animated').forEach(el => el.classList.add('loaded'));
+    }
+  });
+</script>
+</body>
+</html>

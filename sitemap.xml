@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Core Pages -->
+  <url><loc>https://www.dg-knitting.com/index.html</loc><priority>1.00</priority></url>
+  <url><loc>https://www.dg-knitting.com/about-us.html</loc><priority>0.90</priority></url>
+  <url><loc>https://www.dg-knitting.com/contact.html</loc><priority>0.90</priority></url>
+  
+  <!-- Product / Fabric Pages -->
+  <url><loc>https://www.dg-knitting.com/fabric.html</loc><priority>0.90</priority></url>
+  <url><loc>https://www.dg-knitting.com/interlock-fabric-for-garment-manufacturing.html</loc><priority>0.80</priority></url>
+  <url><loc>https://www.dg-knitting.com/scuba-fabric.html</loc><priority>0.80</priority></url>
+  <url><loc>https://www.dg-knitting.com/sportswear-fabric.html</loc><priority>0.80</priority></url>
+  <url><loc>https://www.dg-knitting.com/kids-garment-fabrics.html</loc><priority>0.80</priority></url>
+  
+  <!-- Company & Operations -->
+  <url><loc>https://www.dg-knitting.com/strength.html</loc><priority>0.70</priority></url>
+  <url><loc>https://www.dg-knitting.com/quality.html</loc><priority>0.70</priority></url>
+  <url><loc>https://www.dg-knitting.com/process.html</loc><priority>0.70</priority></url>
+  <url><loc>https://www.dg-knitting.com/industries.html</loc><priority>0.70</priority></url>
+  <url><loc>https://www.dg-knitting.com/export.html</loc><priority>0.70</priority></url>
+  
+  <!-- Information & Legal -->
+  <url><loc>https://www.dg-knitting.com/blog.html</loc><priority>0.60</priority></url>
+  <url><loc>https://www.dg-knitting.com/career.html</loc><priority>0.60</priority></url>
+  <url><loc>https://www.dg-knitting.com/privacy-policy.html</loc><priority>0.30</priority></url>
+  <url><loc>https://www.dg-knitting.com/terms-conditions.html</loc><priority>0.30</priority></url>
+
+  <!-- Utility -->
+  <url><loc>https://www.dg-knitting.com/test.html</loc><priority>0.10</priority></url>
+
+</urlset>

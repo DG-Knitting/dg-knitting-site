@@ -2,35 +2,494 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DG Knitting | Journal: Threads of Thought</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    </noscript>
-
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
-
-    <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
-
+    <title>Blog | DG Knitting - Insights on Performance Fabrics & Garment Manufacturing</title>
+    <meta name="description" content="Expert insights on polyester lycra interlock fabric, kids garment fabrics, scuba fabric, and sportswear performance textiles from DG Knitting.">
+    <meta name="keywords" content="DG Knitting blog, fabric blog, interlock fabric, scuba fabric, sportswear fabric, kids garment fabrics, textile insights">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="DG Knitting Blog | Textile Insights & Fabric Technology">
+    <meta property="og:description" content="Explore expert articles on performance fabrics, garment manufacturing, and textile innovation from DG Knitting.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.dgknitting.com/blog.html">
+    <meta property="og:site_name" content="DG Knitting">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.dgknitting.com/blog.html">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/blog.css">
     
-    <!-- Ensure color variables match brand -->
-    <style>:root{--crimson:#df2229;--pink-light:#fdf2f1;--dark-main:#2e2d2c;--dark-soft:#4a4a4a;--orchid:#e18c94}</style>
+    <style>
+        :root {
+            --crimson: #df2229;
+            --pink-light: #fdf2f1;
+            --dark-main: #2e2d2c;
+            --dark-soft: #4a4a4a;
+            --orchid: #e18c94;
+            --transition: all 0.2s ease;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark-main);
+            background: white;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, .blog-header .header-title, .section-title {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* ===== BLOG HEADER ===== */
+        .blog-header {
+            position: relative;
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, #fff 0%, var(--pink-light) 100%);
+            overflow: hidden;
+            margin-top: 0;
+        }
+        
+        .blog-header .header-content {
+            position: relative;
+            z-index: 5;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .blog-header .header-subtitle {
+            display: inline-block;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--crimson);
+            margin-bottom: 20px;
+            position: relative;
+            padding: 0 15px;
+        }
+        
+        .blog-header .header-subtitle::before,
+        .blog-header .header-subtitle::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 30px;
+            height: 1px;
+            background: var(--crimson);
+            opacity: 0.3;
+        }
+        
+        .blog-header .header-subtitle::before { left: -30px; }
+        .blog-header .header-subtitle::after { right: -30px; }
+        
+        .blog-header .header-title {
+            font-size: clamp(2.5rem, 5vw, 3.8rem);
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: var(--dark-main);
+            line-height: 1.2;
+        }
+        
+        .blog-header .highlight {
+            color: var(--crimson);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .blog-header .header-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+        
+        .blog-header .header-divider span {
+            height: 2px;
+            background: var(--crimson);
+        }
+        
+        .blog-header .header-divider span:nth-child(1),
+        .blog-header .header-divider span:nth-child(3) {
+            width: 60px;
+            opacity: 0.2;
+        }
+        
+        .blog-header .header-divider span:nth-child(2) {
+            width: 30px;
+            opacity: 0.5;
+        }
+        
+        .blog-header .header-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.2rem;
+            color: var(--dark-soft);
+            line-height: 1.8;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        
+        /* Thread Background */
+        .thread-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .thread-1, .thread-2, .thread-3 {
+            position: absolute;
+            background: linear-gradient(90deg, transparent, var(--crimson), transparent);
+            opacity: 0.05;
+            height: 1px;
+            width: 100%;
+        }
+        
+        .thread-1 { top: 20%; transform: rotate(2deg); }
+        .thread-2 { top: 50%; transform: rotate(-1deg); }
+        .thread-3 { top: 80%; transform: rotate(3deg); }
+        
+        /* ===== BLOG GRID SECTION ===== */
+        .blog-grid-section {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+            margin: 50px 0 40px;
+        }
+        
+        .blog-card {
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+            transition: all 0.35s ease;
+            border: 1px solid rgba(223, 34, 41, 0.08);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 45px rgba(223, 34, 41, 0.12);
+            border-color: rgba(223, 34, 41, 0.2);
+        }
+        
+        .blog-card-image {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+            background: var(--pink-light);
+        }
+        
+        .blog-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .blog-card:hover .blog-card-image img {
+            transform: scale(1.05);
+        }
+        
+        .blog-category {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            background: var(--crimson);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            z-index: 2;
+        }
+        
+        .blog-card-content {
+            padding: 25px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .blog-card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 12px;
+            color: var(--dark-main);
+            transition: color 0.2s ease;
+        }
+        
+        .blog-card:hover .blog-card-title {
+            color: var(--crimson);
+        }
+        
+        .blog-excerpt {
+            font-size: 0.95rem;
+            color: var(--dark-soft);
+            line-height: 1.7;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+        
+        .blog-read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--crimson);
+            text-decoration: none;
+            transition: gap 0.3s ease;
+            margin-top: 10px;
+        }
+        
+        .blog-read-more i {
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-read-more:hover {
+            gap: 12px;
+        }
+        
+        .blog-read-more:hover i {
+            transform: translateX(4px);
+        }
+        
+        /* Pagination */
+        .pagination-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .pagination {
+            display: flex;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .pagination .page-item {
+            display: inline-block;
+        }
+        
+        .pagination .page-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            background: white;
+            border: 1px solid rgba(223, 34, 41, 0.2);
+            color: var(--dark-main);
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .pagination .page-link:hover {
+            background: var(--pink-light);
+            border-color: var(--crimson);
+            color: var(--crimson);
+        }
+        
+        .pagination .active .page-link {
+            background: var(--crimson);
+            border-color: var(--crimson);
+            color: white;
+        }
+        
+        .pagination .disabled .page-link {
+            opacity: 0.5;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+        
+        /* Connect Section */
+        .connect-section {
+            padding: 60px 0 100px;
+            background: white;
+        }
+        
+        .connect-card {
+            background: var(--pink-light);
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid rgba(223, 34, 41, 0.2);
+        }
+        
+        .connect-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--dark-main);
+            margin-bottom: 20px;
+        }
+        
+        .connect-card p {
+            font-size: 1.2rem;
+            color: var(--dark-soft);
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        .connect-links {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .connect-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--dark-main);
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 12px 25px;
+            background: white;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .connect-link i {
+            color: var(--crimson);
+            font-size: 1.3rem;
+        }
+        
+        .connect-link:hover {
+            background: var(--crimson);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(223, 34, 41, 0.2);
+        }
+        
+        .connect-link:hover i {
+            color: white;
+        }
+        
+        .text-center { text-align: center; }
+        
+        @media (max-width: 992px) {
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .blog-header {
+                padding: 80px 0 50px;
+            }
+            .blog-header .header-title {
+                font-size: 1.8rem;
+            }
+            .blog-grid-section {
+                padding: 60px 0;
+            }
+            .blog-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            .connect-card {
+                padding: 30px 20px;
+            }
+            .connect-card h3 {
+                font-size: 1.5rem;
+            }
+            .connect-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            .blog-card-image {
+                height: 200px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .blog-card-title {
+                font-size: 1.2rem;
+            }
+        }
+        
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .blog-card {
+            animation: fadeInUp 0.5s ease forwards;
+            opacity: 0;
+        }
+        
+        .blog-card:nth-child(1) { animation-delay: 0.05s; }
+        .blog-card:nth-child(2) { animation-delay: 0.1s; }
+        .blog-card:nth-child(3) { animation-delay: 0.15s; }
+        .blog-card:nth-child(4) { animation-delay: 0.2s; }
+    </style>
 </head>
 <body>
 
 <div id="navbar-container"></div>
-
 <div id="tags-container"></div>
 
+<!-- Blog Header -->
 <section class="blog-header">
     <div class="thread-background">
         <div class="thread-1"></div>
@@ -39,74 +498,207 @@
     </div>
     <div class="container">
         <div class="header-content text-center">
-            <span class="header-subtitle">Conversations Beyond the Loom</span>
-            <h1 class="header-title">Stories Woven <span class="highlight">in Words</span></h1>
+            <span class="header-subtitle">Insights & Expertise</span>
+            <h1 class="header-title">DG Knitting <span class="highlight">Blog</span></h1>
             <div class="header-divider">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <p class="header-description">Reflections on craft, partnerships that last, and the fabric of Indian textile culture.</p>
+            <p class="header-description">Exploring fabric technology, performance textiles, and garment manufacturing insights from industry experts.</p>
         </div>
     </div>
 </section>
 
+<!-- Blog Grid Section - Only existing blogs (4 blogs displayed in 3x3 grid with pagination) -->
 <section class="blog-grid-section">
     <div class="container">
-        
-        <div class="blog-filters">
-            <button class="filter-btn active" data-filter="all">All Writings</button>
-            <button class="filter-btn" data-filter="technology">Craft & Technique</button>
-            <button class="filter-btn" data-filter="trends">Material Culture</button>
-            <button class="filter-btn" data-filter="sustainability">Slow & Sustainable</button>
-            <button class="filter-btn" data-filter="manufacturing">Behind the Machines</button>
-        </div>
-
-        <!-- Sample blog post previews would be injected here by blog.js -->
-        <!-- The filter buttons above now have more meaningful categories -->
-        
-        <div class="pagination-container">
-            <div class="pagination">
-                <button class="page-btn prev-btn" disabled><i class="fas fa-chevron-left"></i></button>
-                <div class="page-numbers">
-                    <span class="page-number active">1</span>
-                    <span class="page-number">2</span>
-                    <span class="page-number">3</span>
-                    <span class="page-number">4</span>
-                    <span class="page-number">5</span>
+        <div class="blog-grid" id="blogGridContainer">
+            <!-- Blog Card 1: Interlock Fabric -->
+            <div class="blog-card">
+                <div class="blog-card-image">
+                    <img src="assets/images/fabrics/interlock-thumb.webp" alt="Polyester Lycra Interlock Fabric" onerror="this.src='https://placehold.co/600x400/fdf2f1/df2229?text=Interlock+Fabric'">
+                    <span class="blog-category">Fabric Technology</span>
                 </div>
-                <button class="page-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">Polyester Lycra Interlock Fabric: The Secret to Modern Garment Making</h3>
+                    <p class="blog-excerpt">Discover why double-knit interlock fabric with polyester-lycra blend delivers superior shape retention, durability, and performance for premium t-shirts, sportswear, and uniforms.</p>
+                    <a href="interlock-fabric-for-garment-manufacturing.html" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Blog Card 2: Kids Garment Fabrics -->
+            <div class="blog-card">
+                <div class="blog-card-image">
+                    <img src="assets/images/fabrics/kids-fabric-thumb.webp" alt="Kids Garment Fabrics" onerror="this.src='https://placehold.co/600x400/fdf2f1/df2229?text=Kids+Garment+Fabrics'">
+                    <span class="blog-category">Kidswear Textiles</span>
+                </div>
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">Kids Garment Fabrics: Designing the Comfort-Performance Tradeoff</h3>
+                    <p class="blog-excerpt">Essential guide to selecting fabrics for children's clothing. Learn about skin comfort, mechanical durability, shape retention, and color fastness for kidswear manufacturing.</p>
+                    <a href="kids-garment-fabrics.html" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Blog Card 3: Scuba Fabric -->
+            <div class="blog-card">
+                <div class="blog-card-image">
+                    <img src="assets/images/fabrics/scuba-thumb.webp" alt="Scuba Fabric" onerror="this.src='https://placehold.co/600x400/fdf2f1/df2229?text=Scuba+Fabric'">
+                    <span class="blog-category">Performance Textiles</span>
+                </div>
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">Scuba Fabric: Premium 300-320 GSM 4-Way Stretch Performance</h3>
+                    <p class="blog-excerpt">In-depth overview of scuba fabric properties, applications, and sourcing. Ideal for fashion garments, athletic wear, and structured apparel with excellent form retention.</p>
+                    <a href="scuba-fabric.html" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Blog Card 4: Sportswear Fabric -->
+            <div class="blog-card">
+                <div class="blog-card-image">
+                    <img src="assets/images/fabrics/sportswear-thumb.webp" alt="Sportswear Performance Fabric" onerror="this.src='https://placehold.co/600x400/fdf2f1/df2229?text=Sportswear+Fabric'">
+                    <span class="blog-category">Activewear Engineering</span>
+                </div>
+                <div class="blog-card-content">
+                    <h3 class="blog-card-title">Essential Performance Properties & Manufacturing Authority in Activewear</h3>
+                    <p class="blog-excerpt">Professional guide to sportswear fabric performance: breathability, 4-way stretch, anti-odor technology, and B2B manufacturing excellence for activewear brands.</p>
+                    <a href="sportswear-fabric.html" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
-
-        <div class="load-more-container">
-            <button class="load-more-btn">Read More Articles <i class="fas fa-book-open"></i></button>
+        
+        <!-- Pagination - 3x3 grid currently shows 4 blogs, pagination shows only page 1 active -->
+        <div class="pagination-wrapper">
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </a></li>
+            </ul>
         </div>
     </div>
 </section>
 
-<!-- Optional: Featured post section that could be activated later -->
-<!-- 
-<section class="featured-post-section">
+<!-- Connect Section -->
+<section class="connect-section">
     <div class="container">
-        <div class="featured-card">
-            <span class="featured-tag">Latest Reflection</span>
-            <h2>The Handshake Behind the Fabric</h2>
-            <p class="featured-excerpt">Why in an age of automated everything, we still believe relationships matter more than algorithms...</p>
-            <a href="#" class="featured-link">Continue Reading <i class="fas fa-arrow-right"></i></a>
+        <div class="connect-card">
+            <h3>Connect with DG Knitting</h3>
+            <p>Have questions about our fabrics or want to discuss bulk orders? Reach out to our textile specialists.</p>
+            <div class="connect-links">
+                <a href="mailto:sales@dgknitting.com" class="connect-link">
+                    <i class="fas fa-envelope"></i> sales@dgknitting.com
+                </a>
+                <a href="tel:+919327456808" class="connect-link">
+                    <i class="fas fa-phone-alt"></i> +91 93274 56808
+                </a>
+            </div>
         </div>
     </div>
-</section> 
--->
+</section>
 
 <div id="footer-container"></div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('DG Knitting Blog Page Loaded - Displaying existing fabric articles');
+        
+        // Back to Top Button
+        if (!document.querySelector('.back-to-top')) {
+            const backToTop = document.createElement('button');
+            backToTop.className = 'back-to-top';
+            backToTop.innerHTML = '<i class="fas fa-arrow-up"></i>';
+            backToTop.style.cssText = `
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                width: 50px;
+                height: 50px;
+                background: var(--crimson);
+                color: white;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                display: none;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+                box-shadow: 0 5px 15px rgba(223, 34, 41, 0.3);
+                z-index: 999;
+                transition: all 0.3s ease;
+            `;
+            document.body.appendChild(backToTop);
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) {
+                    backToTop.style.display = 'flex';
+                } else {
+                    backToTop.style.display = 'none';
+                }
+            });
+            
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+        
+        // Scroll Progress Bar
+        const progressBar = document.createElement('div');
+        progressBar.className = 'scroll-progress';
+        progressBar.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: var(--crimson);
+            width: 0%;
+            z-index: 9999;
+            transition: width 0.1s ease;
+        `;
+        document.body.appendChild(progressBar);
+        
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            progressBar.style.width = scrolled + '%';
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId !== '#' && targetId !== '' && targetId !== '/') {
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
+        });
+        
+        // Handle image loading errors gracefully
+        const images = document.querySelectorAll('.blog-card-image img');
+        images.forEach(img => {
+            img.addEventListener('error', function() {
+                console.log('Image placeholder active for:', this.alt);
+            });
+        });
+    });
+</script>
 
 <script src="js/bootstrap.bundle.min.js" defer></script>
 <script src="js/component.js" defer></script>
 <script src="js/navbar.js" defer></script>
 <script src="js/footer-loader.js" defer></script>
 <script src="js/script.js" defer></script>
-<script src="js/blog.js" defer></script>
 
 </body>
 </html>
